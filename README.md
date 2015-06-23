@@ -4,6 +4,8 @@
 
 [资源](#ziYuan)
 
+[第三方库](#disanfang)
+
 <h1 id="zhiYiShiXiang">注意事项</h1>
 
 
@@ -25,3 +27,12 @@
 1. [Swift2.0新特性](http://segmentfault.com/a/1190000002922232)
 
 2. [讲解 Markdown](http://alfred-sun.github.io/blog/2015/01/10/markdown-syntax-documentation/)
+
+
+
+<h2 id = "disanfang">第三方库</h2>
+现在cocoapods好像和 Xcode7有点不兼容。我的cocoapods版本有点低，没有更新到最新的版本。回头更新到最新版本试试。
+
+
+1. [SwiftyJSON](https://github.com/SwiftyJSON/SwiftyJSON)
+2. [Alamofire](https://github.com/Alamofire/Alamofire)
