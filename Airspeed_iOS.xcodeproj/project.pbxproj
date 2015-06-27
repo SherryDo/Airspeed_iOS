@@ -15,6 +15,8 @@
 		AB4A2E531B392DC30023F291 /* YXL_Storyboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AB4A2E521B392DC30023F291 /* YXL_Storyboard.storyboard */; };
 		AB4A2E551B392E1C0023F291 /* YXL_ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB4A2E541B392E1C0023F291 /* YXL_ViewController.swift */; };
 		AB4A2E571B392EC40023F291 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB4A2E561B392EC40023F291 /* MainViewController.swift */; };
+		AB99419E1B3E7FB100EA03AA /* RJ_Storyboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AB99419D1B3E7FB100EA03AA /* RJ_Storyboard.storyboard */; };
+		AB9941A21B3E802B00EA03AA /* WZ_StoryBoard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AB9941A11B3E802B00EA03AA /* WZ_StoryBoard.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +30,8 @@
 		AB4A2E521B392DC30023F291 /* YXL_Storyboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = YXL_Storyboard.storyboard; sourceTree = "<group>"; };
 		AB4A2E541B392E1C0023F291 /* YXL_ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YXL_ViewController.swift; sourceTree = "<group>"; };
 		AB4A2E561B392EC40023F291 /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		AB99419D1B3E7FB100EA03AA /* RJ_Storyboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = RJ_Storyboard.storyboard; sourceTree = "<group>"; };
+		AB9941A11B3E802B00EA03AA /* WZ_StoryBoard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = WZ_StoryBoard.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +76,7 @@
 		AB4A2E4D1B392D340023F291 /* renjie */ = {
 			isa = PBXGroup;
 			children = (
+				AB99419D1B3E7FB100EA03AA /* RJ_Storyboard.storyboard */,
 			);
 			path = renjie;
 			sourceTree = "<group>";
@@ -79,6 +84,7 @@
 		AB4A2E4E1B392D340023F291 /* wangzhuo */ = {
 			isa = PBXGroup;
 			children = (
+				AB9941A11B3E802B00EA03AA /* WZ_StoryBoard.storyboard */,
 			);
 			path = wangzhuo;
 			sourceTree = "<group>";
@@ -170,8 +176,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AB99419E1B3E7FB100EA03AA /* RJ_Storyboard.storyboard in Resources */,
 				AB4A2E461B38F7050023F291 /* LaunchScreen.storyboard in Resources */,
 				AB4A2E531B392DC30023F291 /* YXL_Storyboard.storyboard in Resources */,
+				AB9941A21B3E802B00EA03AA /* WZ_StoryBoard.storyboard in Resources */,
 				AB4A2E431B38F7050023F291 /* Assets.xcassets in Resources */,
 				AB4A2E3E1B38F7050023F291 /* Main.storyboard in Resources */,
 			);
