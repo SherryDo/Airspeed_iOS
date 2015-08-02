@@ -22,6 +22,10 @@ class YXL_ViewController: UIViewController {
     }
     
 
+    @IBAction func miss(sender: UIButton) {
+        
+         self.dismissViewControllerAnimated(true, completion: nil)
+    }
     /*
     // MARK: - Navigation
 
