@@ -75,6 +75,9 @@ class ArticleListTableViewController: UITableViewController {
         
         let collectAction = UITableViewRowAction(style: UITableViewRowActionStyle.Default, title: "收藏") { (action, indexpath) -> Void in
             
+            
+//            在这里完成收藏物品的动作
+            
         }
         
         

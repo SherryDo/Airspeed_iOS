@@ -34,10 +34,11 @@ class YXL_ViewController: UIViewController,UICollectionViewDataSource,UICollecti
     }
     
 //MARK: IBAction
-    @IBAction func miss(sender: UIButton) {
-        
-         self.dismissViewControllerAnimated(true, completion: nil)
+    
+        @IBAction func miss(sender: UIBarButtonItem) {
+        self.dismissViewControllerAnimated(true, completion: nil)
     }
+    
     
     
 //   MARK: Function 
