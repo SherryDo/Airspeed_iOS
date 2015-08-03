@@ -8,9 +8,9 @@
 
 import Foundation
 
-class ArticleDataSourceModel {
+struct ArticleDataSourceModel {
     
-    let name = ""
-    let money = ""
+    let name:String
+    let money:String
     let imge = ""
 }

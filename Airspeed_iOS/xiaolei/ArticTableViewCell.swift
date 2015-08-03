@@ -10,7 +10,7 @@ import UIKit
 
 class ArticTableViewCell: UITableViewCell {
     
-    
+//    MARK: IBOutlet
     @IBOutlet weak var articimage: UIImageView!
     
     @IBOutlet weak var articMoney: UILabel!
