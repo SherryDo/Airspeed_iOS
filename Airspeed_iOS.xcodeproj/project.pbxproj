@@ -15,6 +15,11 @@
 		AB4A2E531B392DC30023F291 /* YXL_Storyboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AB4A2E521B392DC30023F291 /* YXL_Storyboard.storyboard */; };
 		AB4A2E551B392E1C0023F291 /* YXL_ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB4A2E541B392E1C0023F291 /* YXL_ViewController.swift */; };
 		AB4A2E571B392EC40023F291 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB4A2E561B392EC40023F291 /* MainViewController.swift */; };
+		AB536FC91B6EFF7D004B75B8 /* YxlCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB536FC81B6EFF7D004B75B8 /* YxlCollectionViewCell.swift */; };
+		AB536FCB1B6F003D004B75B8 /* CollectionDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB536FCA1B6F003D004B75B8 /* CollectionDataSource.swift */; };
+		AB536FD21B6F152F004B75B8 /* ArticleListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB536FD11B6F152F004B75B8 /* ArticleListTableViewController.swift */; };
+		AB536FD41B6F1881004B75B8 /* ArticTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB536FD31B6F1881004B75B8 /* ArticTableViewCell.swift */; };
+		AB536FD61B6F1989004B75B8 /* ArticleDataSourceModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB536FD51B6F1989004B75B8 /* ArticleDataSourceModel.swift */; };
 		AB99419E1B3E7FB100EA03AA /* RJ_Storyboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AB99419D1B3E7FB100EA03AA /* RJ_Storyboard.storyboard */; };
 		AB9941A21B3E802B00EA03AA /* WZ_StoryBoard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AB9941A11B3E802B00EA03AA /* WZ_StoryBoard.storyboard */; };
 /* End PBXBuildFile section */
@@ -30,6 +35,11 @@
 		AB4A2E521B392DC30023F291 /* YXL_Storyboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = YXL_Storyboard.storyboard; sourceTree = "<group>"; };
 		AB4A2E541B392E1C0023F291 /* YXL_ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YXL_ViewController.swift; sourceTree = "<group>"; };
 		AB4A2E561B392EC40023F291 /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		AB536FC81B6EFF7D004B75B8 /* YxlCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YxlCollectionViewCell.swift; sourceTree = "<group>"; };
+		AB536FCA1B6F003D004B75B8 /* CollectionDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionDataSource.swift; sourceTree = "<group>"; };
+		AB536FD11B6F152F004B75B8 /* ArticleListTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArticleListTableViewController.swift; sourceTree = "<group>"; };
+		AB536FD31B6F1881004B75B8 /* ArticTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArticTableViewCell.swift; sourceTree = "<group>"; };
+		AB536FD51B6F1989004B75B8 /* ArticleDataSourceModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArticleDataSourceModel.swift; sourceTree = "<group>"; };
 		AB99419D1B3E7FB100EA03AA /* RJ_Storyboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = RJ_Storyboard.storyboard; sourceTree = "<group>"; };
 		AB9941A11B3E802B00EA03AA /* WZ_StoryBoard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = WZ_StoryBoard.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -92,8 +102,9 @@
 		AB4A2E4F1B392D340023F291 /* xiaolei */ = {
 			isa = PBXGroup;
 			children = (
+				AB536FCE1B6F125F004B75B8 /* model */,
+				AB536FCD1B6F1248004B75B8 /* controller */,
 				AB4A2E521B392DC30023F291 /* YXL_Storyboard.storyboard */,
-				AB4A2E541B392E1C0023F291 /* YXL_ViewController.swift */,
 			);
 			path = xiaolei;
 			sourceTree = "<group>";
@@ -117,6 +128,26 @@
 				AB4A2E471B38F7050023F291 /* Info.plist */,
 			);
 			name = common;
+			sourceTree = "<group>";
+		};
+		AB536FCD1B6F1248004B75B8 /* controller */ = {
+			isa = PBXGroup;
+			children = (
+				AB536FC81B6EFF7D004B75B8 /* YxlCollectionViewCell.swift */,
+				AB4A2E541B392E1C0023F291 /* YXL_ViewController.swift */,
+				AB536FD11B6F152F004B75B8 /* ArticleListTableViewController.swift */,
+				AB536FD31B6F1881004B75B8 /* ArticTableViewCell.swift */,
+			);
+			name = controller;
+			sourceTree = "<group>";
+		};
+		AB536FCE1B6F125F004B75B8 /* model */ = {
+			isa = PBXGroup;
+			children = (
+				AB536FCA1B6F003D004B75B8 /* CollectionDataSource.swift */,
+				AB536FD51B6F1989004B75B8 /* ArticleDataSourceModel.swift */,
+			);
+			name = model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -192,10 +223,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AB536FC91B6EFF7D004B75B8 /* YxlCollectionViewCell.swift in Sources */,
+				AB536FD41B6F1881004B75B8 /* ArticTableViewCell.swift in Sources */,
 				AB4A2E411B38F7050023F291 /* Airspeed_iOS.xcdatamodeld in Sources */,
+				AB536FCB1B6F003D004B75B8 /* CollectionDataSource.swift in Sources */,
+				AB536FD21B6F152F004B75B8 /* ArticleListTableViewController.swift in Sources */,
 				AB4A2E551B392E1C0023F291 /* YXL_ViewController.swift in Sources */,
 				AB4A2E391B38F7050023F291 /* AppDelegate.swift in Sources */,
 				AB4A2E571B392EC40023F291 /* MainViewController.swift in Sources */,
+				AB536FD61B6F1989004B75B8 /* ArticleDataSourceModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
