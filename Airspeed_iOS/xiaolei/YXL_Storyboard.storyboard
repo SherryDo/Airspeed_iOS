@@ -154,7 +154,12 @@
                             <outlet property="delegate" destination="uLE-L1-DSt" id="aeD-As-ySQ"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" id="qp2-gN-9hl"/>
+                    <navigationItem key="navigationItem" id="qp2-gN-9hl">
+                        <barButtonItem key="rightBarButtonItem" title="筛选" id="dQH-08-CU5"/>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="choose" destination="dQH-08-CU5" id="Got-ED-WSj"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Kgo-Ay-fZZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

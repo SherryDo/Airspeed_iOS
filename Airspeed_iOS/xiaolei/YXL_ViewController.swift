@@ -46,6 +46,18 @@ class YXL_ViewController: UIViewController,UICollectionViewDataSource,UICollecti
     */
     func configCollection(){
         collectionView.backgroundColor = UIColor.whiteColor()
+        
+        
+//        测试数据
+        for _ in 0...20{
+            
+            let testData = CollectionDataSource(imgeURL:"http://dowhile.net",name:"yangxiaolei")
+            collectionData.append(testData)
+        }
+        
+        
+                
+        
     }
     
     

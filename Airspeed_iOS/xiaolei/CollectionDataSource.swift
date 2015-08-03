@@ -8,10 +8,10 @@
 
 import Foundation
 
-enum CollectionDataSource{
+struct CollectionDataSource{
     
-    case imgeURL(NSURL)
+    let imgeURL:String
     
-    case name(String)
+    let  name:String
 
 }
