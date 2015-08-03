@@ -40,7 +40,10 @@
 		AB53705E1B6FAC33004B75B8 /* UIScrollView+MJRefresh.m in Sources */ = {isa = PBXBuildFile; fileRef = AB53704A1B6FAC33004B75B8 /* UIScrollView+MJRefresh.m */; };
 		AB53705F1B6FAC33004B75B8 /* UIView+MJExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = AB53704C1B6FAC33004B75B8 /* UIView+MJExtension.m */; };
 		AB99419E1B3E7FB100EA03AA /* RJ_Storyboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AB99419D1B3E7FB100EA03AA /* RJ_Storyboard.storyboard */; };
-		AB9941A21B3E802B00EA03AA /* WZ_StoryBoard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AB9941A11B3E802B00EA03AA /* WZ_StoryBoard.storyboard */; };
+		CBE7A2AF1B6FCAB00028CED5 /* background.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CBE7A2AB1B6FCAB00028CED5 /* background.jpg */; };
+		CBE7A2B01B6FCAB00028CED5 /* icon.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CBE7A2AC1B6FCAB00028CED5 /* icon.jpg */; };
+		CBE7A2B11B6FCAB00028CED5 /* WZ_StoryBoard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CBE7A2AD1B6FCAB00028CED5 /* WZ_StoryBoard.storyboard */; };
+		CBE7A2B21B6FCAB00028CED5 /* WZ_UserInformationViewController.swift .swift in Sources */ = {isa = PBXBuildFile; fileRef = CBE7A2AE1B6FCAB00028CED5 /* WZ_UserInformationViewController.swift .swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -99,7 +102,10 @@
 		AB53704B1B6FAC33004B75B8 /* UIView+MJExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+MJExtension.h"; sourceTree = "<group>"; };
 		AB53704C1B6FAC33004B75B8 /* UIView+MJExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+MJExtension.m"; sourceTree = "<group>"; };
 		AB99419D1B3E7FB100EA03AA /* RJ_Storyboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = RJ_Storyboard.storyboard; sourceTree = "<group>"; };
-		AB9941A11B3E802B00EA03AA /* WZ_StoryBoard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = WZ_StoryBoard.storyboard; sourceTree = "<group>"; };
+		CBE7A2AB1B6FCAB00028CED5 /* background.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = background.jpg; sourceTree = "<group>"; };
+		CBE7A2AC1B6FCAB00028CED5 /* icon.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = icon.jpg; sourceTree = "<group>"; };
+		CBE7A2AD1B6FCAB00028CED5 /* WZ_StoryBoard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = WZ_StoryBoard.storyboard; sourceTree = "<group>"; };
+		CBE7A2AE1B6FCAB00028CED5 /* WZ_UserInformationViewController.swift .swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "WZ_UserInformationViewController.swift .swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -152,7 +158,10 @@
 		AB4A2E4E1B392D340023F291 /* wangzhuo */ = {
 			isa = PBXGroup;
 			children = (
-				AB9941A11B3E802B00EA03AA /* WZ_StoryBoard.storyboard */,
+				CBE7A2AB1B6FCAB00028CED5 /* background.jpg */,
+				CBE7A2AC1B6FCAB00028CED5 /* icon.jpg */,
+				CBE7A2AD1B6FCAB00028CED5 /* WZ_StoryBoard.storyboard */,
+				CBE7A2AE1B6FCAB00028CED5 /* WZ_UserInformationViewController.swift .swift */,
 			);
 			path = wangzhuo;
 			sourceTree = "<group>";
@@ -361,11 +370,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CBE7A2B01B6FCAB00028CED5 /* icon.jpg in Resources */,
 				AB99419E1B3E7FB100EA03AA /* RJ_Storyboard.storyboard in Resources */,
+				CBE7A2B11B6FCAB00028CED5 /* WZ_StoryBoard.storyboard in Resources */,
 				AB4A2E461B38F7050023F291 /* LaunchScreen.storyboard in Resources */,
+				CBE7A2AF1B6FCAB00028CED5 /* background.jpg in Resources */,
 				AB53705B1B6FAC33004B75B8 /* MJRefresh.bundle in Resources */,
 				AB4A2E531B392DC30023F291 /* YXL_Storyboard.storyboard in Resources */,
-				AB9941A21B3E802B00EA03AA /* WZ_StoryBoard.storyboard in Resources */,
 				AB4A2E431B38F7050023F291 /* Assets.xcassets in Resources */,
 				AB4A2E3E1B38F7050023F291 /* Main.storyboard in Resources */,
 			);
@@ -397,6 +408,7 @@
 				AB5370501B6FAC33004B75B8 /* MJRefreshFooter.m in Sources */,
 				AB53704F1B6FAC33004B75B8 /* MJRefreshComponent.m in Sources */,
 				AB5370551B6FAC33004B75B8 /* MJRefreshBackGifFooter.m in Sources */,
+				CBE7A2B21B6FCAB00028CED5 /* WZ_UserInformationViewController.swift .swift in Sources */,
 				AB4A2E391B38F7050023F291 /* AppDelegate.swift in Sources */,
 				AB53705A1B6FAC33004B75B8 /* MJRefreshStateHeader.m in Sources */,
 				AB5370571B6FAC33004B75B8 /* MJRefreshBackStateFooter.m in Sources */,
