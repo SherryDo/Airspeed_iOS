@@ -22,6 +22,7 @@
 		AB536FD61B6F1989004B75B8 /* ArticleDataSourceModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB536FD51B6F1989004B75B8 /* ArticleDataSourceModel.swift */; };
 		AB99419E1B3E7FB100EA03AA /* RJ_Storyboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AB99419D1B3E7FB100EA03AA /* RJ_Storyboard.storyboard */; };
 		AB9941A21B3E802B00EA03AA /* WZ_StoryBoard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AB9941A11B3E802B00EA03AA /* WZ_StoryBoard.storyboard */; };
+		CA56C8971B6F5717002EA014 /* RJ_ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA56C8961B6F5717002EA014 /* RJ_ViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,6 +43,7 @@
 		AB536FD51B6F1989004B75B8 /* ArticleDataSourceModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArticleDataSourceModel.swift; sourceTree = "<group>"; };
 		AB99419D1B3E7FB100EA03AA /* RJ_Storyboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = RJ_Storyboard.storyboard; sourceTree = "<group>"; };
 		AB9941A11B3E802B00EA03AA /* WZ_StoryBoard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = WZ_StoryBoard.storyboard; sourceTree = "<group>"; };
+		CA56C8961B6F5717002EA014 /* RJ_ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RJ_ViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,6 +89,7 @@
 			isa = PBXGroup;
 			children = (
 				AB99419D1B3E7FB100EA03AA /* RJ_Storyboard.storyboard */,
+				CA56C8981B6F5771002EA014 /* Controller */,
 			);
 			path = renjie;
 			sourceTree = "<group>";
@@ -150,6 +153,14 @@
 			name = model;
 			sourceTree = "<group>";
 		};
+		CA56C8981B6F5771002EA014 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				CA56C8961B6F5717002EA014 /* RJ_ViewController.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -176,6 +187,7 @@
 		AB4A2E2D1B38F7050023F291 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftUpdateCheck = 0700;
 				LastUpgradeCheck = 0700;
 				ORGANIZATIONNAME = SherryTeam;
 				TargetAttributes = {
@@ -228,6 +240,7 @@
 				AB4A2E411B38F7050023F291 /* Airspeed_iOS.xcdatamodeld in Sources */,
 				AB536FCB1B6F003D004B75B8 /* CollectionDataSource.swift in Sources */,
 				AB536FD21B6F152F004B75B8 /* ArticleListTableViewController.swift in Sources */,
+				CA56C8971B6F5717002EA014 /* RJ_ViewController.swift in Sources */,
 				AB4A2E551B392E1C0023F291 /* YXL_ViewController.swift in Sources */,
 				AB4A2E391B38F7050023F291 /* AppDelegate.swift in Sources */,
 				AB4A2E571B392EC40023F291 /* MainViewController.swift in Sources */,
