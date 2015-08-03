@@ -6,6 +6,8 @@
 
 [第三方库](#disanfang)
 
+[git使用](#git)
+
 <h1 id="zhiYiShiXiang">注意事项</h1>
 
 
@@ -35,3 +37,38 @@ Master分支主要用来发布正式的版本；develop分支用来开发。所�
 
 <h2 id = "disanfang">第三方库</h2>
 添加了第三方库`MJRefresh`;上拉加载，下拉刷新。
+<<<<<<< HEAD
+=======
+
+<h2 id="git">git使用</h2>
+我们现在都对远程仓库有读写的权限，所以可以直接提交到Github的远程仓库中。
+
+把develop分支克隆到本地之后，我建议每次完成某个功能时再创建一个新的分支。
+
+`git checkout -b newBranch`
+
+之行上边这个命令就创建并且切换到了新的分支，名字叫做`newBranch`
+
+你在这个分支多了很一些工作，完成了某个功能现在要往`develop`分支合并，首先切换到`develop`分支
+
+`git checkout develop`
+
+这个时候最好先和Github的服务器上的仓库同步一下，看看是否有人提交了新的更新。执行:
+
+`git pull oringin develop`
+
+然后看看输出结果是否有问题。没有问题的话再来合并`newBranch`分支。
+
+`git merge --no-ff newBranch`
+
+这个时候编译器会启动，用于录入合并提交的信息。默认信息中已经包含了一些默认的内容，可以不做修改。将编译器中显示的内容保存，关闭编辑器，然后就会看到一些输出结果。
+
+然后把你本地的`develop`推送到Github上。
+
+`git push `
+
+然后你的`newBranch`分支就可以删掉，或者留着。
+
+
+在Xcode中可以直接进行`commit`。这个就不多说了
+>>>>>>> work
