@@ -34,4 +34,4 @@ Master分支主要用来发布正式的版本；develop分支用来开发。所�
 
 
 <h2 id = "disanfang">第三方库</h2>
-现在cocoapods好像和 Xcode7有点不兼容。我的cocoapods版本有点低，没有更新到最新的版本。回头更新到最新版本试试。
+添加了第三方库`MJRefresh`;上拉加载，下拉刷新。
