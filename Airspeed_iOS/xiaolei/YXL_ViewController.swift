@@ -8,11 +8,23 @@
 
 import UIKit
 
-class YXL_ViewController: UIViewController {
+class YXL_ViewController: UIViewController,UICollectionViewDataSource,UICollectionViewDelegate{
 
+    
+    
+//   MARK: 属性
+    var collectionData = [CollectionDataSource]()
+    
+    
+//    MARK: IBOutlet
+    @IBOutlet weak var collectionView: UICollectionView!
+    
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
+//        配置collectinView
+        configCollection()
         // Do any additional setup after loading the view.
     }
 
@@ -21,11 +33,23 @@ class YXL_ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-
+//MARK: IBAction
     @IBAction func miss(sender: UIButton) {
         
          self.dismissViewControllerAnimated(true, completion: nil)
     }
+    
+    
+//   MARK: Function 
+    /**
+    配置collection的相关属性
+    */
+    func configCollection(){
+        collectionView.backgroundColor = UIColor.whiteColor()
+    }
+    
+    
+    
     /*
     // MARK: - Navigation
 
@@ -35,5 +59,21 @@ class YXL_ViewController: UIViewController {
         // Pass the selected object to the new view controller.
     }
     */
+    
+    
+//    MARK: UICollectionViewDataSource
+    
+    func collectionView(collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int{
+        return collectionData.count
+    }
+    
+    func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell{
+        let cell = collectionView.dequeueReusableCellWithReuseIdentifier("yxlCell", forIndexPath: indexPath) as! YxlCollectionViewCell
+        
+        
+        cell.label.text = "\(indexPath.row)"
+        
+        return cell
+    }
 
 }
