@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AB195AEB1B6FE1CB00C93227 /* SwiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB195AEA1B6FE1CB00C93227 /* SwiftyJSON.swift */; };
 		AB4A2E391B38F7050023F291 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB4A2E381B38F7050023F291 /* AppDelegate.swift */; };
 		AB4A2E3E1B38F7050023F291 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AB4A2E3C1B38F7050023F291 /* Main.storyboard */; };
 		AB4A2E411B38F7050023F291 /* Airspeed_iOS.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = AB4A2E3F1B38F7050023F291 /* Airspeed_iOS.xcdatamodeld */; };
@@ -47,6 +48,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		AB195AEA1B6FE1CB00C93227 /* SwiftyJSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftyJSON.swift; sourceTree = "<group>"; };
 		AB4A2E351B38F7050023F291 /* Airspeed_iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Airspeed_iOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AB4A2E381B38F7050023F291 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AB4A2E3D1B38F7050023F291 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -119,6 +121,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		AB195AE91B6FE1AE00C93227 /* SwifyJSON */ = {
+			isa = PBXGroup;
+			children = (
+				AB195AEA1B6FE1CB00C93227 /* SwiftyJSON.swift */,
+			);
+			name = SwifyJSON;
+			sourceTree = "<group>";
+		};
 		AB4A2E2C1B38F7050023F291 = {
 			isa = PBXGroup;
 			children = (
@@ -187,6 +197,7 @@
 		AB4A2E511B392D790023F291 /* common */ = {
 			isa = PBXGroup;
 			children = (
+				AB195AE91B6FE1AE00C93227 /* SwifyJSON */,
 				AB5370201B6FAC33004B75B8 /* MJRefresh */,
 				AB4A2E381B38F7050023F291 /* AppDelegate.swift */,
 				AB4A2E561B392EC40023F291 /* MainViewController.swift */,
@@ -415,6 +426,7 @@
 				AB53705F1B6FAC33004B75B8 /* UIView+MJExtension.m in Sources */,
 				AB5370591B6FAC33004B75B8 /* MJRefreshNormalHeader.m in Sources */,
 				AB5370531B6FAC33004B75B8 /* MJRefreshAutoNormalFooter.m in Sources */,
+				AB195AEB1B6FE1CB00C93227 /* SwiftyJSON.swift in Sources */,
 				AB4A2E571B392EC40023F291 /* MainViewController.swift in Sources */,
 				AB536FD61B6F1989004B75B8 /* ArticleDataSourceModel.swift in Sources */,
 			);

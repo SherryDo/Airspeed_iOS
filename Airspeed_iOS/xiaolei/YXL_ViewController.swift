@@ -24,6 +24,7 @@ class YXL_ViewController: UIViewController,UICollectionViewDataSource,UICollecti
     override func viewDidLoad() {
         super.viewDidLoad()
 //        配置collectinView
+        Alamofire
         configCollection()
         // Do any additional setup after loading the view.
     }
