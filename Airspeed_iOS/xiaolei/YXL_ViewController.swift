@@ -8,6 +8,8 @@
 
 import UIKit
 
+
+
 class YXL_ViewController: UIViewController,UICollectionViewDataSource,UICollectionViewDelegate{
 
     
@@ -24,8 +26,14 @@ class YXL_ViewController: UIViewController,UICollectionViewDataSource,UICollecti
     override func viewDidLoad() {
         super.viewDidLoad()
 //        配置collectinView
-        Alamofire
+        
         configCollection()
+        
+        
+        
+//        Alamofire.request(.GET, "http://httpbin.org/get")
+        
+        
         // Do any additional setup after loading the view.
     }
 
