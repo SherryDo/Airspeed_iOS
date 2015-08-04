@@ -42,6 +42,8 @@
 		AB7A1FC51B706CAE00D77160 /* UIScrollView+MJRefresh.m in Sources */ = {isa = PBXBuildFile; fileRef = AB7A1FB11B706CAE00D77160 /* UIScrollView+MJRefresh.m */; };
 		AB7A1FC61B706CAE00D77160 /* UIView+MJExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = AB7A1FB31B706CAE00D77160 /* UIView+MJExtension.m */; };
 		AB99419E1B3E7FB100EA03AA /* RJ_Storyboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AB99419D1B3E7FB100EA03AA /* RJ_Storyboard.storyboard */; };
+		CAC7722F1B7093FB00AF9009 /* RJ_SJViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAC7722E1B7093FB00AF9009 /* RJ_SJViewController.swift */; };
+		CAC7727A1B709B8700AF9009 /* XLScrollViewer.m in Sources */ = {isa = PBXBuildFile; fileRef = CAC772791B709B8700AF9009 /* XLScrollViewer.m */; };
 		CBE7A2AF1B6FCAB00028CED5 /* background.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CBE7A2AB1B6FCAB00028CED5 /* background.jpg */; };
 		CBE7A2B01B6FCAB00028CED5 /* icon.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CBE7A2AC1B6FCAB00028CED5 /* icon.jpg */; };
 		CBE7A2B11B6FCAB00028CED5 /* WZ_StoryBoard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CBE7A2AD1B6FCAB00028CED5 /* WZ_StoryBoard.storyboard */; };
@@ -165,6 +167,9 @@
 		AB7A1FB21B706CAE00D77160 /* UIView+MJExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+MJExtension.h"; sourceTree = "<group>"; };
 		AB7A1FB31B706CAE00D77160 /* UIView+MJExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+MJExtension.m"; sourceTree = "<group>"; };
 		AB99419D1B3E7FB100EA03AA /* RJ_Storyboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = RJ_Storyboard.storyboard; sourceTree = "<group>"; };
+		CAC7722E1B7093FB00AF9009 /* RJ_SJViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RJ_SJViewController.swift; sourceTree = "<group>"; };
+		CAC772781B709B8700AF9009 /* XLScrollViewer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XLScrollViewer.h; sourceTree = "<group>"; };
+		CAC772791B709B8700AF9009 /* XLScrollViewer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XLScrollViewer.m; sourceTree = "<group>"; };
 		CBE7A2AB1B6FCAB00028CED5 /* background.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = background.jpg; sourceTree = "<group>"; };
 		CBE7A2AC1B6FCAB00028CED5 /* icon.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = icon.jpg; sourceTree = "<group>"; };
 		CBE7A2AD1B6FCAB00028CED5 /* WZ_StoryBoard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = WZ_StoryBoard.storyboard; sourceTree = "<group>"; };
@@ -218,6 +223,7 @@
 			isa = PBXGroup;
 			children = (
 				AB99419D1B3E7FB100EA03AA /* RJ_Storyboard.storyboard */,
+				CAC7722E1B7093FB00AF9009 /* RJ_SJViewController.swift */,
 			);
 			path = renjie;
 			sourceTree = "<group>";
@@ -254,6 +260,7 @@
 		AB4A2E511B392D790023F291 /* common */ = {
 			isa = PBXGroup;
 			children = (
+				CAC772771B709B8700AF9009 /* XLScrollViewer */,
 				AB7A1F871B706CAE00D77160 /* MJRefresh */,
 				AB4A2E381B38F7050023F291 /* AppDelegate.swift */,
 				AB4A2E561B392EC40023F291 /* MainViewController.swift */,
@@ -399,6 +406,15 @@
 				AB7A1FA91B706CAE00D77160 /* MJRefreshStateHeader.m */,
 			);
 			path = Header;
+			sourceTree = "<group>";
+		};
+		CAC772771B709B8700AF9009 /* XLScrollViewer */ = {
+			isa = PBXGroup;
+			children = (
+				CAC772781B709B8700AF9009 /* XLScrollViewer.h */,
+				CAC772791B709B8700AF9009 /* XLScrollViewer.m */,
+			);
+			path = XLScrollViewer;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -547,9 +563,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CAC7727A1B709B8700AF9009 /* XLScrollViewer.m in Sources */,
 				AB536FC91B6EFF7D004B75B8 /* YxlCollectionViewCell.swift in Sources */,
 				AB7A1FC11B706CAE00D77160 /* MJRefreshStateHeader.m in Sources */,
 				AB536FD41B6F1881004B75B8 /* ArticTableViewCell.swift in Sources */,
+				CAC7722F1B7093FB00AF9009 /* RJ_SJViewController.swift in Sources */,
 				AB7A1FC61B706CAE00D77160 /* UIView+MJExtension.m in Sources */,
 				AB4A2E411B38F7050023F291 /* Airspeed_iOS.xcdatamodeld in Sources */,
 				AB536FCB1B6F003D004B75B8 /* CollectionDataSource.swift in Sources */,
