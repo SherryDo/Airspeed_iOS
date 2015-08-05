@@ -48,7 +48,7 @@ class ArticleListTableViewController: UITableViewController {
         // 隐藏时间
         header.lastUpdatedTimeLabel!.hidden = true
         //开始执行刷新
-        header.beginRefreshing()
+//        header.beginRefreshing()
         //header 给当前tb的header属性
         self.tb.header = header
     }
@@ -76,12 +76,8 @@ class ArticleListTableViewController: UITableViewController {
     
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCellWithIdentifier("Article", forIndexPath: indexPath) as! ArticTableViewCell
-
-        
-        cell.articName.text = articleData[indexPath.row].name
-        cell.articMoney.text = articleData[indexPath.row].money
-        
-        
+        //cell 的默认样式
+        cell.configCellWithStatusModel(StatusModel())
         // Configure the cell...
 
         return cell

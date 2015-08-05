@@ -10,19 +10,18 @@ import UIKit
 import Alamofire
 import SwiftyJSON
 
-
-class YXL_ViewController: UIViewController,UICollectionViewDataSource,UICollectionViewDelegate{
+/// 本类是物品分类界面的控制器
+class YXL_ViewController: UIViewController{
 
     
     
 //   MARK: 属性
+    /// cell的数据源
     var collectionData = [CollectionDataSource]()
     
     
 //    MARK: IBOutlet
     @IBOutlet weak var collectionView: UICollectionView!
-    
-    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -45,39 +44,51 @@ class YXL_ViewController: UIViewController,UICollectionViewDataSource,UICollecti
     
 //MARK: IBAction
     
+    
+    
+    /**
+    返回首页
+    
+    */
     @IBAction func miss(sender: UIBarButtonItem) {
-            //返回首页
+        
         self.dismissViewControllerAnimated(true, completion: nil)
     }
     
     
     
 //   MARK: Function 
+    
+    
+    
     /**
     配置collection的相关属性
     */
     func configCollection(){
-        collectionView.backgroundColor = UIColor.whiteColor()
+        //collectionView的背景设置成白颜色
+         self.collectionView.backgroundColor = UIColor.whiteColor()
         
-        
+        let testData = CollectionDataSource.defaultData
 //        测试数据
         for _ in 0...20{
             
-            let testData = CollectionDataSource(imgeURL:"http://dowhile.net",name:"yangxiaolei")
             collectionData.append(testData)
         }
-        
+        /**
+        下拉刷新
+        */
         loadDataAction()
-    
-        
     }
+    
+    
     
 //    刷新加载的动作
     func loadDataAction(){
+        
         let header = MJRefreshNormalHeader(refreshingTarget: self, refreshingAction: "refreshData")
         header.lastUpdatedTimeLabel?.hidden = true
-        header.beginRefreshing()
-       self.collectionView.header = header
+//        header.beginRefreshing()
+        self.collectionView.header = header
     }
 //    刷新数据
     func refreshData(){
@@ -102,10 +113,10 @@ class YXL_ViewController: UIViewController,UICollectionViewDataSource,UICollecti
     }
     
     func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell{
+        
         let cell = collectionView.dequeueReusableCellWithReuseIdentifier("yxlCell", forIndexPath: indexPath) as! YxlCollectionViewCell
         
-        
-        cell.label.text = "\(indexPath.row)"
+        cell.defaultCollectionData(collectionData[indexPath.row])
         
         return cell
     }

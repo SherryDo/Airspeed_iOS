@@ -12,4 +12,11 @@ class YxlCollectionViewCell: UICollectionViewCell {
     @IBOutlet weak var label: UILabel!
     
     @IBOutlet weak var image: UIImageView!
+    
+    
+    func defaultCollectionData(collectiondata:CollectionDataSource){
+        self.label.text = collectiondata.name
+        self.image.image = UIImage(named: "background.jpg")
+    }
+    
 }
