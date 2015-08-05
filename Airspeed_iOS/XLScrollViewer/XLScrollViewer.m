@@ -3,10 +3,8 @@
 //  XLScrollDemo
 //
 //  Created by 章晓亮 on 15/1/12.
-//  Copyright (c) 2015年 ___章晓亮___. All rights reserved.
 //
-//新浪微博：@亮亮亮亮亮靓啊
-//工作邮箱：k52471@126.com
+
 
 #define screen_width [UIScreen mainScreen].bounds.size.width
 
@@ -30,20 +28,20 @@
 -(instancetype)initWithFrame:(CGRect)frame withViews:(NSArray *)views withButtonNames:(NSArray *)names withThreeAnimation:(int)choose{
     self =[super initWithFrame:frame];
     if (self) {
-        self.xl_views =views;
-        self.xl_buttonNames =names;
+        self.xl_views = views;
+        self.xl_buttonNames = names;
         NSString *temp =[NSString stringWithFormat:@"%d",choose];
         NSArray *arr =@[@"111",@"112",@"121",@"211",@"122",@"212",@"221",@"222"];
         for (NSString *str in arr) {
             if ([temp isEqualToString:str]) {
                 if ([[temp substringWithRange:NSMakeRange(0, 1)] isEqual:@"1"]) {
-                    self.xl_isMoveButton =YES;
+                    self.xl_isMoveButton = YES;
                 }
                 if ([[temp substringWithRange:NSMakeRange(1, 1)] isEqual:@"1"]) {
-                    self.xl_isScaleButton =YES;
+                    self.xl_isScaleButton = YES;
                 }
                 if ([[temp substringWithRange:NSMakeRange(2, 1)] isEqual:@"1"]) {
-                    self.xl_isMoveSlider =YES;
+                    self.xl_isMoveSlider = YES;
                 }
             }
         }
@@ -59,11 +57,11 @@
     [self addAll];
 }
 -(void)addAll {
-    if ((self.xl_buttonNames.count || self.xl_views.count) && self.xl_buttonNames.count !=self.xl_views.count) {
-        UIAlertView *alert =[[UIAlertView alloc]initWithTitle:@"XLScroll友情提醒！" message:@"您填写的按钮数与视图数不一致，请仔细检查代码" delegate:nil cancelButtonTitle:@"好的" otherButtonTitles:nil, nil];
+    if ((self.xl_buttonNames.count || self.xl_views.count) && self.xl_buttonNames.count != self.xl_views.count) {
+        UIAlertView *alert = [[UIAlertView alloc]initWithTitle:@"友情提醒！" message:@"您填写的按钮数与视图数不一致，请仔细检查代码" delegate:nil cancelButtonTitle:@"好的" otherButtonTitles:nil, nil];
         [alert show];
     }else {
-        self.xl_buttonNames =self.xl_buttonNames?self.xl_buttonNames:@[@"田馥甄",@"章晓亮",@"哈哈哈"];
+        self.xl_buttonNames = self.xl_buttonNames?self.xl_buttonNames:@[@"晓磊",@"任杰",@"王卓"];
         
         [self addScroll2];
         [self addScroll1];
@@ -73,35 +71,35 @@
     
     
     
-    self.scroll1 =[[UIScrollView alloc]initWithFrame:CGRectMake(0, 0, screen_width, self.xl_topHeight?self.xl_topHeight:50)];
+    self.scroll1 = [[UIScrollView alloc]initWithFrame:CGRectMake(0, 0, screen_width, self.xl_topHeight?self.xl_topHeight:50)];
     
-    if (self.xl_buttonNames.count <=5) {
-        self.scroll1.contentSize =CGSizeMake(screen_width, 0);
+    if (self.xl_buttonNames.count <= 5) {
+        self.scroll1.contentSize = CGSizeMake(screen_width, 0);
     }else {
-        self.scroll1.contentSize =CGSizeMake(screen_width/5*self.xl_buttonNames.count, 0);
+        self.scroll1.contentSize = CGSizeMake(screen_width/5*self.xl_buttonNames.count, 0);
     }
     if (self.xl_topBackImage) {
-        self.scroll1.backgroundColor =[UIColor clearColor];
-        UIImageView *temp =[[UIImageView alloc]initWithFrame:self.scroll1.frame];
-        temp.image =self.xl_topBackImage;
+        self.scroll1.backgroundColor = [UIColor clearColor];
+        UIImageView *temp = [[UIImageView alloc]initWithFrame:self.scroll1.frame];
+        temp.image = self.xl_topBackImage;
         [self insertSubview:temp belowSubview:self.scroll1];
     }else {
-        self.scroll1.backgroundColor =self.xl_topBackColor?self.xl_topBackColor:[UIColor lightGrayColor];
+        self.scroll1.backgroundColor = self.xl_topBackColor?self.xl_topBackColor:[UIColor lightGrayColor];
     }
     
-    self.scroll1.showsHorizontalScrollIndicator =NO;
-    self.scroll1.showsVerticalScrollIndicator =NO;
-    self.scroll1.bounces =NO;
-    self.scroll1.contentOffset=CGPointZero;
-    self.scroll1.scrollsToTop =NO;
+    self.scroll1.showsHorizontalScrollIndicator = NO;
+    self.scroll1.showsVerticalScrollIndicator = NO;
+    self.scroll1.bounces = NO;
+    self.scroll1.contentOffset = CGPointZero;
+    self.scroll1.scrollsToTop = NO;
     
-    self.buttons =[NSMutableArray array];
-    for (int i =0; i<self.xl_buttonNames.count; i++) {
-        UIButton *temp =[UIButton buttonWithType:UIButtonTypeCustom];
-        if (self.xl_buttonNames.count <=5) {
-            temp.frame =CGRectMake(screen_width/self.xl_buttonNames.count*i, 0, screen_width/self.xl_buttonNames.count, self.xl_topHeight?self.xl_topHeight:50);
+    self.buttons = [NSMutableArray array];
+    for (int i = 0; i<self.xl_buttonNames.count; i++) {
+        UIButton *temp = [UIButton buttonWithType:UIButtonTypeCustom];
+        if (self.xl_buttonNames.count <= 5) {
+            temp.frame = CGRectMake(screen_width/self.xl_buttonNames.count*i, 0, screen_width/self.xl_buttonNames.count, self.xl_topHeight?self.xl_topHeight:50);
         }else {
-            temp.frame =CGRectMake(screen_width/5*i, 0, screen_width/5, self.xl_topHeight?self.xl_topHeight:50);
+            temp.frame = CGRectMake(screen_width/5*i, 0, screen_width/5, self.xl_topHeight?self.xl_topHeight:50);
         }
         temp.titleLabel.font =[UIFont systemFontOfSize:self.xl_buttonFont?self.xl_buttonFont:18];
         [temp setTitle:self.xl_buttonNames[i] forState:UIControlStateNormal];
@@ -323,6 +321,6 @@
 
 @end
 
-// 版权属于原作者
+
 // http://code4app.com (cn) http://code4app.net (en)
 // 发布代码于最专业的源码分享网站: Code4App.com 

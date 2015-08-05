@@ -4,7 +4,7 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8135.1"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--上架-->
         <scene sceneID="uXt-Mr-ek1">
             <objects>
                 <viewController id="hIb-CI-HcO" customClass="RJ_SJViewController" customModule="Airspeed_iOS" customModuleProvider="target" sceneMemberID="viewController">
@@ -18,7 +18,7 @@
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" id="5dO-cv-X3r"/>
+                    <navigationItem key="navigationItem" title="上架" id="5dO-cv-X3r"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="70d-3E-go8" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
