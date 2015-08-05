@@ -15,7 +15,6 @@
 		AB4A2E531B392DC30023F291 /* YXL_Storyboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AB4A2E521B392DC30023F291 /* YXL_Storyboard.storyboard */; };
 		AB4A2E571B392EC40023F291 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB4A2E561B392EC40023F291 /* MainViewController.swift */; };
 		AB536FCB1B6F003D004B75B8 /* CollectionDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB536FCA1B6F003D004B75B8 /* CollectionDataSource.swift */; };
-		AB536FD21B6F152F004B75B8 /* ArticleListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB536FD11B6F152F004B75B8 /* ArticleListTableViewController.swift */; };
 		AB536FD41B6F1881004B75B8 /* ArticTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB536FD31B6F1881004B75B8 /* ArticTableViewCell.swift */; };
 		AB536FD61B6F1989004B75B8 /* ArticleDataSourceModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB536FD51B6F1989004B75B8 /* ArticleDataSourceModel.swift */; };
 		AB7A1FB41B706CAE00D77160 /* MJRefreshAutoFooter.m in Sources */ = {isa = PBXBuildFile; fileRef = AB7A1F8A1B706CAE00D77160 /* MJRefreshAutoFooter.m */; };
@@ -66,7 +65,6 @@
 		AB4A2E521B392DC30023F291 /* YXL_Storyboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = YXL_Storyboard.storyboard; sourceTree = "<group>"; };
 		AB4A2E561B392EC40023F291 /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		AB536FCA1B6F003D004B75B8 /* CollectionDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionDataSource.swift; sourceTree = "<group>"; };
-		AB536FD11B6F152F004B75B8 /* ArticleListTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArticleListTableViewController.swift; sourceTree = "<group>"; };
 		AB536FD31B6F1881004B75B8 /* ArticTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArticTableViewCell.swift; sourceTree = "<group>"; };
 		AB536FD51B6F1989004B75B8 /* ArticleDataSourceModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArticleDataSourceModel.swift; sourceTree = "<group>"; };
 		AB536FDC1B6F5195004B75B8 /* Airspeed_iOS-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Airspeed_iOS-Bridging-Header.h"; sourceTree = "<group>"; };
@@ -189,6 +187,7 @@
 		AB4A2E4F1B392D340023F291 /* xiaolei */ = {
 			isa = PBXGroup;
 			children = (
+				ABAD850C1B724B4E0010E923 /* libary */,
 				ABA2CED61B72280900D2C4A4 /* view */,
 				ABA2CE6F1B72041B00D2C4A4 /* API */,
 				AB536FCE1B6F125F004B75B8 /* model */,
@@ -209,7 +208,6 @@
 		AB4A2E511B392D790023F291 /* common */ = {
 			isa = PBXGroup;
 			children = (
-				AB7A1F871B706CAE00D77160 /* MJRefresh */,
 				AB4A2E381B38F7050023F291 /* AppDelegate.swift */,
 				AB4A2E561B392EC40023F291 /* MainViewController.swift */,
 				AB4A2E3C1B38F7050023F291 /* Main.storyboard */,
@@ -225,7 +223,6 @@
 			isa = PBXGroup;
 			children = (
 				ABA2CEC91B7218C700D2C4A4 /* MenuTableViewController.swift */,
-				AB536FD11B6F152F004B75B8 /* ArticleListTableViewController.swift */,
 				AB536FD31B6F1881004B75B8 /* ArticTableViewCell.swift */,
 			);
 			name = controller;
@@ -257,7 +254,8 @@
 				AB7A1FB21B706CAE00D77160 /* UIView+MJExtension.h */,
 				AB7A1FB31B706CAE00D77160 /* UIView+MJExtension.m */,
 			);
-			path = MJRefresh;
+			name = MJRefresh;
+			path = ../MJRefresh;
 			sourceTree = "<group>";
 		};
 		AB7A1F881B706CAE00D77160 /* Base */ = {
@@ -354,12 +352,28 @@
 		ABA2CED71B722DA200D2C4A4 /* menu */ = {
 			isa = PBXGroup;
 			children = (
-				ABA2CECD1B721FA700D2C4A4 /* ENSideMenuNavigationController.swift */,
-				ABA2CECC1B721FA700D2C4A4 /* ENSideMenu.swift */,
 				ABA2CED41B72274A00D2C4A4 /* MyMenuTableViewController.swift */,
 				ABA2CED01B72203C00D2C4A4 /* MyNavigationViewController.swift */,
 			);
 			name = menu;
+			sourceTree = "<group>";
+		};
+		ABAD850C1B724B4E0010E923 /* libary */ = {
+			isa = PBXGroup;
+			children = (
+				ABAD850D1B724B5F0010E923 /* sideMenu */,
+				AB7A1F871B706CAE00D77160 /* MJRefresh */,
+			);
+			name = libary;
+			sourceTree = "<group>";
+		};
+		ABAD850D1B724B5F0010E923 /* sideMenu */ = {
+			isa = PBXGroup;
+			children = (
+				ABA2CECD1B721FA700D2C4A4 /* ENSideMenuNavigationController.swift */,
+				ABA2CECC1B721FA700D2C4A4 /* ENSideMenu.swift */,
+			);
+			name = sideMenu;
 			sourceTree = "<group>";
 		};
 		CAC772771B709B8700AF9009 /* XLScrollViewer */ = {
@@ -470,7 +484,6 @@
 				AB4A2E411B38F7050023F291 /* Airspeed_iOS.xcdatamodeld in Sources */,
 				AB536FCB1B6F003D004B75B8 /* CollectionDataSource.swift in Sources */,
 				AB7A1FC51B706CAE00D77160 /* UIScrollView+MJRefresh.m in Sources */,
-				AB536FD21B6F152F004B75B8 /* ArticleListTableViewController.swift in Sources */,
 				ABA2CED51B72274A00D2C4A4 /* MyMenuTableViewController.swift in Sources */,
 				AB7A1FBD1B706CAE00D77160 /* MJRefreshBackNormalFooter.m in Sources */,
 				AB7A1FC01B706CAE00D77160 /* MJRefreshNormalHeader.m in Sources */,

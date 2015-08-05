@@ -87,7 +87,7 @@ class MenuTableViewController: UITableViewController{
     
     
     /**
-    刷新的动作
+    下拉刷新的动作
     */
     func loadDataAction(){
         //header 给当前tb的header属性
@@ -100,13 +100,29 @@ class MenuTableViewController: UITableViewController{
     }
     
     /**
-    刷新加载数据
+    下拉刷新加载数据
     */
   private func refreshHeader(){
         print("刷新加载数据")
         count++
         self.tableView.reloadData()
         self.tableView.header.endRefreshing()
+    }
+    /**
+    上拉加载的动作
+    */
+    func upLoadDataAction(){
+        self.tableView.footer = MJRefreshAutoNormalFooter(refreshingBlock: refreshFooter)
+        self.tableView.footer.beginRefreshing()
+    }
+    /**
+    *  @author 这块显卡有点冷
+    *
+    *  上拉加载数据
+    */
+   private func refreshFooter(){
+         print("上拉加载数据")
+        tableView.footer.endRefreshing()
     }
     
 

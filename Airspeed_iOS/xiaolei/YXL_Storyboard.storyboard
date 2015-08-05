@@ -14,15 +14,18 @@
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="ListCell" id="TWV-tD-Hyr" customClass="MenuTableViewCell" customModule="Airspeed_iOS" customModuleProvider="target">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="ListCell" id="TWV-tD-Hyr" customClass="MenuTableViewCell" customModule="Airspeed_iOS" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="86" width="320" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="TWV-tD-Hyr" id="S7D-U4-0Z2">
-                                    <rect key="frame" x="0.0" y="0.0" width="320" height="43.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="287" height="43.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <animations/>
                                 </tableViewCellContentView>
                                 <animations/>
+                                <connections>
+                                    <segue destination="QXL-Wa-0g0" kind="push" id="1Jg-9U-Fjh"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -90,7 +93,6 @@
                                     <outlet property="articMoney" destination="H2W-gs-gpg" id="Ob7-dO-Nhx"/>
                                     <outlet property="articName" destination="2fV-n5-WNb" id="QIH-St-hgF"/>
                                     <outlet property="articimage" destination="SBd-vZ-qSo" id="IpW-m0-rVT"/>
-                                    <segue destination="QXL-Wa-0g0" kind="push" id="sIh-s5-9Zr"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -249,7 +251,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gXa-U2-hcK" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2405" y="287"/>
+            <point key="canvasLocation" x="1631" y="774"/>
         </scene>
         <!--My Navigation View Controller-->
         <scene sceneID="OW5-2B-MBG">
