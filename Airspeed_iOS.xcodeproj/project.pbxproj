@@ -52,6 +52,11 @@
 		CBE7A2B01B6FCAB00028CED5 /* icon.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CBE7A2AC1B6FCAB00028CED5 /* icon.jpg */; };
 		CBE7A2B11B6FCAB00028CED5 /* WZ_StoryBoard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CBE7A2AD1B6FCAB00028CED5 /* WZ_StoryBoard.storyboard */; };
 		CBE7A2B21B6FCAB00028CED5 /* WZ_UserInformationViewController.swift .swift in Sources */ = {isa = PBXBuildFile; fileRef = CBE7A2AE1B6FCAB00028CED5 /* WZ_UserInformationViewController.swift .swift */; };
+		CBED99A91B71FDD2001B31F7 /* WZ_myWalletViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBED99A81B71FDD2001B31F7 /* WZ_myWalletViewController.swift */; };
+		CBED99B31B7201E0001B31F7 /* WZ_auctionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBED99B21B7201E0001B31F7 /* WZ_auctionViewController.swift */; };
+		CBED99B51B7203AF001B31F7 /* WZ_myRentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBED99B41B7203AF001B31F7 /* WZ_myRentViewController.swift */; };
+		CBED99B91B72057D001B31F7 /* WZ_onSaleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBED99B81B72057D001B31F7 /* WZ_onSaleViewController.swift */; };
+		CBEE130C1B71AE34006605A6 /* WZ_UserInfoEditTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBEE130B1B71AE34006605A6 /* WZ_UserInfoEditTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -123,6 +128,11 @@
 		CBE7A2AC1B6FCAB00028CED5 /* icon.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = icon.jpg; sourceTree = "<group>"; };
 		CBE7A2AD1B6FCAB00028CED5 /* WZ_StoryBoard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = WZ_StoryBoard.storyboard; sourceTree = "<group>"; };
 		CBE7A2AE1B6FCAB00028CED5 /* WZ_UserInformationViewController.swift .swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "WZ_UserInformationViewController.swift .swift"; sourceTree = "<group>"; };
+		CBED99A81B71FDD2001B31F7 /* WZ_myWalletViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WZ_myWalletViewController.swift; sourceTree = "<group>"; };
+		CBED99B21B7201E0001B31F7 /* WZ_auctionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WZ_auctionViewController.swift; sourceTree = "<group>"; };
+		CBED99B41B7203AF001B31F7 /* WZ_myRentViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WZ_myRentViewController.swift; sourceTree = "<group>"; };
+		CBED99B81B72057D001B31F7 /* WZ_onSaleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WZ_onSaleViewController.swift; sourceTree = "<group>"; };
+		CBEE130B1B71AE34006605A6 /* WZ_UserInfoEditTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WZ_UserInfoEditTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -176,10 +186,9 @@
 		AB4A2E4E1B392D340023F291 /* wangzhuo */ = {
 			isa = PBXGroup;
 			children = (
-				CBE7A2AB1B6FCAB00028CED5 /* background.jpg */,
-				CBE7A2AC1B6FCAB00028CED5 /* icon.jpg */,
 				CBE7A2AD1B6FCAB00028CED5 /* WZ_StoryBoard.storyboard */,
-				CBE7A2AE1B6FCAB00028CED5 /* WZ_UserInformationViewController.swift .swift */,
+				CBEE130A1B71AC8F006605A6 /* TestSource */,
+				CBEE13011B71AC7C006605A6 /* Controllers */,
 			);
 			path = wangzhuo;
 			sourceTree = "<group>";
@@ -396,6 +405,28 @@
 			name = Controller;
 			sourceTree = "<group>";
 		};
+		CBEE13011B71AC7C006605A6 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				CBE7A2AE1B6FCAB00028CED5 /* WZ_UserInformationViewController.swift .swift */,
+				CBEE130B1B71AE34006605A6 /* WZ_UserInfoEditTableViewController.swift */,
+				CBED99A81B71FDD2001B31F7 /* WZ_myWalletViewController.swift */,
+				CBED99B21B7201E0001B31F7 /* WZ_auctionViewController.swift */,
+				CBED99B41B7203AF001B31F7 /* WZ_myRentViewController.swift */,
+				CBED99B81B72057D001B31F7 /* WZ_onSaleViewController.swift */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		CBEE130A1B71AC8F006605A6 /* TestSource */ = {
+			isa = PBXGroup;
+			children = (
+				CBE7A2AB1B6FCAB00028CED5 /* background.jpg */,
+				CBE7A2AC1B6FCAB00028CED5 /* icon.jpg */,
+			);
+			name = TestSource;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -480,7 +511,11 @@
 				AB536FD41B6F1881004B75B8 /* ArticTableViewCell.swift in Sources */,
 				CAC7722F1B7093FB00AF9009 /* RJ_SJViewController.swift in Sources */,
 				AB7A1FC61B706CAE00D77160 /* UIView+MJExtension.m in Sources */,
+
 				ABA2CED11B72203C00D2C4A4 /* MyNavigationViewController.swift in Sources */,
+
+				CBED99B51B7203AF001B31F7 /* WZ_myRentViewController.swift in Sources */,
+
 				AB4A2E411B38F7050023F291 /* Airspeed_iOS.xcdatamodeld in Sources */,
 				AB536FCB1B6F003D004B75B8 /* CollectionDataSource.swift in Sources */,
 				AB7A1FC51B706CAE00D77160 /* UIScrollView+MJRefresh.m in Sources */,
@@ -490,18 +525,27 @@
 				AB7A1FBA1B706CAE00D77160 /* MJRefreshAutoNormalFooter.m in Sources */,
 				AB7A1FB51B706CAE00D77160 /* MJRefreshBackFooter.m in Sources */,
 				AB7A1FBB1B706CAE00D77160 /* MJRefreshAutoStateFooter.m in Sources */,
+				CBED99B91B72057D001B31F7 /* WZ_onSaleViewController.swift in Sources */,
 				AB7A1FBF1B706CAE00D77160 /* MJRefreshGifHeader.m in Sources */,
 				AB7A1FB91B706CAE00D77160 /* MJRefreshAutoGifFooter.m in Sources */,
 				AB7A1FC41B706CAE00D77160 /* UIScrollView+MJExtension.m in Sources */,
 				CBE7A2B21B6FCAB00028CED5 /* WZ_UserInformationViewController.swift .swift in Sources */,
+
 				ABA2CECA1B7218C700D2C4A4 /* MenuTableViewController.swift in Sources */,
 				ABA2CEC81B7218B100D2C4A4 /* MenuTableViewCell.swift in Sources */,
 				ABA2CECE1B721FA700D2C4A4 /* ENSideMenu.swift in Sources */,
+
+				CBED99B31B7201E0001B31F7 /* WZ_auctionViewController.swift in Sources */,
 				AB7A1FBC1B706CAE00D77160 /* MJRefreshBackGifFooter.m in Sources */,
 				AB7A1FB61B706CAE00D77160 /* MJRefreshComponent.m in Sources */,
 				AB4A2E391B38F7050023F291 /* AppDelegate.swift in Sources */,
 				AB7A1FB81B706CAE00D77160 /* MJRefreshHeader.m in Sources */,
+
 				ABA2CECF1B721FA700D2C4A4 /* ENSideMenuNavigationController.swift in Sources */,
+
+				CBED99A91B71FDD2001B31F7 /* WZ_myWalletViewController.swift in Sources */,
+				CBEE130C1B71AE34006605A6 /* WZ_UserInfoEditTableViewController.swift in Sources */,
+
 				AB4A2E571B392EC40023F291 /* MainViewController.swift in Sources */,
 				AB536FD61B6F1989004B75B8 /* ArticleDataSourceModel.swift in Sources */,
 				AB7A1FB41B706CAE00D77160 /* MJRefreshAutoFooter.m in Sources */,
