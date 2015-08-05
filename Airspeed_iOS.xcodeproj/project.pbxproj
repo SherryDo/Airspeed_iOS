@@ -41,7 +41,8 @@
 		AB7A1FC41B706CAE00D77160 /* UIScrollView+MJExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = AB7A1FAF1B706CAE00D77160 /* UIScrollView+MJExtension.m */; };
 		AB7A1FC51B706CAE00D77160 /* UIScrollView+MJRefresh.m in Sources */ = {isa = PBXBuildFile; fileRef = AB7A1FB11B706CAE00D77160 /* UIScrollView+MJRefresh.m */; };
 		AB7A1FC61B706CAE00D77160 /* UIView+MJExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = AB7A1FB31B706CAE00D77160 /* UIView+MJExtension.m */; };
-		AB99419E1B3E7FB100EA03AA /* RJ_Storyboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AB99419D1B3E7FB100EA03AA /* RJ_Storyboard.storyboard */; };
+		CABCABF21B71B5C400000E02 /* rj_Storyboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CABCABF11B71B5C400000E02 /* rj_Storyboard.storyboard */; };
+		CABCABFC1B71BA3F00000E02 /* Test1ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CABCABFB1B71BA3F00000E02 /* Test1ViewController.swift */; };
 		CAC7722F1B7093FB00AF9009 /* RJ_SJViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAC7722E1B7093FB00AF9009 /* RJ_SJViewController.swift */; };
 		CAC7727A1B709B8700AF9009 /* XLScrollViewer.m in Sources */ = {isa = PBXBuildFile; fileRef = CAC772791B709B8700AF9009 /* XLScrollViewer.m */; };
 		CBE7A2AF1B6FCAB00028CED5 /* background.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CBE7A2AB1B6FCAB00028CED5 /* background.jpg */; };
@@ -166,7 +167,8 @@
 		AB7A1FB11B706CAE00D77160 /* UIScrollView+MJRefresh.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIScrollView+MJRefresh.m"; sourceTree = "<group>"; };
 		AB7A1FB21B706CAE00D77160 /* UIView+MJExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+MJExtension.h"; sourceTree = "<group>"; };
 		AB7A1FB31B706CAE00D77160 /* UIView+MJExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+MJExtension.m"; sourceTree = "<group>"; };
-		AB99419D1B3E7FB100EA03AA /* RJ_Storyboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = RJ_Storyboard.storyboard; sourceTree = "<group>"; };
+		CABCABF11B71B5C400000E02 /* rj_Storyboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = rj_Storyboard.storyboard; sourceTree = "<group>"; };
+		CABCABFB1B71BA3F00000E02 /* Test1ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Test1ViewController.swift; sourceTree = "<group>"; };
 		CAC7722E1B7093FB00AF9009 /* RJ_SJViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RJ_SJViewController.swift; sourceTree = "<group>"; };
 		CAC772781B709B8700AF9009 /* XLScrollViewer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XLScrollViewer.h; sourceTree = "<group>"; };
 		CAC772791B709B8700AF9009 /* XLScrollViewer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XLScrollViewer.m; sourceTree = "<group>"; };
@@ -224,7 +226,6 @@
 			children = (
 				CAC772841B70A4AE00AF9009 /* Controller */,
 				CAC772771B709B8700AF9009 /* XLScrollViewer */,
-				AB99419D1B3E7FB100EA03AA /* RJ_Storyboard.storyboard */,
 			);
 			path = renjie;
 			sourceTree = "<group>";
@@ -422,6 +423,8 @@
 			isa = PBXGroup;
 			children = (
 				CAC7722E1B7093FB00AF9009 /* RJ_SJViewController.swift */,
+				CABCABF11B71B5C400000E02 /* rj_Storyboard.storyboard */,
+				CABCABFB1B71BA3F00000E02 /* Test1ViewController.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -554,11 +557,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				CBE7A2B01B6FCAB00028CED5 /* icon.jpg in Resources */,
-				AB99419E1B3E7FB100EA03AA /* RJ_Storyboard.storyboard in Resources */,
 				CBE7A2B11B6FCAB00028CED5 /* WZ_StoryBoard.storyboard in Resources */,
 				AB4A2E461B38F7050023F291 /* LaunchScreen.storyboard in Resources */,
 				CBE7A2AF1B6FCAB00028CED5 /* background.jpg in Resources */,
 				AB4A2E531B392DC30023F291 /* YXL_Storyboard.storyboard in Resources */,
+				CABCABF21B71B5C400000E02 /* rj_Storyboard.storyboard in Resources */,
 				AB4A2E431B38F7050023F291 /* Assets.xcassets in Resources */,
 				AB4A2E3E1B38F7050023F291 /* Main.storyboard in Resources */,
 				AB7A1FC21B706CAE00D77160 /* MJRefresh.bundle in Resources */,
@@ -572,6 +575,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CABCABFC1B71BA3F00000E02 /* Test1ViewController.swift in Sources */,
 				CAC7727A1B709B8700AF9009 /* XLScrollViewer.m in Sources */,
 				AB536FC91B6EFF7D004B75B8 /* YxlCollectionViewCell.swift in Sources */,
 				AB7A1FC11B706CAE00D77160 /* MJRefreshStateHeader.m in Sources */,

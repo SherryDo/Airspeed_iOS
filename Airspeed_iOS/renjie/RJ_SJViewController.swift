@@ -14,25 +14,32 @@ class RJ_SJViewController:UIViewController {
         super.viewDidLoad()
         self.addPageMenu()
         self.view.backgroundColor = UIColor.orangeColor()
+        self.view.addSubview(button1)
     }
     
     // MARK: - 添加PageMenu
     var scroll: XLScrollViewer!
     var tab1 = UIViewController()
     var tab2 = UIViewController()
+    var tab3 = UIViewController()
     func addPageMenu() {
         let frame = CGRectMake(0,64, self.view.frame.size.width, self.view.frame.size.height - 64)   //如果没有导航栏，则去掉64
         //
         //        //对应填写两个数组
+        
+        
+        let sb = UIStoryboard(name: "rj_Storyboard", bundle: nil)
+        tab1 = sb.instantiateViewControllerWithIdentifier("Test1ViewControllerID")
         self.addChildViewController(tab1)
         self.addChildViewController(tab2)
-        
-        let views = [tab1.view, tab2.view]
-        let names = ["上架物品","上架需求"]
+        self.addChildViewController(tab3)
+        let views = [tab1.view, tab2.view,tab3.view]
+        let names = ["上架物品","上架需求","上架拍卖品"]
         
         //        //创建使用
-        tab1.view.backgroundColor = UIColor.blackColor()
-        tab2.view.backgroundColor = UIColor.blackColor()
+        tab3.view.backgroundColor = UIColor.orangeColor()
+        tab1.view.backgroundColor = UIColor.greenColor()
+        tab2.view.backgroundColor = UIColor.blueColor()
         self.scroll = XLScrollViewer(frame: frame, withViews: views, withButtonNames: names, withThreeAnimation: 211)
         //
         //自定义各种属性。。打开查看
@@ -51,4 +58,7 @@ class RJ_SJViewController:UIViewController {
         self.view.addSubview(scroll)
         
     }
+    
+    var button1 = UIButton(frame: CGRectMake(10, 122, 144, 44))
+    
 }
