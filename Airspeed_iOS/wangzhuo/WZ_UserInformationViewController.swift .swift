@@ -55,9 +55,6 @@ class WZ_UserInformationViewController:UIViewController,UIImagePickerControllerD
     }
     
     
-    
-    
-    
     //返回按钮响应方法
     @IBAction func backButtonClicked(sender: UIBarButtonItem) {
         self.dismissViewControllerAnimated(true, completion: nil)
@@ -102,55 +99,38 @@ class WZ_UserInformationViewController:UIViewController,UIImagePickerControllerD
     }
     
     //MARK:-UIImagePickerController Delegate
+    
+    /* 此处info 有六个值
+    * UIImagePickerControllerMediaType; // an NSString UTTypeImage)
+    * UIImagePickerControllerOriginalImage;  // a UIImage 原始图片
+    * UIImagePickerControllerEditedImage;    // a UIImage 裁剪后图片
+    * UIImagePickerControllerCropRect;       // an NSValue (CGRect)
+    * UIImagePickerControllerMediaURL;       // an NSURL
+    * UIImagePickerControllerReferenceURL    // an NSURL that references an asset in the AssetsLibrary framework
+    * UIImagePickerControllerMediaMetadata    // an NSDictionary containing metadata from a captured photo
+    */
     func imagePickerController(picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : AnyObject]) {
         
-//        if ([[info objectForKey:UIImagePickerControllerMediaType] isEqualToString:(__bridge NSString *)kUTTypeImage])
-//        {
-        
-        let img=info
-//            UIImage *img = [info objectForKey:UIImagePickerControllerEditedImage];
-//        
-//            [self performSelector:@selector(saveImage:)  withObject:img afterDelay:0.5];
-//        }
-//            
-//        else if ([[info objectForKey:UIImagePickerControllerMediaType] isEqualToString:(__bridge NSString *)kUTTypeMovie]) {
-//            NSString *videoPath = [[info objectForKey:UIImagePickerControllerMediaURL] path];
-//            self.fileData = [NSData dataWithContentsOfFile:videoPath];
-//        }
+        let image = (info as NSDictionary).objectForKey(UIImagePickerControllerEditedImage)
+        self.performSelector(Selector("saveImage:"), withObject: image, afterDelay: 0.5)
         picker.dismissViewControllerAnimated(true, completion: nil)
-
     }
     
-    
-
     func imagePickerControllerDidCancel(picker: UIImagePickerController){
         picker.dismissViewControllerAnimated(true, completion: nil)
     }
-    func saveImage(image:UIImage)->Void{
-        	print("保存头像！");
-        //	[userPhotoButton setImage:image forState:UIControlStateNormal];
-        var success:Bool;
-        var fileManager = NSFileManager()
-        //var error=NSError(domain: <#T##String#>, code: <#T##Int#>, userInfo: <#T##[NSObject : AnyObject]?#>)
-        
-        var paths=NSArray()
-//        paths=NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, true)
-        //NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
-        
-//        NSString *documentsDirectory = [paths objectAtIndex:0];
-//        NSString *imageFilePath = [documentsDirectory stringByappendingPathComponent:@"selfPhoto.jpg"];
-//        NSLog(@"imageFile->>%@",imageFilePath);
-//        success = [fileManager fileExistsAtPath:imageFilePath];
-//        if(success) {
-//            success = [fileManager removeItemAtPath:imageFilePath error:&error];
-//        }
-//        //	UIImage *smallImage=[self scaleFromImage:image toSize:CGSizeMake(80.0f, 80.0f)];//将图片尺寸改为80*80
-//        UIImage *smallImage = [self thumbnailWithImageWithoutScale:image size:CGSizeMake(93, 93)];
-//        [UIImageJPEgrepresentation(smallImage, 1.0f) writeToFile:imageFilePath atomically:YES];//写入文件
-//        UIImage *selfPhoto = [UIImage imageWithContentsOfFile:imageFilePath];//读取图片文件
-//        //	[userPhotoButton setImage:selfPhoto forState:UIControlStateNormal];
-//        self.img.image = selfPhoto;
-    }
+    
+//    func saveImage(image:UIImage)->Void{
+//        print("保存头像！");
+//        self.saveImage("currentImage.png")
+//        var fullPath = NSHomeDirectoryForUser()?.stringByAppendingString("Documents").stringByAppendingString("currentImage.png")
+//        UIImage *savedImage = [[UIImage alloc] initWithContentsOfFile:fullPath];
+//        
+//        isFullScreen = NO;
+//        [self.imageView setImage:savedImage];
+//        
+//        self.imageView.tag = 100;    }
+    
     
     // 改变图像的尺寸，方便上传服务器
     func scaleFromImage(image:UIImage,size:CGSize)->UIImage{

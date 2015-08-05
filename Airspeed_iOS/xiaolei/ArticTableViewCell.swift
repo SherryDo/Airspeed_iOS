@@ -31,5 +31,14 @@ class ArticTableViewCell: UITableViewCell {
 
         // Configure the view for the selected state
     }
+    
+    //配置默认的cell
+    func configCellWithStatusModel(model:StatusModel){
+        
+        self.articName.text = model.name
+        self.articMoney.text = model.money
+        self.articimage.image = model.imge!
+        
+    }
 
 }
