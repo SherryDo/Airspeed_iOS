@@ -14,7 +14,6 @@ class RJ_SJViewController:UIViewController {
         super.viewDidLoad()
         self.addPageMenu()
         self.view.backgroundColor = UIColor.orangeColor()
-        self.view.addSubview(button1)
     }
     
     // MARK: - 添加PageMenu
@@ -28,8 +27,10 @@ class RJ_SJViewController:UIViewController {
         //        //对应填写两个数组
         
         
-        let sb = UIStoryboard(name: "rj_Storyboard", bundle: nil)
-        tab1 = sb.instantiateViewControllerWithIdentifier("Test1ViewControllerID")
+        let sb1 = UIStoryboard(name: "rj_Storyboard", bundle: nil)
+        tab1 = sb1.instantiateViewControllerWithIdentifier("Test1_ViewControllerID")
+        let sb2 = UIStoryboard(name: "rj_Storyboard", bundle: nil)
+        tab2 = sb2.instantiateViewControllerWithIdentifier("Test2_ViewControllerID")
         self.addChildViewController(tab1)
         self.addChildViewController(tab2)
         self.addChildViewController(tab3)
@@ -59,6 +60,6 @@ class RJ_SJViewController:UIViewController {
         
     }
     
-    var button1 = UIButton(frame: CGRectMake(10, 122, 144, 44))
+    
     
 }
