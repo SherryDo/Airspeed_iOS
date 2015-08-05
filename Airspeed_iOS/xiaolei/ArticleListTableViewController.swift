@@ -8,6 +8,7 @@
 
 import UIKit
 
+
 class ArticleListTableViewController: UITableViewController {
     
     
@@ -15,6 +16,7 @@ class ArticleListTableViewController: UITableViewController {
     
     @IBOutlet weak var choose: UIBarButtonItem!
     
+    @IBOutlet var tb: UITableView!
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -25,7 +27,7 @@ class ArticleListTableViewController: UITableViewController {
             articleData.append(testData)
         }
         
-        
+      loadDataAction()
     }
 
     override func didReceiveMemoryWarning() {
@@ -33,6 +35,30 @@ class ArticleListTableViewController: UITableViewController {
         // Dispose of any resources that can be recreated.
     }
 
+    
+//    MARK: function
+    
+    
+    /**
+    刷新的动作
+    */
+    func loadDataAction(){
+        //下拉刷新
+        let header = MJRefreshNormalHeader(refreshingTarget: self, refreshingAction: "refreshHeader")
+        // 隐藏时间
+        header.lastUpdatedTimeLabel!.hidden = true
+        //开始执行刷新
+        header.beginRefreshing()
+        //header 给当前tb的header属性
+        self.tb.header = header
+    }
+    
+    /**
+    刷新加载数据
+    */
+    func refreshHeader(){
+        print("刷新加载数据")
+    }
     
     
     // MARK: - Table view data source
@@ -86,7 +112,7 @@ class ArticleListTableViewController: UITableViewController {
     }
 
     /*
-    // MARK: - Navigation
+    // MARK: - NavigationY
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {

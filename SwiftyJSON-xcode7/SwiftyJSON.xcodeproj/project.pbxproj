@@ -58,6 +58,27 @@
 			remoteGlobalIDString = 9C7DFC5A1A9102BD005AA3F7;
 			remoteInfo = "SwiftyJSON OSX";
 		};
+		ABA2CE3E1B7115BC00D2C4A4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = ABA2CE381B7115BC00D2C4A4 /* PullToRefresh.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = C7D1CF8F199BB3C8009FD485;
+			remoteInfo = PullToRefreshDemo;
+		};
+		ABA2CE401B7115BC00D2C4A4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = ABA2CE381B7115BC00D2C4A4 /* PullToRefresh.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = C7AC6CCC19A7FE6D007107DF;
+			remoteInfo = Refresher;
+		};
+		ABA2CE421B7115BC00D2C4A4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = ABA2CE381B7115BC00D2C4A4 /* PullToRefresh.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = C7AC6CD619A7FE6D007107DF;
+			remoteInfo = RefresherTests;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
@@ -85,6 +106,7 @@
 		A885D1DA19CFCFF0002FD4C3 /* Tests.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Tests.json; sourceTree = "<group>"; };
 		A8B66C8B19E51D6500540692 /* DictionaryTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DictionaryTests.swift; sourceTree = "<group>"; };
 		A8B66C8D19E52F4200540692 /* ArrayTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArrayTests.swift; sourceTree = "<group>"; };
+		ABA2CE381B7115BC00D2C4A4 /* PullToRefresh.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = PullToRefresh.xcodeproj; path = "../refresher-swift2/PullToRefresh.xcodeproj"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -124,6 +146,7 @@
 		2E4FEFD119575BE100351305 = {
 			isa = PBXGroup;
 			children = (
+				ABA2CE381B7115BC00D2C4A4 /* PullToRefresh.xcodeproj */,
 				2E4FEFDD19575BE100351305 /* Source */,
 				2E4FEFEA19575BE100351305 /* Tests */,
 				2E4FEFDC19575BE100351305 /* Products */,
@@ -189,6 +212,16 @@
 				9C459EF61A9103B1008C9A41 /* Info-OSX.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		ABA2CE391B7115BC00D2C4A4 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				ABA2CE3F1B7115BC00D2C4A4 /* PullToRefreshDemo.app */,
+				ABA2CE411B7115BC00D2C4A4 /* Refresher.framework */,
+				ABA2CE431B7115BC00D2C4A4 /* RefresherTests.xctest */,
+			);
+			name = Products;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -319,6 +352,12 @@
 			mainGroup = 2E4FEFD119575BE100351305;
 			productRefGroup = 2E4FEFDC19575BE100351305 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = ABA2CE391B7115BC00D2C4A4 /* Products */;
+					ProjectRef = ABA2CE381B7115BC00D2C4A4 /* PullToRefresh.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				2E4FEFDA19575BE100351305 /* SwiftyJSON iOS */,
@@ -328,6 +367,30 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		ABA2CE3F1B7115BC00D2C4A4 /* PullToRefreshDemo.app */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.application;
+			path = PullToRefreshDemo.app;
+			remoteRef = ABA2CE3E1B7115BC00D2C4A4 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		ABA2CE411B7115BC00D2C4A4 /* Refresher.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Refresher.framework;
+			remoteRef = ABA2CE401B7115BC00D2C4A4 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		ABA2CE431B7115BC00D2C4A4 /* RefresherTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = RefresherTests.xctest;
+			remoteRef = ABA2CE421B7115BC00D2C4A4 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		2E4FEFD919575BE100351305 /* Resources */ = {

@@ -45,7 +45,8 @@ class YXL_ViewController: UIViewController,UICollectionViewDataSource,UICollecti
     
 //MARK: IBAction
     
-        @IBAction func miss(sender: UIBarButtonItem) {
+    @IBAction func miss(sender: UIBarButtonItem) {
+            //返回首页
         self.dismissViewControllerAnimated(true, completion: nil)
     }
     
@@ -66,11 +67,19 @@ class YXL_ViewController: UIViewController,UICollectionViewDataSource,UICollecti
             collectionData.append(testData)
         }
         
-        
-                
+        loadDataAction()
+    
         
     }
     
+//    刷新加载
+    func loadDataAction(){
+        
+        let header = MJRefreshNormalHeader(refreshingTarget: self, refreshingAction: "refreshData")
+        header.lastUpdatedTimeLabel?.hidden = true
+        header.beginRefreshing()
+       self.collectionView.header = header
+    }
     
     
     /*

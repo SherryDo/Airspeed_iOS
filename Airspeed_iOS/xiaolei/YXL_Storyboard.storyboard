@@ -165,6 +165,7 @@
                     </navigationItem>
                     <connections>
                         <outlet property="choose" destination="dQH-08-CU5" id="Got-ED-WSj"/>
+                        <outlet property="tb" destination="0zE-q2-AuY" id="TKP-IK-tpP"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Kgo-Ay-fZZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
