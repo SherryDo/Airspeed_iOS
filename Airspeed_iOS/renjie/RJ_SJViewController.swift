@@ -13,7 +13,7 @@ class RJ_SJViewController:UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.addPageMenu()
-             self.view.backgroundColor = UIColor.orangeColor()
+        self.view.backgroundColor = UIColor.orangeColor()
     }
     
     // MARK: - 添加PageMenu
@@ -31,16 +31,16 @@ class RJ_SJViewController:UIViewController {
         let names = ["上架物品","上架需求"]
         
         //        //创建使用
-        tab1.view.backgroundColor = UIColor.blueColor()
-        tab2.view.backgroundColor = UIColor.orangeColor()
+        tab1.view.backgroundColor = UIColor.blackColor()
+        tab2.view.backgroundColor = UIColor.blackColor()
         self.scroll = XLScrollViewer(frame: frame, withViews: views, withButtonNames: names, withThreeAnimation: 211)
         //
         //自定义各种属性。。打开查看
         //  self.scroll.xl_topBackImage =[UIImage imageNamed:@"10.jpg"];
         self.scroll.xl_topBackColor = UIColor.whiteColor()
-        self.scroll.xl_sliderColor = UIColor.orangeColor()
-        self.scroll.xl_buttonColorNormal = UIColor.redColor()
-        self.scroll.xl_buttonColorSelected = UIColor.blackColor()
+        self.scroll.xl_sliderColor = UIColor.blueColor()
+        self.scroll.xl_buttonColorNormal = UIColor.blackColor()
+        self.scroll.xl_buttonColorSelected = UIColor.blueColor()
         self.scroll.xl_buttonFont = 14
         self.scroll.xl_buttonToSlider = 7
         self.scroll.xl_sliderHeight = 3

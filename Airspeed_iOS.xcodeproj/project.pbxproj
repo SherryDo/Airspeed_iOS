@@ -222,8 +222,9 @@
 		AB4A2E4D1B392D340023F291 /* renjie */ = {
 			isa = PBXGroup;
 			children = (
+				CAC772841B70A4AE00AF9009 /* Controller */,
+				CAC772771B709B8700AF9009 /* XLScrollViewer */,
 				AB99419D1B3E7FB100EA03AA /* RJ_Storyboard.storyboard */,
-				CAC7722E1B7093FB00AF9009 /* RJ_SJViewController.swift */,
 			);
 			path = renjie;
 			sourceTree = "<group>";
@@ -260,7 +261,6 @@
 		AB4A2E511B392D790023F291 /* common */ = {
 			isa = PBXGroup;
 			children = (
-				CAC772771B709B8700AF9009 /* XLScrollViewer */,
 				AB7A1F871B706CAE00D77160 /* MJRefresh */,
 				AB4A2E381B38F7050023F291 /* AppDelegate.swift */,
 				AB4A2E561B392EC40023F291 /* MainViewController.swift */,
@@ -414,7 +414,16 @@
 				CAC772781B709B8700AF9009 /* XLScrollViewer.h */,
 				CAC772791B709B8700AF9009 /* XLScrollViewer.m */,
 			);
-			path = XLScrollViewer;
+			name = XLScrollViewer;
+			path = ../XLScrollViewer;
+			sourceTree = "<group>";
+		};
+		CAC772841B70A4AE00AF9009 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				CAC7722E1B7093FB00AF9009 /* RJ_SJViewController.swift */,
+			);
+			name = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
