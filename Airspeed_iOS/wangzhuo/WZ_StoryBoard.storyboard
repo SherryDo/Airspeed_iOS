@@ -38,6 +38,9 @@
                                         <state key="normal" title="我的钱包">
                                             <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         </state>
+                                        <connections>
+                                            <segue destination="5rj-sV-KQi" kind="push" id="vZd-ra-gF8"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pJp-yB-Adx">
                                         <rect key="frame" x="0.0" y="120" width="320" height="60"/>
@@ -48,6 +51,9 @@
                                         <state key="normal" title="我的拍卖">
                                             <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         </state>
+                                        <connections>
+                                            <segue destination="dYi-8b-YeD" kind="push" id="NkA-ag-zXQ"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hqx-yi-JDI">
                                         <rect key="frame" x="0.0" y="60" width="320" height="60"/>
@@ -58,6 +64,9 @@
                                         <state key="normal" title="我的租赁">
                                             <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         </state>
+                                        <connections>
+                                            <segue destination="OEh-d2-TCF" kind="push" id="Ooh-ES-p3c"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QxI-33-Q1e">
                                         <rect key="frame" x="0.0" y="0.0" width="320" height="60"/>
@@ -68,6 +77,9 @@
                                         <state key="normal" title="我的上架">
                                             <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         </state>
+                                        <connections>
+                                            <segue destination="8KD-Lw-cCF" kind="push" id="uP4-Q4-9KM"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" red="0.13313360274109487" green="0.53949461720336711" blue="0.55056446821152716" alpha="1" colorSpace="calibratedRGB"/>
@@ -184,6 +196,7 @@
                         <barButtonItem key="rightBarButtonItem" title="编辑" id="haG-an-1Tm">
                             <connections>
                                 <action selector="editButtonClicked:" destination="x9n-K6-3sg" id="GJt-lF-yLn"/>
+                                <segue destination="dJG-ra-J0U" kind="push" id="rf5-mO-xJt"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -200,6 +213,131 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="XTB-jP-6IU" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="681" y="441.5"/>
+        </scene>
+        <!--my Rent View Controller-->
+        <scene sceneID="Cvf-OL-sRr">
+            <objects>
+                <viewController id="OEh-d2-TCF" customClass="WZ_myRentViewController" customModule="Airspeed_iOS" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="A9O-90-sLe"/>
+                        <viewControllerLayoutGuide type="bottom" id="4PP-BJ-rwM"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="l51-7N-BMA">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="PF0-zJ-XbV"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="PsJ-RH-2rd" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1186" y="153"/>
+        </scene>
+        <!--auction View Controller-->
+        <scene sceneID="uc2-c3-J1i">
+            <objects>
+                <viewController id="dYi-8b-YeD" customClass="WZ_auctionViewController" customModule="Airspeed_iOS" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Yhl-j5-TDZ"/>
+                        <viewControllerLayoutGuide type="bottom" id="LXO-UX-Kpe"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="crt-EU-tyj">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="3pw-eA-D0M"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hiJ-kz-b4g" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1186" y="772"/>
+        </scene>
+        <!--my Wallet View Controller-->
+        <scene sceneID="t1H-o5-6gH">
+            <objects>
+                <viewController id="5rj-sV-KQi" customClass="WZ_myWalletViewController" customModule="Airspeed_iOS" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="SZd-QK-NtV"/>
+                        <viewControllerLayoutGuide type="bottom" id="6Y8-6y-b1Z"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="vek-Ke-kFb">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="IAh-SA-037"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8U4-FW-e4E" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1186" y="1400"/>
+        </scene>
+        <!--on Sale View Controller-->
+        <scene sceneID="TAd-JA-TEh">
+            <objects>
+                <viewController id="8KD-Lw-cCF" customClass="WZ_onSaleViewController" customModule="Airspeed_iOS" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="MZD-4G-HT8"/>
+                        <viewControllerLayoutGuide type="bottom" id="zHG-aJ-f1o"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="bmr-M2-NAN">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="RsA-xM-w8V"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="viE-IE-nrS" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1186" y="-465"/>
+        </scene>
+        <!--User Info Edit Table View Controller-->
+        <scene sceneID="VZk-87-NFM">
+            <objects>
+                <tableViewController id="dJG-ra-J0U" customClass="WZ_UserInfoEditTableViewController" customModule="Airspeed_iOS" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="50" sectionHeaderHeight="22" sectionFooterHeight="22" id="Imd-T2-gzZ">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="editUserInfoCell" id="hVv-fz-0Do">
+                                <rect key="frame" x="0.0" y="86" width="320" height="50"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="hVv-fz-0Do" id="CK0-Dg-8IL">
+                                    <rect key="frame" x="0.0" y="0.0" width="320" height="49"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <sections/>
+                        <connections>
+                            <outlet property="dataSource" destination="dJG-ra-J0U" id="BDa-EF-8gk"/>
+                            <outlet property="delegate" destination="dJG-ra-J0U" id="VJ0-Wy-aKU"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" id="WIw-ir-YXQ"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Qjk-Pt-qou" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="editUserIcon" rowHeight="85" id="y1L-1a-2eJ">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="85"/>
+                    <autoresizingMask key="autoresizingMask"/>
+                    <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="y1L-1a-2eJ" id="CEp-7R-5Ij">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="84"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="修改头像" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SqN-rG-xuy">
+                                <rect key="frame" x="91" y="16" width="75" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="cn7-x6-Bve">
+                                <rect key="frame" x="8" y="8" width="66" height="66"/>
+                            </imageView>
+                        </subviews>
+                    </tableViewCellContentView>
+                </tableViewCell>
+            </objects>
+            <point key="canvasLocation" x="681" y="-173"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="Bsa-ZQ-nrn">
