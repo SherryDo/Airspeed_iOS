@@ -26,7 +26,7 @@ class ArticleListTableViewController: UITableViewController {
         for _ in 0...50{
             articleData.append(testData)
         }
-        
+//        刷新
       loadDataAction()
     }
 

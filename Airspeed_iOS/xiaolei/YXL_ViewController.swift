@@ -72,15 +72,17 @@ class YXL_ViewController: UIViewController,UICollectionViewDataSource,UICollecti
         
     }
     
-//    刷新加载
+//    刷新加载的动作
     func loadDataAction(){
-        
         let header = MJRefreshNormalHeader(refreshingTarget: self, refreshingAction: "refreshData")
         header.lastUpdatedTimeLabel?.hidden = true
         header.beginRefreshing()
        self.collectionView.header = header
     }
-    
+//    刷新数据
+    func refreshData(){
+        
+    }
     
     /*
     // MARK: - Navigation
