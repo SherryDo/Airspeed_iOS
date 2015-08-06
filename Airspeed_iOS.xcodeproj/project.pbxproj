@@ -507,12 +507,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-<<<<<<< HEAD
+
 				CABCABFC1B71BA3F00000E02 /* Test1_ViewController.swift in Sources */,
-=======
-				CABCABFC1B71BA3F00000E02 /* Test1ViewController.swift in Sources */,
+
+
 				ABA2CE6E1B71F5FE00D2C4A4 /* StatusModel.swift in Sources */,
->>>>>>> origin/develop
 				CAC7727A1B709B8700AF9009 /* XLScrollViewer.m in Sources */,
 				AB7A1FC11B706CAE00D77160 /* MJRefreshStateHeader.m in Sources */,
 				AB536FD41B6F1881004B75B8 /* ArticTableViewCell.swift in Sources */,
