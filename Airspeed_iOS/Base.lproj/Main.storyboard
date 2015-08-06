@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8164.2" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="ILl-eF-czF">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8164.2" systemVersion="15A235d" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="ILl-eF-czF">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8135.1"/>
     </dependencies>
@@ -35,7 +35,7 @@
                                                 <animations/>
                                                 <state key="normal" title="租赁"/>
                                                 <connections>
-                                                    <segue destination="ncU-Oe-TyV" kind="modal" id="fKD-rH-9E9"/>
+                                                    <segue destination="ncU-Oe-TyV" kind="modal" identifier="GotoYXL" modalTransitionStyle="crossDissolve" id="fKD-rH-9E9"/>
                                                 </connections>
                                             </button>
                                         </subviews>
