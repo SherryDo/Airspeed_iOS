@@ -15,7 +15,6 @@
 		AB4A2E531B392DC30023F291 /* YXL_Storyboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AB4A2E521B392DC30023F291 /* YXL_Storyboard.storyboard */; };
 		AB4A2E571B392EC40023F291 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB4A2E561B392EC40023F291 /* MainViewController.swift */; };
 		AB536FCB1B6F003D004B75B8 /* CollectionDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB536FCA1B6F003D004B75B8 /* CollectionDataSource.swift */; };
-		AB536FD41B6F1881004B75B8 /* ArticTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB536FD31B6F1881004B75B8 /* ArticTableViewCell.swift */; };
 		AB536FD61B6F1989004B75B8 /* ArticleDataSourceModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB536FD51B6F1989004B75B8 /* ArticleDataSourceModel.swift */; };
 		AB7A1FB41B706CAE00D77160 /* MJRefreshAutoFooter.m in Sources */ = {isa = PBXBuildFile; fileRef = AB7A1F8A1B706CAE00D77160 /* MJRefreshAutoFooter.m */; };
 		AB7A1FB51B706CAE00D77160 /* MJRefreshBackFooter.m in Sources */ = {isa = PBXBuildFile; fileRef = AB7A1F8C1B706CAE00D77160 /* MJRefreshBackFooter.m */; };
@@ -36,7 +35,7 @@
 		AB7A1FC41B706CAE00D77160 /* UIScrollView+MJExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = AB7A1FAF1B706CAE00D77160 /* UIScrollView+MJExtension.m */; };
 		AB7A1FC51B706CAE00D77160 /* UIScrollView+MJRefresh.m in Sources */ = {isa = PBXBuildFile; fileRef = AB7A1FB11B706CAE00D77160 /* UIScrollView+MJRefresh.m */; };
 		AB7A1FC61B706CAE00D77160 /* UIView+MJExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = AB7A1FB31B706CAE00D77160 /* UIView+MJExtension.m */; };
-		ABA2CE6E1B71F5FE00D2C4A4 /* StatusModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABA2CE6D1B71F5FE00D2C4A4 /* StatusModel.swift */; };
+		ABA2CE6E1B71F5FE00D2C4A4 /* ArticInformation.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABA2CE6D1B71F5FE00D2C4A4 /* ArticInformation.swift */; };
 		ABA2CE711B72070900D2C4A4 /* HttpCollectionData.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABA2CE701B72070900D2C4A4 /* HttpCollectionData.swift */; };
 		ABA2CEC81B7218B100D2C4A4 /* MenuTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABA2CEC71B7218B100D2C4A4 /* MenuTableViewCell.swift */; };
 		ABA2CECA1B7218C700D2C4A4 /* MenuTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABA2CEC91B7218C700D2C4A4 /* MenuTableViewController.swift */; };
@@ -44,6 +43,7 @@
 		ABA2CECF1B721FA700D2C4A4 /* ENSideMenuNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABA2CECD1B721FA700D2C4A4 /* ENSideMenuNavigationController.swift */; };
 		ABA2CED11B72203C00D2C4A4 /* MyNavigationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABA2CED01B72203C00D2C4A4 /* MyNavigationViewController.swift */; };
 		ABA2CED51B72274A00D2C4A4 /* MyMenuTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABA2CED41B72274A00D2C4A4 /* MyMenuTableViewController.swift */; };
+		ABE387F81B7320BB0028557E /* SwiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABE387F71B7320BB0028557E /* SwiftyJSON.swift */; };
 		CABCABF21B71B5C400000E02 /* rj_Storyboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CABCABF11B71B5C400000E02 /* rj_Storyboard.storyboard */; };
 		CABCABFC1B71BA3F00000E02 /* Test1_ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CABCABFB1B71BA3F00000E02 /* Test1_ViewController.swift */; };
 		CABCAC0E1B720E2000000E02 /* Test2_ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CABCAC0D1B720E2000000E02 /* Test2_ViewController.swift */; };
@@ -71,7 +71,6 @@
 		AB4A2E521B392DC30023F291 /* YXL_Storyboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = YXL_Storyboard.storyboard; sourceTree = "<group>"; };
 		AB4A2E561B392EC40023F291 /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		AB536FCA1B6F003D004B75B8 /* CollectionDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionDataSource.swift; sourceTree = "<group>"; };
-		AB536FD31B6F1881004B75B8 /* ArticTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArticTableViewCell.swift; sourceTree = "<group>"; };
 		AB536FD51B6F1989004B75B8 /* ArticleDataSourceModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArticleDataSourceModel.swift; sourceTree = "<group>"; };
 		AB536FDC1B6F5195004B75B8 /* Airspeed_iOS-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Airspeed_iOS-Bridging-Header.h"; sourceTree = "<group>"; };
 		AB7A1F891B706CAE00D77160 /* MJRefreshAutoFooter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJRefreshAutoFooter.h; sourceTree = "<group>"; };
@@ -112,7 +111,7 @@
 		AB7A1FB11B706CAE00D77160 /* UIScrollView+MJRefresh.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIScrollView+MJRefresh.m"; sourceTree = "<group>"; };
 		AB7A1FB21B706CAE00D77160 /* UIView+MJExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+MJExtension.h"; sourceTree = "<group>"; };
 		AB7A1FB31B706CAE00D77160 /* UIView+MJExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+MJExtension.m"; sourceTree = "<group>"; };
-		ABA2CE6D1B71F5FE00D2C4A4 /* StatusModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StatusModel.swift; sourceTree = "<group>"; };
+		ABA2CE6D1B71F5FE00D2C4A4 /* ArticInformation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArticInformation.swift; sourceTree = "<group>"; };
 		ABA2CE701B72070900D2C4A4 /* HttpCollectionData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HttpCollectionData.swift; sourceTree = "<group>"; };
 		ABA2CEC71B7218B100D2C4A4 /* MenuTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuTableViewCell.swift; sourceTree = "<group>"; };
 		ABA2CEC91B7218C700D2C4A4 /* MenuTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuTableViewController.swift; sourceTree = "<group>"; };
@@ -120,6 +119,7 @@
 		ABA2CECD1B721FA700D2C4A4 /* ENSideMenuNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ENSideMenuNavigationController.swift; sourceTree = "<group>"; };
 		ABA2CED01B72203C00D2C4A4 /* MyNavigationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyNavigationViewController.swift; sourceTree = "<group>"; };
 		ABA2CED41B72274A00D2C4A4 /* MyMenuTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyMenuTableViewController.swift; sourceTree = "<group>"; };
+		ABE387F71B7320BB0028557E /* SwiftyJSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SwiftyJSON.swift; path = xiaolei/SwiftyJSON.swift; sourceTree = "<group>"; };
 		CABCABF11B71B5C400000E02 /* rj_Storyboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = rj_Storyboard.storyboard; sourceTree = "<group>"; };
 		CABCABFB1B71BA3F00000E02 /* Test1_ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Test1_ViewController.swift; sourceTree = "<group>"; };
 		CABCAC0D1B720E2000000E02 /* Test2_ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Test2_ViewController.swift; sourceTree = "<group>"; };
@@ -220,6 +220,7 @@
 		AB4A2E511B392D790023F291 /* common */ = {
 			isa = PBXGroup;
 			children = (
+				ABE387F71B7320BB0028557E /* SwiftyJSON.swift */,
 				AB4A2E381B38F7050023F291 /* AppDelegate.swift */,
 				AB4A2E561B392EC40023F291 /* MainViewController.swift */,
 				AB4A2E3C1B38F7050023F291 /* Main.storyboard */,
@@ -235,7 +236,6 @@
 			isa = PBXGroup;
 			children = (
 				ABA2CEC91B7218C700D2C4A4 /* MenuTableViewController.swift */,
-				AB536FD31B6F1881004B75B8 /* ArticTableViewCell.swift */,
 			);
 			name = controller;
 			sourceTree = "<group>";
@@ -245,7 +245,7 @@
 			children = (
 				AB536FCA1B6F003D004B75B8 /* CollectionDataSource.swift */,
 				AB536FD51B6F1989004B75B8 /* ArticleDataSourceModel.swift */,
-				ABA2CE6D1B71F5FE00D2C4A4 /* StatusModel.swift */,
+				ABA2CE6D1B71F5FE00D2C4A4 /* ArticInformation.swift */,
 			);
 			name = model;
 			sourceTree = "<group>";
@@ -507,22 +507,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-
 				CABCABFC1B71BA3F00000E02 /* Test1_ViewController.swift in Sources */,
-
-
-				ABA2CE6E1B71F5FE00D2C4A4 /* StatusModel.swift in Sources */,
+				ABA2CE6E1B71F5FE00D2C4A4 /* ArticInformation.swift in Sources */,
 				CAC7727A1B709B8700AF9009 /* XLScrollViewer.m in Sources */,
 				AB7A1FC11B706CAE00D77160 /* MJRefreshStateHeader.m in Sources */,
-				AB536FD41B6F1881004B75B8 /* ArticTableViewCell.swift in Sources */,
 				CABCAC0E1B720E2000000E02 /* Test2_ViewController.swift in Sources */,
 				CAC7722F1B7093FB00AF9009 /* RJ_SJViewController.swift in Sources */,
+				ABE387F81B7320BB0028557E /* SwiftyJSON.swift in Sources */,
 				AB7A1FC61B706CAE00D77160 /* UIView+MJExtension.m in Sources */,
-
 				ABA2CED11B72203C00D2C4A4 /* MyNavigationViewController.swift in Sources */,
-
 				CBED99B51B7203AF001B31F7 /* WZ_myRentViewController.swift in Sources */,
-
 				AB4A2E411B38F7050023F291 /* Airspeed_iOS.xcdatamodeld in Sources */,
 				AB536FCB1B6F003D004B75B8 /* CollectionDataSource.swift in Sources */,
 				AB7A1FC51B706CAE00D77160 /* UIScrollView+MJRefresh.m in Sources */,
@@ -537,22 +531,17 @@
 				AB7A1FB91B706CAE00D77160 /* MJRefreshAutoGifFooter.m in Sources */,
 				AB7A1FC41B706CAE00D77160 /* UIScrollView+MJExtension.m in Sources */,
 				CBE7A2B21B6FCAB00028CED5 /* WZ_UserInformationViewController.swift .swift in Sources */,
-
 				ABA2CECA1B7218C700D2C4A4 /* MenuTableViewController.swift in Sources */,
 				ABA2CEC81B7218B100D2C4A4 /* MenuTableViewCell.swift in Sources */,
 				ABA2CECE1B721FA700D2C4A4 /* ENSideMenu.swift in Sources */,
-
 				CBED99B31B7201E0001B31F7 /* WZ_auctionViewController.swift in Sources */,
 				AB7A1FBC1B706CAE00D77160 /* MJRefreshBackGifFooter.m in Sources */,
 				AB7A1FB61B706CAE00D77160 /* MJRefreshComponent.m in Sources */,
 				AB4A2E391B38F7050023F291 /* AppDelegate.swift in Sources */,
 				AB7A1FB81B706CAE00D77160 /* MJRefreshHeader.m in Sources */,
-
 				ABA2CECF1B721FA700D2C4A4 /* ENSideMenuNavigationController.swift in Sources */,
-
 				CBED99A91B71FDD2001B31F7 /* WZ_myWalletViewController.swift in Sources */,
 				CBEE130C1B71AE34006605A6 /* WZ_UserInfoEditTableViewController.swift in Sources */,
-
 				AB4A2E571B392EC40023F291 /* MainViewController.swift in Sources */,
 				AB536FD61B6F1989004B75B8 /* ArticleDataSourceModel.swift in Sources */,
 				AB7A1FB41B706CAE00D77160 /* MJRefreshAutoFooter.m in Sources */,

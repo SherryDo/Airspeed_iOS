@@ -65,6 +65,9 @@
                                 </tableViewCellContentView>
                                 <animations/>
                                 <connections>
+                                    <outlet property="imageview" destination="9lH-g0-tqu" id="VAK-wa-Utz"/>
+                                    <outlet property="money" destination="nHS-Nj-6AE" id="vIv-pe-xE2"/>
+                                    <outlet property="name" destination="Yhd-3w-yg1" id="xds-Un-PxV"/>
                                     <segue destination="QXL-Wa-0g0" kind="push" id="1Jg-9U-Fjh"/>
                                 </connections>
                             </tableViewCell>

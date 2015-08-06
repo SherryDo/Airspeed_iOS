@@ -10,8 +10,6 @@ import UIKit
 /// 种类菜单栏的设置
 class MyMenuTableViewController: UITableViewController {
     var selectedMenuItem : Int = 0// 当前是第几个菜单
-    
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -96,9 +94,10 @@ class MyMenuTableViewController: UITableViewController {
             
             destViewController = mainStoryboard.instantiateViewControllerWithIdentifier("YXLViewController1") as! MenuTableViewController
         }
-        
-        destViewController.loadDataAction()
+        //跳转到选择的界面
         sideMenuController()?.setContentViewController(destViewController)
+        //选择cell之后进行刷新界面
+        destViewController.tableView.header.beginRefreshing()
         //        关掉侧边导航
         hideSideMenuView()
     }
