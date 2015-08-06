@@ -1,111 +1,115 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8164.2" systemVersion="15A235d" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="ILl-eF-czF">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8164.2" systemVersion="15A235d" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="8BF-JS-jNl">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8135.1"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
-        <scene sceneID="fZ7-cj-sue">
+        <!--Tab Bar Controller-->
+        <scene sceneID="p6X-i4-hpJ">
             <objects>
-                <viewController id="ILl-eF-czF" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="KDk-aT-ESR"/>
-                        <viewControllerLayoutGuide type="bottom" id="98L-p5-S5h"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="Kqn-fY-dtr">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" axis="vertical" alignment="top" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="b5p-zk-T65">
-                                <rect key="frame" x="120" y="244" width="80" height="80"/>
-                                <subviews>
-                                    <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="Qfo-9s-xyZ">
-                                        <rect key="frame" x="0.0" y="0.0" width="80" height="30"/>
-                                        <subviews>
-                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c67-N7-D9W">
-                                                <rect key="frame" x="0.0" y="0.0" width="30" height="30"/>
-                                                <animations/>
-                                                <state key="normal" title="上架"/>
-                                                <connections>
-                                                    <segue destination="iKZ-ce-SzQ" kind="modal" id="bNy-th-Mnm"/>
-                                                </connections>
-                                            </button>
-                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9nl-NW-rke">
-                                                <rect key="frame" x="50" y="0.0" width="30" height="30"/>
-                                                <animations/>
-                                                <state key="normal" title="租赁"/>
-                                                <connections>
-                                                    <segue destination="ncU-Oe-TyV" kind="modal" identifier="GotoYXL" modalTransitionStyle="crossDissolve" id="fKD-rH-9E9"/>
-                                                </connections>
-                                            </button>
-                                        </subviews>
-                                        <animations/>
-                                    </stackView>
-                                    <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="BFY-pO-Fbr">
-                                        <rect key="frame" x="0.0" y="50" width="80" height="30"/>
-                                        <subviews>
-                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kUJ-ja-Pfx">
-                                                <rect key="frame" x="0.0" y="0.0" width="30" height="30"/>
-                                                <animations/>
-                                                <state key="normal" title="同城"/>
-                                            </button>
-                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bhE-yY-2dQ">
-                                                <rect key="frame" x="50" y="0.0" width="30" height="30"/>
-                                                <animations/>
-                                                <state key="normal" title="帮助"/>
-                                            </button>
-                                        </subviews>
-                                        <animations/>
-                                    </stackView>
-                                </subviews>
-                                <animations/>
-                            </stackView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ACx-2j-erb">
-                                <rect key="frame" x="28" y="28" width="30" height="30"/>
-                                <animations/>
-                                <state key="normal" title="头像"/>
-                                <connections>
-                                    <segue destination="Uao-vD-C3L" kind="modal" id="Oyd-7E-Dua"/>
-                                </connections>
-                            </button>
-                        </subviews>
+                <tabBarController id="8BF-JS-jNl" sceneMemberID="viewController">
+                    <nil key="simulatedBottomBarMetrics"/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="Q7B-dv-UxZ">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
                         <animations/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="veq-Mk-WqT" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="ncU-Oe-TyV" kind="relationship" relationship="viewControllers" id="mc6-ZS-POu"/>
+                        <segue destination="iKZ-ce-SzQ" kind="relationship" relationship="viewControllers" id="Hf4-dz-CnW"/>
+                        <segue destination="Uao-vD-C3L" kind="relationship" relationship="viewControllers" id="X85-5Q-mad"/>
+                        <segue destination="K8a-W1-xb1" kind="relationship" relationship="viewControllers" id="TeV-za-VRQ"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="yE5-xF-lwE" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-102" y="65"/>
+            <point key="canvasLocation" x="263" y="65"/>
         </scene>
         <!--YXL_Storyboard-->
         <scene sceneID="aP5-dS-Rek">
             <objects>
                 <viewControllerPlaceholder storyboardName="YXL_Storyboard" id="ncU-Oe-TyV" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" id="R2l-NL-Z7t"/>
                     <navigationItem key="navigationItem" id="Mwr-xG-l4j"/>
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xqr-Hx-PKK" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-264.5" y="496"/>
+            <point key="canvasLocation" x="115.5" y="496"/>
         </scene>
         <!--WZ_StoryBoard-->
         <scene sceneID="6J6-92-pfG">
             <objects>
                 <viewControllerPlaceholder storyboardName="WZ_StoryBoard" id="Uao-vD-C3L" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" id="ZQi-a0-rxC"/>
                     <navigationItem key="navigationItem" id="Avw-i3-GPE"/>
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="GuO-8w-Oc1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-5.5" y="496"/>
+            <point key="canvasLocation" x="450.5" y="496"/>
+        </scene>
+        <!--Table View Controller-->
+        <scene sceneID="ZbT-Vr-Se4">
+            <objects>
+                <tableViewController id="M3e-Mx-l7h" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="rhI-T4-n5g">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="Xu4-AK-b2c">
+                                <rect key="frame" x="0.0" y="86" width="320" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Xu4-AK-b2c" id="PA4-Wq-Po3">
+                                    <rect key="frame" x="0.0" y="0.0" width="320" height="43.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <animations/>
+                                </tableViewCellContentView>
+                                <animations/>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="M3e-Mx-l7h" id="BlU-hc-8g6"/>
+                            <outlet property="delegate" destination="M3e-Mx-l7h" id="x4s-XR-2cZ"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" id="Ied-oW-kvZ"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="lvD-Zw-1wo" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1097" y="65"/>
         </scene>
         <!--rj_Storyboard-->
         <scene sceneID="N0k-En-m6B">
             <objects>
                 <viewControllerPlaceholder storyboardName="rj_Storyboard" id="iKZ-ce-SzQ" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" id="jy1-ed-ue7"/>
                     <navigationItem key="navigationItem" id="UZ7-dA-zSv"/>
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="FPK-uJ-szS" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-130.5" y="496"/>
+            <point key="canvasLocation" x="263.5" y="496"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="bP7-Dg-h7r">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="K8a-W1-xb1" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" systemItem="downloads" id="jkX-Yb-4LI"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="QG8-lN-hLb">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <animations/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="M3e-Mx-l7h" kind="relationship" relationship="rootViewController" id="XOU-Z0-dSm"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="RSD-cV-9gB" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="689" y="65"/>
         </scene>
     </scenes>
 </document>
