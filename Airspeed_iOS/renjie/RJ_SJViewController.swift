@@ -16,6 +16,11 @@ class RJ_SJViewController:UIViewController {
         self.view.backgroundColor = UIColor.orangeColor()
     }
     
+    @IBAction func backToHome(sender: UIBarButtonItem) {
+        
+        self.dismissViewControllerAnimated(true, completion: nil)
+    }
+ 
     // MARK: - 添加PageMenu
     var scroll: XLScrollViewer!
     var tab1 = UIViewController()

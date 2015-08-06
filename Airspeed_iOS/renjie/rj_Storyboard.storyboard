@@ -18,11 +18,19 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" title="上架" id="YmA-NP-XaC"/>
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" title="上架" id="YmA-NP-XaC">
+                        <barButtonItem key="leftBarButtonItem" systemItem="reply" id="RuZ-hv-LtN">
+                            <connections>
+                                <action selector="backToHome:" destination="uqe-u9-A26" id="aLg-F4-W4z"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7YQ-ay-G3b" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="688.5333333333333" y="390.02666666666664"/>
+            <point key="canvasLocation" x="657" y="390"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="sgI-22-e1M">
@@ -57,15 +65,18 @@
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DVW-XX-Jyl">
                                 <rect key="frame" x="160" y="108" width="153" height="30"/>
-                                <state key="normal" title="Button">
+                                <state key="normal" title="国内上架">
                                     <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eP9-qB-VLZ">
                                 <rect key="frame" x="7" y="108" width="153" height="30"/>
-                                <state key="normal" title="Button">
+                                <state key="normal" title="同城上架">
                                     <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
+                                <connections>
+                                    <segue destination="FNi-mB-Lok" kind="push" id="mhJ-Wx-YlR"/>
+                                </connections>
                             </button>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="U31-sP-DuY">
                                 <rect key="frame" x="0.0" y="166" width="320" height="402"/>
@@ -96,6 +107,10 @@
                             <constraint firstItem="eP9-qB-VLZ" firstAttribute="top" secondItem="2ym-H8-AHr" secondAttribute="bottom" constant="88" id="xKV-iu-aKI"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="tD7-Kf-VLF"/>
+                    <connections>
+                        <outlet property="rj1_tableView" destination="U31-sP-DuY" id="I0A-vQ-8Fr"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mzd-gd-HmF" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -127,8 +142,8 @@
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WkG-S6-9zr">
-                                <rect key="frame" x="1" y="84" width="320" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WkG-S6-9zr">
+                                <rect key="frame" x="0.0" y="84" width="320" height="30"/>
                                 <state key="normal" title="新需求">
                                     <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                                 </state>
@@ -149,6 +164,39 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fwa-ha-FeD" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="761" y="1076"/>
+        </scene>
+        <!--Title-->
+        <scene sceneID="tCU-OI-EVD">
+            <objects>
+                <viewController id="FNi-mB-Lok" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="j0H-vz-qOw"/>
+                        <viewControllerLayoutGuide type="bottom" id="7pn-Dz-YGf"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Fjy-Gf-AO4">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Vkg-DV-9H3">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                                <items>
+                                    <navigationItem title="同城范围" id="WhD-fS-XvX">
+                                        <barButtonItem key="leftBarButtonItem" title="&lt;上架" id="G5y-Ej-VT4">
+                                            <connections>
+                                                <segue destination="mfY-Sd-Cq6" kind="push" id="lAE-2h-42a"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Title" id="9tB-Pa-sD6"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9Hd-PM-cbg" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="62" y="1076"/>
         </scene>
     </scenes>
 </document>

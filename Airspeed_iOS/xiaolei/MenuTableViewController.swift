@@ -7,7 +7,6 @@
 //
 
 import UIKit
-import SideMenu
 class MenuTableViewController: UITableViewController{
     
         var count = 10
