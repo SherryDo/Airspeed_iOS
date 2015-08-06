@@ -8,12 +8,11 @@
 
 import UIKit
 /// 种类菜单栏的设置
-class MyMenuTableViewController: UITableViewController {
+class MyMenuTableViewController: UITableViewController,ENSideMenuDelegate{
     var selectedMenuItem : Int = 0// 当前是第几个菜单
      //Present new view controller
     /// 取到 MenuTableViewController
     let destViewController  = UIStoryboard(name: "YXL_Storyboard", bundle: nil).instantiateViewControllerWithIdentifier("YXLViewController1") as! MenuTableViewController
-    
     
     
     override func viewDidLoad() {

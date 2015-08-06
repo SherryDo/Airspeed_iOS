@@ -24,16 +24,19 @@ class MenuTableViewController: UITableViewController{
     返回主页面
 
     */
+    
     @IBAction func back(sender: UIBarButtonItem) {
         self.dismissViewControllerAnimated(true, completion: nil)
     }
 
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
         mjRefreshAction()
     }
 
+ 
    
 
     // MARK: - Table view data source
@@ -75,6 +78,8 @@ class MenuTableViewController: UITableViewController{
     override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
         //取消cell的选中状态
         self.tableView.deselectRowAtIndexPath(indexPath, animated: true)
+        //侧边栏隐藏
+        hideSideMenuView()
     }
   
     
