@@ -8,9 +8,14 @@
 
 import Foundation
 
-class StatusModel {
+class ArticInformation {
     
-    let name = "Apple"
-    let money = "999"
+    let name:String
+    let money:Double
     let imge = UIImage(named: "icon.jpg")
+    
+    init(name:String,money:Double){
+        self.name = name
+        self.money = money
+    }
 }

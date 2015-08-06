@@ -46,12 +46,17 @@ class WZ_UserInformationViewController:UIViewController,UIImagePickerControllerD
         userBackground.addSubview(EffertView)
         Navi.title="用户"
         
-        
+        //为头像添加点击事件
         userIcon.userInteractionEnabled=true
         let userIconActionGR = UITapGestureRecognizer()
         userIconActionGR.addTarget(self, action: Selector("userIconAction"))
         userIcon.addGestureRecognizer(userIconActionGR)
-        // Do any additional setup after loading the view.
+        
+        //读取用户头像
+        let fullPath = NSHomeDirectory().stringByAppendingPathComponent("Documents").stringByAppendingPathComponent("currentImage.png")
+        if let savedImage = UIImage(contentsOfFile: fullPath){
+        self.userIcon.image=savedImage
+        }
     }
     
     
@@ -98,21 +103,22 @@ class WZ_UserInformationViewController:UIViewController,UIImagePickerControllerD
         self.presentViewController(imagePicker, animated: true, completion: nil)
     }
     
-    //MARK:-UIImagePickerController Delegate
+//MARK:-UIImagePickerController Delegate
     
-    /* 此处info 有六个值
-    * UIImagePickerControllerMediaType; // an NSString UTTypeImage)
-    * UIImagePickerControllerOriginalImage;  // a UIImage 原始图片
-    * UIImagePickerControllerEditedImage;    // a UIImage 裁剪后图片
-    * UIImagePickerControllerCropRect;       // an NSValue (CGRect)
-    * UIImagePickerControllerMediaURL;       // an NSURL
-    * UIImagePickerControllerReferenceURL    // an NSURL that references an asset in the AssetsLibrary framework
-    * UIImagePickerControllerMediaMetadata    // an NSDictionary containing metadata from a captured photo
-    */
+//     此处info 有六个值
+//     UIImagePickerControllerMediaType; // an NSString UTTypeImage)
+//     UIImagePickerControllerOriginalImage;  // a UIImage 原始图片
+//     UIImagePickerControllerEditedImage;    // a UIImage 裁剪后图片
+//     UIImagePickerControllerCropRect;       // an NSValue (CGRect)
+//     UIImagePickerControllerMediaURL;       // an NSURL
+//     UIImagePickerControllerReferenceURL    // an NSURL that references an asset in the AssetsLibrary framework
+//     UIImagePickerControllerMediaMetadata    // an NSDictionary containing metadata from a captured photo
     func imagePickerController(picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : AnyObject]) {
-        
-        let image = (info as NSDictionary).objectForKey(UIImagePickerControllerEditedImage)
-        self.performSelector(Selector("saveImage:"), withObject: image, afterDelay: 0.5)
+        let image = (info as NSDictionary).objectForKey(UIImagePickerControllerOriginalImage)
+        self.saveImage(image as! UIImage, imageName: "currentImage.png")
+        let fullPath = NSHomeDirectory().stringByAppendingPathComponent("Documents").stringByAppendingPathComponent("currentImage.png")
+        let savedImage = UIImage(contentsOfFile: fullPath)
+        self.userIcon.image=savedImage
         picker.dismissViewControllerAnimated(true, completion: nil)
     }
     
@@ -120,27 +126,24 @@ class WZ_UserInformationViewController:UIViewController,UIImagePickerControllerD
         picker.dismissViewControllerAnimated(true, completion: nil)
     }
     
-//    func saveImage(image:UIImage)->Void{
-//        print("保存头像！");
-//        self.saveImage("currentImage.png")
-//        var fullPath = NSHomeDirectoryForUser()?.stringByAppendingString("Documents").stringByAppendingString("currentImage.png")
-//        UIImage *savedImage = [[UIImage alloc] initWithContentsOfFile:fullPath];
-//        
-//        isFullScreen = NO;
-//        [self.imageView setImage:savedImage];
-//        
-//        self.imageView.tag = 100;    }
-    
-    
-    // 改变图像的尺寸，方便上传服务器
-    func scaleFromImage(image:UIImage,size:CGSize)->UIImage{
-        UIGraphicsBeginImageContext(size)
-        image.drawInRect(CGRectMake(0, 0, size.width, size.height))
-        let newImage = UIGraphicsGetImageFromCurrentImageContext()
-        UIGraphicsEndImageContext()
-        return newImage;
+//MARK: - 保存图片至沙盒
+    func saveImage(currentImage:UIImage,imageName:String){
+        var imageData = NSData()
+        imageData = UIImageJPEGRepresentation(currentImage, 0.5)!
+        // 获取沙盒目录
+    let fullPath = NSHomeDirectory().stringByAppendingPathComponent("Documents").stringByAppendingPathComponent(imageName)
+        // 将图片写入文件
+        imageData.writeToFile(fullPath, atomically: false)
     }
     
+//    // 改变图像的尺寸，方便上传服务器
+//    func scaleFromImage(image:UIImage,size:CGSize)->UIImage{
+//        UIGraphicsBeginImageContext(size)
+//        image.drawInRect(CGRectMake(0, 0, size.width, size.height))
+//        let newImage = UIGraphicsGetImageFromCurrentImageContext()
+//        UIGraphicsEndImageContext()
+//        return newImage;
+//    }
     
     
     
@@ -148,12 +151,7 @@ class WZ_UserInformationViewController:UIViewController,UIImagePickerControllerD
     
     
     
-    
-    
-    
-    
-    
-    
+
     //保存数据到NSUserDefaults
     func saveNSUserDefaults(){
 //        var userName:String = "TestName"

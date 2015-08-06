@@ -9,8 +9,9 @@
 import UIKit
 class MenuTableViewController: UITableViewController{
     
-        var count = 10
-
+    /// cell的信息存储
+    var ArticArry = [ArticInformation]()
+    var menueNumber = 0
     /**
     打开侧边菜单
     
@@ -22,16 +23,19 @@ class MenuTableViewController: UITableViewController{
     返回主页面
 
     */
+    
     @IBAction func back(sender: UIBarButtonItem) {
         self.dismissViewControllerAnimated(true, completion: nil)
     }
 
     
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        loadDataAction()
+        mjRefreshAction()
     }
 
+ 
    
 
     // MARK: - Table view data source
@@ -39,36 +43,30 @@ class MenuTableViewController: UITableViewController{
    
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
        
-        
-        return count
+        return ArticArry.count
     }
 
     override func tableView(tableView: UITableView,
         cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell{
-     let cell =  self.tableView.dequeueReusableCellWithIdentifier("ListCell", forIndexPath: indexPath)
+     let cell =  self.tableView.dequeueReusableCellWithIdentifier("ListCell", forIndexPath: indexPath) as! MenuTableViewCell
             
-        cell.textLabel?.text = "\(indexPath.row)"
+        cell.name.text = ArticArry[indexPath.row].name
+        cell.money.text = String(ArticArry[indexPath.row].money + 1)
+        cell.imageView?.image = ArticArry[indexPath.row].imge!
+        
             
             return cell
     }
     
     // Override to support editing the table view.
-    override func tableView(tableView: UITableView, commitEditingStyle editingStyle: UITableViewCellEditingStyle, forRowAtIndexPath indexPath: NSIndexPath) {
-        
-    }
-    
+    override func tableView(tableView: UITableView, commitEditingStyle editingStyle: UITableViewCellEditingStyle, forRowAtIndexPath indexPath: NSIndexPath) {}
     
     // MARK: - Table view delegate
     
     override func tableView(tableView: UITableView, editActionsForRowAtIndexPath indexPath: NSIndexPath) -> [UITableViewRowAction]?{
         
         
-        let collectAction = UITableViewRowAction(style: UITableViewRowActionStyle.Default, title: "收藏") { (action, indexpath) -> Void in
-            
-            
-            //            在这里完成收藏物品的动作
-            
-        }
+        let collectAction = UITableViewRowAction(style: UITableViewRowActionStyle.Default, title: "收藏",handler: CollectArtic)
         
         
         return [collectAction]
@@ -79,41 +77,48 @@ class MenuTableViewController: UITableViewController{
     override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
         //取消cell的选中状态
         self.tableView.deselectRowAtIndexPath(indexPath, animated: true)
+        //侧边栏隐藏
+        hideSideMenuView()
     }
   
     
     //    MARK: function
     
+    /**
+    cell收藏
+    :param: action cell收藏
+    */
+    func CollectArtic(action:UITableViewRowAction,index:NSIndexPath){
+        
+    }
     
     /**
-    下拉刷新的动作
+    刷新的属性配置
     */
-    func loadDataAction(){
+    func mjRefreshAction(){
         //header 给当前tb的header属性
         self.tableView.header = MJRefreshNormalHeader(refreshingBlock: refreshHeader)
-        // 上次刷新的时间
-        tableView.header.lastUpdatedTimeKey = NSDate().description
-        //开始执行刷新
-        tableView.header.beginRefreshing()
-       
+        //footer  给当前的tb的footer属性
+        self.tableView.footer = MJRefreshAutoNormalFooter(refreshingBlock: refreshFooter)
     }
     
     /**
-    下拉刷新加载数据
+    * @auther 这块显卡有点冷
+    ＊下拉刷新加载数据
     */
   private func refreshHeader(){
-        print("刷新加载数据")
-        count++
-        self.tableView.reloadData()
-        self.tableView.header.endRefreshing()
+    //测试数据
+    let newCell = ArticInformation(name: "Swift", money: 0)
+    ArticArry.append(newCell)
+    
+    // 上次刷新的时间
+    tableView.header.lastUpdatedTimeKey = NSDate().description
+    
+    self.tableView.reloadData()
+    
+    self.tableView.header.endRefreshing()
     }
-    /**
-    上拉加载的动作
-    */
-    func upLoadDataAction(){
-        self.tableView.footer = MJRefreshAutoNormalFooter(refreshingBlock: refreshFooter)
-        self.tableView.footer.beginRefreshing()
-    }
+   
     /**
     *  @author 这块显卡有点冷
     *

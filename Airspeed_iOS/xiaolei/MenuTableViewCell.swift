@@ -9,6 +9,10 @@
 import UIKit
 
 class MenuTableViewCell: UITableViewCell {
+    @IBOutlet weak var name: UILabel!
+    @IBOutlet weak var money: UILabel!
+    @IBOutlet weak var imageview: UIImageView!
+    
 
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -20,5 +24,14 @@ class MenuTableViewCell: UITableViewCell {
 
         // Configure the view for the selected state
     }
+    
+    //配置默认的cell
+    func configCellWithStatusModel(model:ArticInformation){
+        self.name.text = model.name
+        self.money.text = String(model.money)
+        self.imageView!.image = model.imge!
+        
+    }
+    
 
 }

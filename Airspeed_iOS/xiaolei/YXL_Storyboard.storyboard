@@ -13,6 +13,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <gestureRecognizers/>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="ListCell" id="TWV-tD-Hyr" customClass="MenuTableViewCell" customModule="Airspeed_iOS" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="86" width="320" height="88"/>
@@ -65,6 +66,9 @@
                                 </tableViewCellContentView>
                                 <animations/>
                                 <connections>
+                                    <outlet property="imageview" destination="9lH-g0-tqu" id="VAK-wa-Utz"/>
+                                    <outlet property="money" destination="nHS-Nj-6AE" id="vIv-pe-xE2"/>
+                                    <outlet property="name" destination="Yhd-3w-yg1" id="xds-Un-PxV"/>
                                     <segue destination="QXL-Wa-0g0" kind="push" id="1Jg-9U-Fjh"/>
                                 </connections>
                             </tableViewCell>
