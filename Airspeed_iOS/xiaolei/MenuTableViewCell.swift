@@ -10,7 +10,6 @@ import UIKit
 
 class MenuTableViewCell: UITableViewCell {
     @IBOutlet weak var name: UILabel!
-    
     @IBOutlet weak var money: UILabel!
     @IBOutlet weak var imageview: UIImageView!
     
@@ -28,7 +27,6 @@ class MenuTableViewCell: UITableViewCell {
     
     //配置默认的cell
     func configCellWithStatusModel(model:ArticInformation){
-        
         self.name.text = model.name
         self.money.text = String(model.money)
         self.imageView!.image = model.imge!

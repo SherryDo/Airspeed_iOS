@@ -12,7 +12,7 @@ class MenuTableViewController: UITableViewController{
     
     /// cell的信息存储
     var ArticArry = [ArticInformation]()
-    
+    var menueNumber = 0
     /**
     打开侧边菜单
     
@@ -103,14 +103,16 @@ class MenuTableViewController: UITableViewController{
     ＊下拉刷新加载数据
     */
   private func refreshHeader(){
+    //测试数据
     let newCell = ArticInformation(name: "Swift", money: 0)
     ArticArry.append(newCell)
     
     // 上次刷新的时间
     tableView.header.lastUpdatedTimeKey = NSDate().description
-
-        self.tableView.reloadData()
-        self.tableView.header.endRefreshing()
+    
+    self.tableView.reloadData()
+    
+    self.tableView.header.endRefreshing()
     }
    
     /**
