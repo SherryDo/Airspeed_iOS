@@ -45,11 +45,13 @@ class MyMenuTableViewController: UITableViewController,ENSideMenuDelegate{
     
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         
-       let cell = tableView.dequeueReusableCellWithIdentifier("menuCell")
+       var menueCell = tableView.dequeueReusableCellWithIdentifier("menuCell")
        /// 判断cell是否存在
-       let menueCell = configMenueCell(cell)
         
-        return menueCell
+        
+//       let menueCell = configMenueCell(cell)
+        
+        return menueCell!
     }
 
 
@@ -79,13 +81,15 @@ class MyMenuTableViewController: UITableViewController,ENSideMenuDelegate{
 
     */
     func goMenuToRefresh(cellindex:Int){
+        
         selectedMenuItem = cellindex
         //跳转到选择的界面
         sideMenuController()?.setContentViewController(destViewController)
-        //        关掉侧边导航
-        hideSideMenuView()
         //选择cell之后进行刷新界面的数据
         destViewController.tableView.header.beginRefreshing()
+        //        关掉侧边导航
+        hideSideMenuView()
+        
     }
     
     /**
