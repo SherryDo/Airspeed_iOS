@@ -8,7 +8,7 @@
 
 import UIKit
 
-class Test1_ViewController: UIViewController {
+class Test1_ViewController: UIViewController,UITableViewDelegate {
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -20,8 +20,19 @@ class Test1_ViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+//    func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int{
+//        return 10
+//    
+//    }
     
-
+//    func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell{
+//        let cell = UITableViewCell(style: UITableViewCellAccessoryType.DetailButton, reuseIdentifier: "sherry")
+//        let rowData:NSDictionary = self.tableData[indexPath.row] as! NSDictionary
+//        cell.textLabel?.text = rowData["name"] as? String
+//        cell.detailTextLabel?.text = rowData["owner"] as? String
+//        cell.imageView?.image = UIImage(named: "star")
+//    
+//    }
     /*
     // MARK: - Navigation
 
