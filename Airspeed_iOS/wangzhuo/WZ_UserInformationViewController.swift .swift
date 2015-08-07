@@ -57,6 +57,9 @@ class WZ_UserInformationViewController:UIViewController,UIImagePickerControllerD
         if let savedImage = UIImage(contentsOfFile: fullPath){
         self.userIcon.image=savedImage
         }
+        
+        let userdata = NSUserDefaults()
+        
     }
     
     
@@ -136,17 +139,32 @@ class WZ_UserInformationViewController:UIViewController,UIImagePickerControllerD
         imageData.writeToFile(fullPath, atomically: false)
     }
     
-//    // 改变图像的尺寸，方便上传服务器
-//    func scaleFromImage(image:UIImage,size:CGSize)->UIImage{
-//        UIGraphicsBeginImageContext(size)
-//        image.drawInRect(CGRectMake(0, 0, size.width, size.height))
-//        let newImage = UIGraphicsGetImageFromCurrentImageContext()
-//        UIGraphicsEndImageContext()
-//        return newImage;
+    // 改变图像的尺寸，方便上传服务器
+    func scaleFromImage(image:UIImage,size:CGSize)->UIImage{
+        UIGraphicsBeginImageContext(size)
+        image.drawInRect(CGRectMake(0, 0, size.width, size.height))
+        let newImage = UIGraphicsGetImageFromCurrentImageContext()
+        UIGraphicsEndImageContext()
+        return newImage;
+    }
+    
+//    override func touchesBegan(touches: Set<UITouch>, withEvent event: UIEvent?) {
+//        let isFullScreen = true;
+//        let touch = UITouch()
+//        let touchPoint = touch.locationInView(self.view)
+//        let imagePoint = self.userIcon.frame.origin
+//        if (imagePoint.x <= touchPoint.x && imagePoint.x+self.userIcon.frame.size.width>=touchPoint.x && imagePoint.y <= touchPoint.y && imagePoint.y+self.userIcon.frame.size.height >= touchPoint.y){
+//            UIView.beginAnimations(nil, context: nil)
+//            UIView.setAnimationDuration(1)
+//            if isFullScreen {
+//                self.userIcon.frame = CGRectMake(0, 0, 320, 480)
+//            }else{
+//                self.userIcon.frame = CGRectMake(50, 65, 90, 115)
+//            }
+//            UIView.commitAnimations()
+//        }
 //    }
-    
-    
-    
+
     
     
     
