@@ -20,12 +20,10 @@ class Test1_ViewController: UIViewController,UITableViewDelegate {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    
-    @IBOutlet weak var rj1_tableView: UITableView!
-    func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int{
-        return 10
-    
-    }
+//    func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int{
+//        return 10
+//    
+//    }
     
 //    func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell{
 //        let cell = UITableViewCell(style: UITableViewCellAccessoryType.DetailButton, reuseIdentifier: "sherry")

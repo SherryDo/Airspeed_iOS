@@ -55,7 +55,7 @@ class WZ_UserInformationViewController:UIViewController,UIImagePickerControllerD
         //读取用户头像
         let fullPath = NSHomeDirectory().stringByAppendingPathComponent("Documents").stringByAppendingPathComponent("currentImage.png")
         if let savedImage = UIImage(contentsOfFile: fullPath){
-        self.userIcon.image=savedImage
+        self.userIcon.image = savedImage
         }
     }
     

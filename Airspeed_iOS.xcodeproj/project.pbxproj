@@ -44,6 +44,7 @@
 		ABA2CED51B72274A00D2C4A4 /* MyMenuTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABA2CED41B72274A00D2C4A4 /* MyMenuTableViewController.swift */; };
 		ABE387F81B7320BB0028557E /* SwiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABE387F71B7320BB0028557E /* SwiftyJSON.swift */; };
 		ABE387FA1B7336EC0028557E /* ItemDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABE387F91B7336EC0028557E /* ItemDetails.swift */; };
+		CA64D0541B744D0600E6786B /* rj_gnsjViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA64D0531B744D0600E6786B /* rj_gnsjViewController.swift */; };
 		CABCABF21B71B5C400000E02 /* rj_Storyboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CABCABF11B71B5C400000E02 /* rj_Storyboard.storyboard */; };
 		CABCABFC1B71BA3F00000E02 /* Test1_ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CABCABFB1B71BA3F00000E02 /* Test1_ViewController.swift */; };
 		CABCAC0E1B720E2000000E02 /* Test2_ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CABCAC0D1B720E2000000E02 /* Test2_ViewController.swift */; };
@@ -120,6 +121,7 @@
 		ABA2CED41B72274A00D2C4A4 /* MyMenuTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyMenuTableViewController.swift; sourceTree = "<group>"; };
 		ABE387F71B7320BB0028557E /* SwiftyJSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SwiftyJSON.swift; path = xiaolei/SwiftyJSON.swift; sourceTree = "<group>"; };
 		ABE387F91B7336EC0028557E /* ItemDetails.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemDetails.swift; sourceTree = "<group>"; };
+		CA64D0531B744D0600E6786B /* rj_gnsjViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = rj_gnsjViewController.swift; sourceTree = "<group>"; };
 		CABCABF11B71B5C400000E02 /* rj_Storyboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = rj_Storyboard.storyboard; sourceTree = "<group>"; };
 		CABCABFB1B71BA3F00000E02 /* Test1_ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Test1_ViewController.swift; sourceTree = "<group>"; };
 		CABCAC0D1B720E2000000E02 /* Test2_ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Test2_ViewController.swift; sourceTree = "<group>"; };
@@ -404,6 +406,7 @@
 				CAC7722E1B7093FB00AF9009 /* RJ_SJViewController.swift */,
 				CABCAC0D1B720E2000000E02 /* Test2_ViewController.swift */,
 				CABCABFB1B71BA3F00000E02 /* Test1_ViewController.swift */,
+				CA64D0531B744D0600E6786B /* rj_gnsjViewController.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -510,8 +513,11 @@
 
 
 
-				CABCABFC1B71BA3F00000E02 /* Test1_ViewController.swift in Sources */,
+
+
 				ABA2CE6E1B71F5FE00D2C4A4 /* ArticInformation.swift in Sources */,
+				CABCABFC1B71BA3F00000E02 /* Test1_ViewController.swift in Sources */,
+
 				CAC7727A1B709B8700AF9009 /* XLScrollViewer.m in Sources */,
 				AB7A1FC11B706CAE00D77160 /* MJRefreshStateHeader.m in Sources */,
 				CABCAC0E1B720E2000000E02 /* Test2_ViewController.swift in Sources */,
@@ -548,6 +554,7 @@
 				AB4A2E571B392EC40023F291 /* MainViewController.swift in Sources */,
 				AB7A1FB41B706CAE00D77160 /* MJRefreshAutoFooter.m in Sources */,
 				AB7A1FB71B706CAE00D77160 /* MJRefreshFooter.m in Sources */,
+				CA64D0541B744D0600E6786B /* rj_gnsjViewController.swift in Sources */,
 				ABA2CE711B72070900D2C4A4 /* HttpCollectionData.swift in Sources */,
 				ABE387FA1B7336EC0028557E /* ItemDetails.swift in Sources */,
 				AB7A1FBE1B706CAE00D77160 /* MJRefreshBackStateFooter.m in Sources */,
