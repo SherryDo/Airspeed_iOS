@@ -45,13 +45,11 @@ class MyMenuTableViewController: UITableViewController,ENSideMenuDelegate{
     
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         
-       var menueCell = tableView.dequeueReusableCellWithIdentifier("menuCell")
+       let cell = tableView.dequeueReusableCellWithIdentifier("menuCell")
        /// 判断cell是否存在
+       let menueCell = configMenueCell(cell)
         
-        
-//       let menueCell = configMenueCell(cell)
-        
-        return menueCell!
+        return menueCell
     }
 
 
