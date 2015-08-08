@@ -14,25 +14,20 @@ class MenuTableViewController: UITableViewController{
     var ArticArry = [ArticInformation]()
     var menueNumber = 0
     /**
-    打开侧边菜单
+    打开侧边菜单/关闭侧边栏
     
     */
     @IBAction func Miss(sender: UIBarButtonItem) {
         toggleSideMenuView()
     }
-    /**
-    返回主页面
-
-    */
+   
     
-    @IBAction func back(sender: UIBarButtonItem) {
-        self.dismissViewControllerAnimated(true, completion: nil)
-    }
-
+   
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        // MJRefresh
         mjRefreshAction()
     }
 
@@ -49,7 +44,8 @@ class MenuTableViewController: UITableViewController{
 
     override func tableView(tableView: UITableView,
         cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell{
-     let cell =  self.tableView.dequeueReusableCellWithIdentifier("ListCell", forIndexPath: indexPath) as! MenuTableViewCell
+     
+            let cell =  self.tableView.dequeueReusableCellWithIdentifier("ListCell", forIndexPath: indexPath) as! MenuTableViewCell
             
         cell.name.text = ArticArry[indexPath.row].name
         cell.money.text = String(ArticArry[indexPath.row].money + 1)
@@ -111,12 +107,11 @@ class MenuTableViewController: UITableViewController{
     //测试数据
     let newCell = ArticInformation(name: "Swift", money: 0)
     ArticArry.append(newCell)
-    
     // 上次刷新的时间
     tableView.header.lastUpdatedTimeKey = NSDate().description
-    
+    //刷新界面
     self.tableView.reloadData()
-    
+    //停止刷新
     self.tableView.header.endRefreshing()
     }
    
@@ -126,7 +121,12 @@ class MenuTableViewController: UITableViewController{
     *  上拉加载数据
     */
    private func refreshFooter(){
-         print("上拉加载数据")
+    //测试数据
+        let newCell = ArticInformation(name: "Swift", money: 0)
+        ArticArry.append(newCell)
+    //刷新界面
+        tableView.reloadData()
+    //停止加载数据
         tableView.footer.endRefreshing()
     }
     

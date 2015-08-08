@@ -34,6 +34,7 @@
 		AB7A1FC41B706CAE00D77160 /* UIScrollView+MJExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = AB7A1FAF1B706CAE00D77160 /* UIScrollView+MJExtension.m */; };
 		AB7A1FC51B706CAE00D77160 /* UIScrollView+MJRefresh.m in Sources */ = {isa = PBXBuildFile; fileRef = AB7A1FB11B706CAE00D77160 /* UIScrollView+MJRefresh.m */; };
 		AB7A1FC61B706CAE00D77160 /* UIView+MJExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = AB7A1FB31B706CAE00D77160 /* UIView+MJExtension.m */; };
+		AB7C476D1B75D25D00AF2077 /* Pitaya.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB7C476C1B75D25D00AF2077 /* Pitaya.swift */; };
 		ABA2CE6E1B71F5FE00D2C4A4 /* ArticInformation.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABA2CE6D1B71F5FE00D2C4A4 /* ArticInformation.swift */; };
 		ABA2CE711B72070900D2C4A4 /* HttpCollectionData.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABA2CE701B72070900D2C4A4 /* HttpCollectionData.swift */; };
 		ABA2CEC81B7218B100D2C4A4 /* MenuTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABA2CEC71B7218B100D2C4A4 /* MenuTableViewCell.swift */; };
@@ -111,6 +112,7 @@
 		AB7A1FB11B706CAE00D77160 /* UIScrollView+MJRefresh.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIScrollView+MJRefresh.m"; sourceTree = "<group>"; };
 		AB7A1FB21B706CAE00D77160 /* UIView+MJExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+MJExtension.h"; sourceTree = "<group>"; };
 		AB7A1FB31B706CAE00D77160 /* UIView+MJExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+MJExtension.m"; sourceTree = "<group>"; };
+		AB7C476C1B75D25D00AF2077 /* Pitaya.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Pitaya.swift; sourceTree = "<group>"; };
 		ABA2CE6D1B71F5FE00D2C4A4 /* ArticInformation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArticInformation.swift; sourceTree = "<group>"; };
 		ABA2CE701B72070900D2C4A4 /* HttpCollectionData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HttpCollectionData.swift; sourceTree = "<group>"; };
 		ABA2CEC71B7218B100D2C4A4 /* MenuTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuTableViewCell.swift; sourceTree = "<group>"; };
@@ -375,6 +377,7 @@
 		ABAD850C1B724B4E0010E923 /* libary */ = {
 			isa = PBXGroup;
 			children = (
+				AB7C476C1B75D25D00AF2077 /* Pitaya.swift */,
 				ABAD850D1B724B5F0010E923 /* sideMenu */,
 				AB7A1F871B706CAE00D77160 /* MJRefresh */,
 			);
@@ -510,14 +513,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-
-
-
-
-
 				ABA2CE6E1B71F5FE00D2C4A4 /* ArticInformation.swift in Sources */,
 				CABCABFC1B71BA3F00000E02 /* Test1_ViewController.swift in Sources */,
-
 				CAC7727A1B709B8700AF9009 /* XLScrollViewer.m in Sources */,
 				AB7A1FC11B706CAE00D77160 /* MJRefreshStateHeader.m in Sources */,
 				CABCAC0E1B720E2000000E02 /* Test2_ViewController.swift in Sources */,
@@ -531,6 +528,7 @@
 				AB7A1FC51B706CAE00D77160 /* UIScrollView+MJRefresh.m in Sources */,
 				ABA2CED51B72274A00D2C4A4 /* MyMenuTableViewController.swift in Sources */,
 				AB7A1FBD1B706CAE00D77160 /* MJRefreshBackNormalFooter.m in Sources */,
+				AB7C476D1B75D25D00AF2077 /* Pitaya.swift in Sources */,
 				AB7A1FC01B706CAE00D77160 /* MJRefreshNormalHeader.m in Sources */,
 				AB7A1FBA1B706CAE00D77160 /* MJRefreshAutoNormalFooter.m in Sources */,
 				AB7A1FB51B706CAE00D77160 /* MJRefreshBackFooter.m in Sources */,
