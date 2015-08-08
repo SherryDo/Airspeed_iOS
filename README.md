@@ -34,11 +34,14 @@ Master分支主要用来发布正式的版本；develop分支用来开发。所�
 
 4. [添加第三方库](http://www.cocoachina.com/industry/20140721/9201.html)
 
+5. [Swift2中文翻译](http://wiki.jikexueyuan.com/project/swift/)
 
 <h2 id = "disanfang">第三方库</h2>
-1. 添加了第三方库`MJRefresh`;上拉加载，下拉刷新。
-2. 添加了第三方库`SwiftyJSON`;解析JOSN数据的.
-3. 添加了第三方库`Alamofire`；网络请求。
+1. 添加了第三方库`MJRefresh`;[链接](https://github.com/CoderMJLee/MJRefresh)上拉加载，下拉刷新。
+
+2. 添加了第三方库`SwiftyJSON`;[链接](https://github.com/SwiftyJSON/SwiftyJSON)解析JOSN数据的.
+
+3. 添加了第三方库`Pitaya`；[链接](https://github.com/johnlui/Pitaya)网络请求。文件的上传和下载等功能
 
 <h2 id="git">git使用</h2>
 我们现在都对远程仓库有读写的权限，所以可以直接提交到Github的远程仓库中。
