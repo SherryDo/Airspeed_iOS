@@ -7,6 +7,10 @@
 //
 
 import UIKit
+<<<<<<< HEAD
+//import SideMenu
+=======
+>>>>>>> origin/develop
 class MenuTableViewController: UITableViewController{
     
     /// cell的信息存储
