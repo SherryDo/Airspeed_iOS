@@ -84,11 +84,6 @@
                                 <action selector="Miss:" destination="Jc5-2z-XMD" id="efM-CN-OEN"/>
                             </connections>
                         </barButtonItem>
-                        <barButtonItem key="rightBarButtonItem" title="Back" id="hgQ-0L-e5R">
-                            <connections>
-                                <action selector="back:" destination="Jc5-2z-XMD" id="l1i-Ou-R5g"/>
-                            </connections>
-                        </barButtonItem>
                     </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ur7-KS-ENp" userLabel="First Responder" sceneMemberID="firstResponder"/>
