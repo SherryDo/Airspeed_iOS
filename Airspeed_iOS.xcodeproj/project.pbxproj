@@ -407,18 +407,34 @@
 			name = Controller;
 			sourceTree = "<group>";
 		};
-		CBF07FA31B76F86F008BA69F /* wangzhuo */ = {
+		CBECF9291B76F950002DCD6E /* testFiles */ = {
 			isa = PBXGroup;
 			children = (
 				CBF07FA41B76F86F008BA69F /* background.jpg */,
 				CBF07FA51B76F86F008BA69F /* icon.jpg */,
+			);
+			name = testFiles;
+			sourceTree = "<group>";
+		};
+		CBECF92A1B76F967002DCD6E /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				CBF07FAC1B76F86F008BA69F /* WZ_UserInformationViewController.swift .swift */,
+				CBF07FAB1B76F86F008BA69F /* WZ_UserInfoEditTableViewController.swift */,
 				CBF07FA61B76F86F008BA69F /* WZ_auctionViewController.swift */,
 				CBF07FA71B76F86F008BA69F /* WZ_myRentViewController.swift */,
 				CBF07FA81B76F86F008BA69F /* WZ_myWalletViewController.swift */,
 				CBF07FA91B76F86F008BA69F /* WZ_onSaleViewController.swift */,
+			);
+			name = ViewController;
+			sourceTree = "<group>";
+		};
+		CBF07FA31B76F86F008BA69F /* wangzhuo */ = {
+			isa = PBXGroup;
+			children = (
 				CBF07FAA1B76F86F008BA69F /* WZ_StoryBoard.storyboard */,
-				CBF07FAB1B76F86F008BA69F /* WZ_UserInfoEditTableViewController.swift */,
-				CBF07FAC1B76F86F008BA69F /* WZ_UserInformationViewController.swift .swift */,
+				CBECF92A1B76F967002DCD6E /* ViewController */,
+				CBECF9291B76F950002DCD6E /* testFiles */,
 			);
 			path = wangzhuo;
 			sourceTree = SOURCE_ROOT;

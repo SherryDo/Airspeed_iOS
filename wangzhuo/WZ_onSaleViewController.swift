@@ -12,7 +12,7 @@ class WZ_onSaleViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.navigationItem.title="我的上架"
+        //self.navigationItem.title="我的上架"
         // Do any additional setup after loading the view.
     }
 

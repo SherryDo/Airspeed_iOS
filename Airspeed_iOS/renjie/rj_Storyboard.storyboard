@@ -109,7 +109,6 @@
         <!--Test1 View Controller-->
         <scene sceneID="9N8-vZ-7lK">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="mZp-kb-PSy" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <viewController storyboardIdentifier="Test1_ViewControllerID" id="LKg-eu-GUV" customClass="Test1_ViewController" customModule="Airspeed_iOS" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="TR6-BX-6vD"/>
@@ -135,6 +134,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="AOi-MN-057"/>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mZp-kb-PSy" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1097" y="869"/>
         </scene>

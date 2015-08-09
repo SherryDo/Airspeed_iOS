@@ -10,7 +10,9 @@ import UIKit
 
 class WZ_UserInformationViewController:UIViewController,UIImagePickerControllerDelegate,UINavigationControllerDelegate{
     
-    @IBOutlet weak var Navi: UINavigationItem!
+//    @IBOutlet weak var Navi: UINavigationItem!
+    @IBOutlet weak var editUserInformation: UIButton!
+    
     //用户头像
     @IBOutlet weak var userIcon: UIImageView!
     //背景
@@ -40,7 +42,6 @@ class WZ_UserInformationViewController:UIViewController,UIImagePickerControllerD
         EffertView.frame.size=CGSize(width: view.frame.width, height: view.frame.height)
         //加入视图
         userBackground.addSubview(EffertView)
-        Navi.title="用户"
         
         //为头像添加点击事件
         userIcon.userInteractionEnabled=true
@@ -58,13 +59,17 @@ class WZ_UserInformationViewController:UIViewController,UIImagePickerControllerD
         
     }
     
-    
-    //返回按钮响应方法
-    @IBAction func backButtonClicked(sender: UIBarButtonItem) {
-        self.dismissViewControllerAnimated(true, completion: nil)
+    override func preferredStatusBarStyle() -> UIStatusBarStyle {
+        return UIStatusBarStyle.LightContent
     }
+
+    
+//    //返回按钮响应方法
+//    @IBAction func backButtonClicked(sender: UIBarButtonItem) {
+//        self.dismissViewControllerAnimated(true, completion: nil)
+//    }
     //编辑按钮响应方法
-    @IBAction func editButtonClicked(sender: UIBarButtonItem) {
+    @IBAction func editButtonClicked(sender: UIButton) {
         print("editButtonClicked has been called")
     }
     

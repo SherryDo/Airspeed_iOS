@@ -12,7 +12,7 @@ class WZ_myRentViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.navigationItem.title="我的租赁"
+        //self.navigationItem.title="我的租赁"
         // Do any additional setup after loading the view.
     }
 

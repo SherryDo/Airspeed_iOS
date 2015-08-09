@@ -12,7 +12,7 @@ class WZ_myWalletViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.navigationItem.title="我的钱包"
+        //self.navigationItem.title="我的钱包"
         // Do any additional setup after loading the view.
     }
 
