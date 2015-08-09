@@ -52,7 +52,8 @@
 		CABCAC0E1B720E2000000E02 /* Test2_ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CABCAC0D1B720E2000000E02 /* Test2_ViewController.swift */; };
 		CAC7722F1B7093FB00AF9009 /* RJ_SJViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAC7722E1B7093FB00AF9009 /* RJ_SJViewController.swift */; };
 		CAC7727A1B709B8700AF9009 /* XLScrollViewer.m in Sources */ = {isa = PBXBuildFile; fileRef = CAC772791B709B8700AF9009 /* XLScrollViewer.m */; };
-		CBF07FAD1B76F86F008BA69F /* background.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CBF07FA41B76F86F008BA69F /* background.jpg */; };
+		CB4580E41B7733B000659A75 /* background.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CB4580E31B7733B000659A75 /* background.jpg */; };
+		CB4580E61B7737B100659A75 /* Clearpng.png in Resources */ = {isa = PBXBuildFile; fileRef = CB4580E51B7737B100659A75 /* Clearpng.png */; };
 		CBF07FAE1B76F86F008BA69F /* icon.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CBF07FA51B76F86F008BA69F /* icon.jpg */; };
 		CBF07FAF1B76F86F008BA69F /* WZ_auctionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBF07FA61B76F86F008BA69F /* WZ_auctionViewController.swift */; };
 		CBF07FB01B76F86F008BA69F /* WZ_myRentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBF07FA71B76F86F008BA69F /* WZ_myRentViewController.swift */; };
@@ -132,7 +133,8 @@
 		CAC7722E1B7093FB00AF9009 /* RJ_SJViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RJ_SJViewController.swift; sourceTree = "<group>"; };
 		CAC772781B709B8700AF9009 /* XLScrollViewer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XLScrollViewer.h; sourceTree = "<group>"; };
 		CAC772791B709B8700AF9009 /* XLScrollViewer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XLScrollViewer.m; sourceTree = "<group>"; };
-		CBF07FA41B76F86F008BA69F /* background.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = background.jpg; sourceTree = "<group>"; };
+		CB4580E31B7733B000659A75 /* background.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = background.jpg; sourceTree = "<group>"; };
+		CB4580E51B7737B100659A75 /* Clearpng.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Clearpng.png; sourceTree = "<group>"; };
 		CBF07FA51B76F86F008BA69F /* icon.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = icon.jpg; sourceTree = "<group>"; };
 		CBF07FA61B76F86F008BA69F /* WZ_auctionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WZ_auctionViewController.swift; sourceTree = "<group>"; };
 		CBF07FA71B76F86F008BA69F /* WZ_myRentViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WZ_myRentViewController.swift; sourceTree = "<group>"; };
@@ -410,7 +412,8 @@
 		CBECF9291B76F950002DCD6E /* testFiles */ = {
 			isa = PBXGroup;
 			children = (
-				CBF07FA41B76F86F008BA69F /* background.jpg */,
+				CB4580E31B7733B000659A75 /* background.jpg */,
+				CB4580E51B7737B100659A75 /* Clearpng.png */,
 				CBF07FA51B76F86F008BA69F /* icon.jpg */,
 			);
 			name = testFiles;
@@ -497,11 +500,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CB4580E41B7733B000659A75 /* background.jpg in Resources */,
 				CBF07FAE1B76F86F008BA69F /* icon.jpg in Resources */,
 				AB4A2E461B38F7050023F291 /* LaunchScreen.storyboard in Resources */,
 				CBF07FB31B76F86F008BA69F /* WZ_StoryBoard.storyboard in Resources */,
 				AB4A2E531B392DC30023F291 /* YXL_Storyboard.storyboard in Resources */,
-				CBF07FAD1B76F86F008BA69F /* background.jpg in Resources */,
+				CB4580E61B7737B100659A75 /* Clearpng.png in Resources */,
 				CABCABF21B71B5C400000E02 /* rj_Storyboard.storyboard in Resources */,
 				AB4A2E431B38F7050023F291 /* Assets.xcassets in Resources */,
 				AB4A2E3E1B38F7050023F291 /* Main.storyboard in Resources */,

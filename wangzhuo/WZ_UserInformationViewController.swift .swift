@@ -10,9 +10,7 @@ import UIKit
 
 class WZ_UserInformationViewController:UIViewController,UIImagePickerControllerDelegate,UINavigationControllerDelegate{
     
-//    @IBOutlet weak var Navi: UINavigationItem!
-    @IBOutlet weak var editUserInformation: UIButton!
-    
+    @IBOutlet weak var Navi: UINavigationItem!
     //用户头像
     @IBOutlet weak var userIcon: UIImageView!
     //背景
@@ -30,6 +28,10 @@ class WZ_UserInformationViewController:UIViewController,UIImagePickerControllerD
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        //更改标题
+        Navi.title="用户信息"
+        self.navigationController?.navigationBar.translucent=true
+        
         //设置头像形状，去边框
         userIcon.layer.cornerRadius=50
         userIcon.clipsToBounds=true
@@ -58,7 +60,7 @@ class WZ_UserInformationViewController:UIViewController,UIImagePickerControllerD
         let userdata = NSUserDefaults()
         
     }
-    
+    //设置任务栏文字颜色
     override func preferredStatusBarStyle() -> UIStatusBarStyle {
         return UIStatusBarStyle.LightContent
     }
