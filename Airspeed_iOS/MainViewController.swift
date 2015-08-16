@@ -25,19 +25,19 @@ class MainViewController: UITabBarController {
 //        设置 tabBarItem的一些属性
         //1
         yxl_RootViewController.tabBarItem.title = "租赁"
-        yxl_RootViewController.tabBarItem.image = UIImage(named: "zuling")
-        yxl_RootViewController.tabBarItem.selectedImage = UIImage(named: "zulingdown")
+        yxl_RootViewController.tabBarItem.image = UIImage(named: "tabbar 1")
+        yxl_RootViewController.tabBarItem.selectedImage = UIImage(named: "tabbar 1_choosed")
         //2
-        yxl2_ViewController.tabBarItem.image = UIImage(named: "zuling")
-        yxl2_ViewController.tabBarItem.selectedImage = UIImage(named: "zulingdown")
+        yxl2_ViewController.tabBarItem.image = UIImage(named: "tabbar 4")
+        yxl2_ViewController.tabBarItem.selectedImage = UIImage(named: "tabbar 4")
         //3
-        rj_RootViewController.tabBarItem.title = "任杰"
-        rj_RootViewController.tabBarItem.image = UIImage(named: "zuling")
-        rj_RootViewController.tabBarItem.selectedImage = UIImage(named: "zulingdown")
+        rj_RootViewController.tabBarItem.title = "上架"
+        rj_RootViewController.tabBarItem.image = UIImage(named: "tabbar 2")
+        rj_RootViewController.tabBarItem.selectedImage = UIImage(named: "tabbar 2_choosed")
         //4
-        wz_RootViewController.tabBarItem.title = "王卓"
-        wz_RootViewController.tabBarItem.image = UIImage(named: "zuling")
-        wz_RootViewController.tabBarItem.selectedImage = UIImage(named: "zulingdown")
+        wz_RootViewController.tabBarItem.title = "用户"
+        wz_RootViewController.tabBarItem.image = UIImage(named: "tabbar 3")
+        wz_RootViewController.tabBarItem.selectedImage = UIImage(named: "tabbar 3_choosed")
         
         self.viewControllers = [
             yxl_RootViewController,
