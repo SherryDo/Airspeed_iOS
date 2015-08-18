@@ -42,10 +42,10 @@ class MainViewController: UITabBarController {
         wz_RootViewController.tabBarItem.selectedImage = UIImage(named: "tabbar 3_choosed")?.imageWithRenderingMode(UIImageRenderingMode.AlwaysOriginal)
         
         self.viewControllers = [
+            yxl2_ViewController,
             yxl_RootViewController,
             rj_RootViewController,
-            wz_RootViewController,
-            yxl2_ViewController
+            wz_RootViewController
         ]
         
         self.selectedIndex = 0
