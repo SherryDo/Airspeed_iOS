@@ -19,9 +19,11 @@ class MenuTableViewController: UITableViewController{
     */
     @IBAction func Miss(sender: UIBarButtonItem) {
         toggleSideMenuView()
-        
     }
    
+    
+   
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
