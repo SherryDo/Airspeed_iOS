@@ -36,8 +36,6 @@
 		AB7A1FC61B706CAE00D77160 /* UIView+MJExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = AB7A1FB31B706CAE00D77160 /* UIView+MJExtension.m */; };
 		AB7C476D1B75D25D00AF2077 /* Pitaya.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB7C476C1B75D25D00AF2077 /* Pitaya.swift */; };
 		AB7C476F1B75D69900AF2077 /* SwiftNotice.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB7C476E1B75D69900AF2077 /* SwiftNotice.swift */; };
-		AB8008CD1B7F021B0038BF89 /* YXL_ItemTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB8008CC1B7F021B0038BF89 /* YXL_ItemTableViewController.swift */; };
-		AB8008CF1B7F03590038BF89 /* YXL2_Storyboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AB8008CE1B7F03590038BF89 /* YXL2_Storyboard.storyboard */; };
 		ABA2CE6E1B71F5FE00D2C4A4 /* ArticInformation.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABA2CE6D1B71F5FE00D2C4A4 /* ArticInformation.swift */; };
 		ABA2CE711B72070900D2C4A4 /* HttpCollectionData.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABA2CE701B72070900D2C4A4 /* HttpCollectionData.swift */; };
 		ABA2CEC81B7218B100D2C4A4 /* MenuTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABA2CEC71B7218B100D2C4A4 /* MenuTableViewCell.swift */; };
@@ -54,7 +52,8 @@
 		CABCAC0E1B720E2000000E02 /* Test2_ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CABCAC0D1B720E2000000E02 /* Test2_ViewController.swift */; };
 		CAC7722F1B7093FB00AF9009 /* RJ_SJViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAC7722E1B7093FB00AF9009 /* RJ_SJViewController.swift */; };
 		CAC7727A1B709B8700AF9009 /* XLScrollViewer.m in Sources */ = {isa = PBXBuildFile; fileRef = CAC772791B709B8700AF9009 /* XLScrollViewer.m */; };
-		CBF07FAD1B76F86F008BA69F /* background.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CBF07FA41B76F86F008BA69F /* background.jpg */; };
+		CB4580E41B7733B000659A75 /* background.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CB4580E31B7733B000659A75 /* background.jpg */; };
+		CB4580E61B7737B100659A75 /* Clearpng.png in Resources */ = {isa = PBXBuildFile; fileRef = CB4580E51B7737B100659A75 /* Clearpng.png */; };
 		CBF07FAE1B76F86F008BA69F /* icon.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CBF07FA51B76F86F008BA69F /* icon.jpg */; };
 		CBF07FAF1B76F86F008BA69F /* WZ_auctionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBF07FA61B76F86F008BA69F /* WZ_auctionViewController.swift */; };
 		CBF07FB01B76F86F008BA69F /* WZ_myRentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBF07FA71B76F86F008BA69F /* WZ_myRentViewController.swift */; };
@@ -117,8 +116,6 @@
 		AB7A1FB31B706CAE00D77160 /* UIView+MJExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+MJExtension.m"; sourceTree = "<group>"; };
 		AB7C476C1B75D25D00AF2077 /* Pitaya.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Pitaya.swift; sourceTree = "<group>"; };
 		AB7C476E1B75D69900AF2077 /* SwiftNotice.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftNotice.swift; sourceTree = "<group>"; };
-		AB8008CC1B7F021B0038BF89 /* YXL_ItemTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YXL_ItemTableViewController.swift; sourceTree = "<group>"; };
-		AB8008CE1B7F03590038BF89 /* YXL2_Storyboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = YXL2_Storyboard.storyboard; sourceTree = "<group>"; };
 		ABA2CE6D1B71F5FE00D2C4A4 /* ArticInformation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArticInformation.swift; sourceTree = "<group>"; };
 		ABA2CE701B72070900D2C4A4 /* HttpCollectionData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HttpCollectionData.swift; sourceTree = "<group>"; };
 		ABA2CEC71B7218B100D2C4A4 /* MenuTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuTableViewCell.swift; sourceTree = "<group>"; };
@@ -136,7 +133,8 @@
 		CAC7722E1B7093FB00AF9009 /* RJ_SJViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RJ_SJViewController.swift; sourceTree = "<group>"; };
 		CAC772781B709B8700AF9009 /* XLScrollViewer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XLScrollViewer.h; sourceTree = "<group>"; };
 		CAC772791B709B8700AF9009 /* XLScrollViewer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XLScrollViewer.m; sourceTree = "<group>"; };
-		CBF07FA41B76F86F008BA69F /* background.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = background.jpg; sourceTree = "<group>"; };
+		CB4580E31B7733B000659A75 /* background.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = background.jpg; sourceTree = "<group>"; };
+		CB4580E51B7737B100659A75 /* Clearpng.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Clearpng.png; sourceTree = "<group>"; };
 		CBF07FA51B76F86F008BA69F /* icon.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = icon.jpg; sourceTree = "<group>"; };
 		CBF07FA61B76F86F008BA69F /* WZ_auctionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WZ_auctionViewController.swift; sourceTree = "<group>"; };
 		CBF07FA71B76F86F008BA69F /* WZ_myRentViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WZ_myRentViewController.swift; sourceTree = "<group>"; };
@@ -205,7 +203,6 @@
 				AB536FCE1B6F125F004B75B8 /* model */,
 				AB536FCD1B6F1248004B75B8 /* controller */,
 				AB4A2E521B392DC30023F291 /* YXL_Storyboard.storyboard */,
-				AB8008CE1B7F03590038BF89 /* YXL2_Storyboard.storyboard */,
 			);
 			path = xiaolei;
 			sourceTree = "<group>";
@@ -237,7 +234,6 @@
 			isa = PBXGroup;
 			children = (
 				ABA2CEC91B7218C700D2C4A4 /* MenuTableViewController.swift */,
-				AB8008CC1B7F021B0038BF89 /* YXL_ItemTableViewController.swift */,
 			);
 			name = controller;
 			sourceTree = "<group>";
@@ -416,7 +412,8 @@
 		CBECF9291B76F950002DCD6E /* testFiles */ = {
 			isa = PBXGroup;
 			children = (
-				CBF07FA41B76F86F008BA69F /* background.jpg */,
+				CB4580E31B7733B000659A75 /* background.jpg */,
+				CB4580E51B7737B100659A75 /* Clearpng.png */,
 				CBF07FA51B76F86F008BA69F /* icon.jpg */,
 			);
 			name = testFiles;
@@ -503,12 +500,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AB8008CF1B7F03590038BF89 /* YXL2_Storyboard.storyboard in Resources */,
+				CB4580E41B7733B000659A75 /* background.jpg in Resources */,
 				CBF07FAE1B76F86F008BA69F /* icon.jpg in Resources */,
 				AB4A2E461B38F7050023F291 /* LaunchScreen.storyboard in Resources */,
 				CBF07FB31B76F86F008BA69F /* WZ_StoryBoard.storyboard in Resources */,
 				AB4A2E531B392DC30023F291 /* YXL_Storyboard.storyboard in Resources */,
-				CBF07FAD1B76F86F008BA69F /* background.jpg in Resources */,
+				CB4580E61B7737B100659A75 /* Clearpng.png in Resources */,
 				CABCABF21B71B5C400000E02 /* rj_Storyboard.storyboard in Resources */,
 				AB4A2E431B38F7050023F291 /* Assets.xcassets in Resources */,
 				AB4A2E3E1B38F7050023F291 /* Main.storyboard in Resources */,
@@ -531,7 +528,6 @@
 				AB7A1FC11B706CAE00D77160 /* MJRefreshStateHeader.m in Sources */,
 				CABCAC0E1B720E2000000E02 /* Test2_ViewController.swift in Sources */,
 				CBF07FB41B76F86F008BA69F /* WZ_UserInfoEditTableViewController.swift in Sources */,
-				AB8008CD1B7F021B0038BF89 /* YXL_ItemTableViewController.swift in Sources */,
 				CAC7722F1B7093FB00AF9009 /* RJ_SJViewController.swift in Sources */,
 				CBF07FB21B76F86F008BA69F /* WZ_onSaleViewController.swift in Sources */,
 				ABE387F81B7320BB0028557E /* SwiftyJSON.swift in Sources */,

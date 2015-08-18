@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8173.3" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="6Aq-ma-sVh">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8164.2" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="6Aq-ma-sVh">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8142"/>
-        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8135.1"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -20,7 +19,17 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <toolbarItems/>
+<<<<<<< HEAD
                     <navigationItem key="navigationItem" id="YmA-NP-XaC"/>
+=======
+                    <navigationItem key="navigationItem" title="上架" id="YmA-NP-XaC">
+                        <barButtonItem key="leftBarButtonItem" systemItem="reply" id="RuZ-hv-LtN">
+                            <connections>
+                                <action selector="backToHome:" destination="uqe-u9-A26" id="aLg-F4-W4z"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+>>>>>>> origin/develop
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7YQ-ay-G3b" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -113,13 +122,20 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+<<<<<<< HEAD
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AGt-QS-1Eo">
                                 <rect key="frame" x="42" y="80" width="64" height="30"/>
                                 <state key="normal" title="同城上架"/>
+=======
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AGt-QS-1Eo">
+                                <rect key="frame" x="46" y="80" width="67" height="30"/>
+                                <state key="normal" title="Button1"/>
+>>>>>>> origin/develop
                                 <connections>
                                     <segue destination="FNi-mB-Lok" kind="push" id="cKM-ew-V77"/>
                                 </connections>
                             </button>
+<<<<<<< HEAD
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="39s-i8-xSa">
                                 <rect key="frame" x="205" y="80" width="64" height="30"/>
                                 <state key="normal" title="国内上架"/>
@@ -134,12 +150,20 @@
                             <constraint firstItem="39s-i8-xSa" firstAttribute="top" secondItem="TR6-BX-6vD" secondAttribute="bottom" constant="60" id="r2h-ln-83N"/>
                             <constraint firstItem="AGt-QS-1Eo" firstAttribute="top" secondItem="TR6-BX-6vD" secondAttribute="bottom" constant="60" id="tEG-2j-7dC"/>
                         </constraints>
+=======
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="39s-i8-xSa">
+                                <rect key="frame" x="197" y="80" width="68" height="30"/>
+                                <state key="normal" title="Button2"/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+>>>>>>> origin/develop
                     </view>
                     <navigationItem key="navigationItem" id="AOi-MN-057"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mZp-kb-PSy" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="552" y="1075"/>
+            <point key="canvasLocation" x="1097" y="869"/>
         </scene>
         <!--Title-->
         <scene sceneID="tCU-OI-EVD">
@@ -167,7 +191,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9Hd-PM-cbg" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="932" y="1075"/>
+            <point key="canvasLocation" x="548" y="1141"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="3lV-yw-4pm">
@@ -180,13 +204,23 @@
                     <view key="view" contentMode="scaleToFill" id="VZ2-25-N6m">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ADQ-Q4-qu9">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                                <items>
+                                    <navigationItem title="国内范围" id="099-nz-OZE">
+                                        <barButtonItem key="leftBarButtonItem" title="&lt;上架" id="q9q-6e-OGr"/>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="TMU-mJ-keE"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1Wm-dZ-8YN" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="829" y="1740"/>
+            <point key="canvasLocation" x="951" y="1090"/>
         </scene>
     </scenes>
     <resources>

@@ -12,9 +12,8 @@ class MainViewController: UITabBarController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-//        获取每个故事版的根视图控制器
-        let yxl_RootViewController = UIStoryboard(name: "YXL_Storyboard", bundle: nil).instantiateInitialViewController() as! MyNavigationViewController
         
+<<<<<<< HEAD
         let rj_RootViewController = UIStoryboard(name: "rj_Storyboard", bundle: nil).instantiateInitialViewController() as! UINavigationController
         
         let wz_RootViewController = UIStoryboard(name: "WZ_StoryBoard", bundle: nil).instantiateInitialViewController() as! WZ_UserInformationViewController
@@ -57,6 +56,8 @@ class MainViewController: UITabBarController {
         ]
         
         self.selectedIndex = 0
+=======
+>>>>>>> origin/develop
         // Do any additional setup after loading the view.
     }
 
@@ -66,8 +67,6 @@ class MainViewController: UITabBarController {
     }
     
 
-    
-    
     /*
     // MARK: - Navigation
 
