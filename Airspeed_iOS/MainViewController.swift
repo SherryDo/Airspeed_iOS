@@ -22,24 +22,31 @@ class MainViewController: UITabBarController {
         let yxl2_ViewController = UIStoryboard(name: "YXL2_Storyboard", bundle: nil).instantiateInitialViewController() as! UINavigationController
         
         
-//        设置 tabBarItem的一些属性
+        let selectedText = NSMutableDictionary()
+        selectedText[NSForegroundColorAttributeName] = UIColor.purpleColor()
+        yxl_RootViewController.tabBarItem.setTitleTextAttributes(selectedText as? [String:AnyObject], forState: UIControlState.Selected)
+        rj_RootViewController.tabBarItem.setTitleTextAttributes(selectedText as? [String:AnyObject], forState: UIControlState.Selected)
+        wz_RootViewController.tabBarItem.setTitleTextAttributes(selectedText as? [String:AnyObject], forState: UIControlState.Selected)
+        yxl2_ViewController.tabBarItem.setTitleTextAttributes(selectedText as? [String:AnyObject], forState: UIControlState.Selected)
+        //        设置 tabBarItem的一些属性
         //1
         yxl_RootViewController.tabBarItem.title = "租赁"
-        yxl_RootViewController.tabBarItem.image = UIImage(named: "tabbar 1")
-        yxl_RootViewController.tabBarItem.selectedImage = UIImage(named: "tabbar 1_choosed")?.imageWithRenderingMode(UIImageRenderingMode.AlwaysOriginal)
+        yxl_RootViewController.tabBarItem.image = UIImage(named: "tabbar 1")?.imageWithRenderingMode(UIImageRenderingMode.AlwaysOriginal)
+        yxl_RootViewController.tabBarItem.selectedImage = UIImage(named: "tabbar 1_selected")?.imageWithRenderingMode(UIImageRenderingMode.AlwaysOriginal)
+        
         //2
         yxl2_ViewController.tabBarItem.title = "同城"
-        yxl2_ViewController.tabBarItem.image = UIImage(named: "tabbar 4")
-        yxl2_ViewController.tabBarItem.selectedImage = UIImage(named: "tabbar 4_choosed")?.imageWithRenderingMode(UIImageRenderingMode.AlwaysOriginal)
+        yxl2_ViewController.tabBarItem.image = UIImage(named: "tabbar 4")?.imageWithRenderingMode(UIImageRenderingMode.AlwaysOriginal)
+        yxl2_ViewController.tabBarItem.selectedImage = UIImage(named: "tabbar 4_selected")?.imageWithRenderingMode(UIImageRenderingMode.AlwaysOriginal)
 
         //3
         rj_RootViewController.tabBarItem.title = "上架"
-        rj_RootViewController.tabBarItem.image = UIImage(named: "tabbar 2")
-        rj_RootViewController.tabBarItem.selectedImage = UIImage(named: "tabbar 2_choosed")?.imageWithRenderingMode(UIImageRenderingMode.AlwaysOriginal)
+        rj_RootViewController.tabBarItem.image = UIImage(named: "tabbar 2")?.imageWithRenderingMode(UIImageRenderingMode.AlwaysOriginal)
+        rj_RootViewController.tabBarItem.selectedImage = UIImage(named: "tabbar 2_selected")?.imageWithRenderingMode(UIImageRenderingMode.AlwaysOriginal)
         //4
         wz_RootViewController.tabBarItem.title = "用户"
-        wz_RootViewController.tabBarItem.image = UIImage(named: "tabbar 3")
-        wz_RootViewController.tabBarItem.selectedImage = UIImage(named: "tabbar 3_choosed")?.imageWithRenderingMode(UIImageRenderingMode.AlwaysOriginal)
+        wz_RootViewController.tabBarItem.image = UIImage(named: "tabbar 3")?.imageWithRenderingMode(UIImageRenderingMode.AlwaysOriginal)
+        wz_RootViewController.tabBarItem.selectedImage = UIImage(named: "tabbar 3_selected")?.imageWithRenderingMode(UIImageRenderingMode.AlwaysOriginal)
         
         self.viewControllers = [
             yxl2_ViewController,
