@@ -18,7 +18,7 @@ class rj_gnsjViewController: UIViewController,UIImagePickerControllerDelegate,UI
         userIconActionGR.addTarget(self, action: Selector("photoChoiseAction"))
         photoChoise.addGestureRecognizer(userIconActionGR)
         
-        let fullPath = NSHomeDirectory().stringByAppendingPathComponent("Documents").stringByAppendingPathComponent("currentImage.png")
+        let fullPath = ((NSHomeDirectory() as NSString).stringByAppendingPathComponent("Documents") as NSString).stringByAppendingPathComponent("currentImage.png")
         if let savedImage = UIImage(contentsOfFile: fullPath){
             self.photoChoise.image = savedImage
         }
@@ -79,7 +79,7 @@ class rj_gnsjViewController: UIViewController,UIImagePickerControllerDelegate,UI
     func imagePickerController(picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : AnyObject]) {
         let image = (info as NSDictionary).objectForKey(UIImagePickerControllerOriginalImage)
         self.saveImage(image as! UIImage, imageName: "currentImage.png")
-        let fullPath = NSHomeDirectory().stringByAppendingPathComponent("Documents").stringByAppendingPathComponent("currentImage.png")
+        let fullPath = ((NSHomeDirectory()as NSString) .stringByAppendingPathComponent("Documents") as NSString).stringByAppendingPathComponent("currentImage.png")
         let savedImage = UIImage(contentsOfFile: fullPath)
         self.photoChoise.image=savedImage
         picker.dismissViewControllerAnimated(true, completion: nil)
@@ -94,7 +94,7 @@ class rj_gnsjViewController: UIViewController,UIImagePickerControllerDelegate,UI
         var imageData = NSData()
         imageData = UIImageJPEGRepresentation(currentImage, 0.5)!
         // 获取沙盒目录
-        let fullPath = NSHomeDirectory().stringByAppendingPathComponent("Documents").stringByAppendingPathComponent(imageName)
+        let fullPath = ((NSHomeDirectory() as NSString).stringByAppendingPathComponent("Documents") as NSString).stringByAppendingPathComponent(imageName)
         // 将图片写入文件
         imageData.writeToFile(fullPath, atomically: false)
     }
