@@ -51,13 +51,12 @@ class RJ_SJViewController:UIViewController {
         //
         //自定义各种属性。。打开查看
         //  self.scroll.xl_topBackImage =[UIImage imageNamed:@"10.jpg"];
-<<<<<<< HEAD
-        self.scroll.xl_topBackColor = UIColor.purpleColor()
-        self.scroll.xl_sliderColor = UIColor.whiteColor()
-=======
+
+
+
         self.scroll.xl_topBackColor = UIColor.whiteColor()
         self.scroll.xl_sliderColor = UIColor.blueColor()
->>>>>>> origin/develop
+
         self.scroll.xl_buttonColorNormal = UIColor.blackColor()
         self.scroll.xl_buttonColorSelected = UIColor.whiteColor()
         self.scroll.xl_buttonFont = 14

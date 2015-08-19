@@ -24,9 +24,6 @@
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="sherry_purple" translatesAutoresizingMaskIntoConstraints="NO" id="taW-A4-wfE">
-                                <rect key="frame" x="122" y="220" width="76" height="25"/>
-                            </imageView>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SherryDO" textAlignment="center" lineBreakMode="middleTruncation" baselineAdjustment="alignBaselines" minimumFontSize="18" translatesAutoresizingMaskIntoConstraints="NO" id="GJd-Yh-RWb">
                                 <rect key="frame" x="16" y="169" width="288" height="43"/>
                                 <animations/>
@@ -39,14 +36,11 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstAttribute="centerX" secondItem="obG-Y5-kRd" secondAttribute="centerX" id="5cz-MP-9tL"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="taW-A4-wfE" secondAttribute="trailing" constant="106" id="GfL-iV-BiZ"/>
                             <constraint firstAttribute="leadingMargin" secondItem="GJd-Yh-RWb" secondAttribute="leading" id="LMS-ho-R0p"/>
-                            <constraint firstItem="taW-A4-wfE" firstAttribute="top" secondItem="Llm-lL-Icb" secondAttribute="bottom" constant="200" id="Mm0-X0-oQV"/>
                             <constraint firstItem="obG-Y5-kRd" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leading" constant="20" symbolic="YES" id="SfN-ll-jLj"/>
                             <constraint firstAttribute="bottom" secondItem="obG-Y5-kRd" secondAttribute="bottom" constant="20" id="Y44-ml-fuU"/>
                             <constraint firstItem="GJd-Yh-RWb" firstAttribute="top" secondItem="Llm-lL-Icb" secondAttribute="bottom" constant="149" id="kw0-wk-9Le"/>
                             <constraint firstAttribute="trailingMargin" secondItem="GJd-Yh-RWb" secondAttribute="trailing" id="r0q-f3-YZe"/>
-                            <constraint firstItem="taW-A4-wfE" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leadingMargin" constant="106" id="xDc-hy-dm4"/>
                         </constraints>
                     </view>
                 </viewController>
@@ -55,7 +49,4 @@
             <point key="canvasLocation" x="32" y="309"/>
         </scene>
     </scenes>
-    <resources>
-        <image name="sherry_purple" width="25" height="25"/>
-    </resources>
 </document>
