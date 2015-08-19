@@ -21,14 +21,13 @@ class MainViewController: UITabBarController {
         
         let yxl2_ViewController = UIStoryboard(name: "YXL2_Storyboard", bundle: nil).instantiateInitialViewController() as! UINavigationController
         
-        //设置tabbar被选中时的字体颜色
+        
         let selectedText = NSMutableDictionary()
         selectedText[NSForegroundColorAttributeName] = UIColor.purpleColor()
         yxl_RootViewController.tabBarItem.setTitleTextAttributes(selectedText as? [String:AnyObject], forState: UIControlState.Selected)
         rj_RootViewController.tabBarItem.setTitleTextAttributes(selectedText as? [String:AnyObject], forState: UIControlState.Selected)
         wz_RootViewController.tabBarItem.setTitleTextAttributes(selectedText as? [String:AnyObject], forState: UIControlState.Selected)
         yxl2_ViewController.tabBarItem.setTitleTextAttributes(selectedText as? [String:AnyObject], forState: UIControlState.Selected)
-        
         //        设置 tabBarItem的一些属性
         //1
         yxl_RootViewController.tabBarItem.title = "租赁"
@@ -37,10 +36,10 @@ class MainViewController: UITabBarController {
         
         //2
         yxl2_ViewController.tabBarItem.title = "同城"
-        yxl2_ViewController.tabBarItem.image = UIImage(named: "lima")?.imageWithRenderingMode(UIImageRenderingMode.AlwaysOriginal)
-        yxl2_ViewController.tabBarItem.selectedImage = UIImage(named: "lima_selected")?.imageWithRenderingMode(UIImageRenderingMode.AlwaysOriginal)
+        yxl2_ViewController.tabBarItem.image = UIImage(named: "tabbar 4")?.imageWithRenderingMode(UIImageRenderingMode.AlwaysOriginal)
+        yxl2_ViewController.tabBarItem.selectedImage = UIImage(named: "tabbar 4_selected")?.imageWithRenderingMode(UIImageRenderingMode.AlwaysOriginal)
 
-        //3imageWithRenderingMode添加image渲染，使其保持为图片原色
+        //3
         rj_RootViewController.tabBarItem.title = "上架"
         rj_RootViewController.tabBarItem.image = UIImage(named: "tabbar 2")?.imageWithRenderingMode(UIImageRenderingMode.AlwaysOriginal)
         rj_RootViewController.tabBarItem.selectedImage = UIImage(named: "tabbar 2_selected")?.imageWithRenderingMode(UIImageRenderingMode.AlwaysOriginal)

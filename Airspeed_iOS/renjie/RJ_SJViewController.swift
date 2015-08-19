@@ -13,14 +13,13 @@ class RJ_SJViewController:UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.addPageMenu()
-        self.view.backgroundColor = UIColor.lightGrayColor()
-        self.navigationItem.title = "上架"
-//        self.navigationItem.rightBarButtonItem?.title = "帮助"
-//        self.navigationItem.leftBarButtonItem?.image = UIImage(contentsOfFile: "sherry_purple")
-        
+        self.view.backgroundColor = UIColor.orangeColor()
     }
     
-
+    @IBAction func backToHome(sender: UIBarButtonItem) {
+        
+        self.dismissViewControllerAnimated(true, completion: nil)
+    }
  
     // MARK: - 添加PageMenu
     var scroll: XLScrollViewer!
@@ -35,8 +34,8 @@ class RJ_SJViewController:UIViewController {
         
         let sb1 = UIStoryboard(name: "rj_Storyboard", bundle: nil)
         tab1 = sb1.instantiateViewControllerWithIdentifier("Test1_ViewControllerID")
-
-        tab2 = sb1.instantiateViewControllerWithIdentifier("Test2_ViewControllerID")
+        let sb2 = UIStoryboard(name: "rj_Storyboard", bundle: nil)
+        tab2 = sb2.instantiateViewControllerWithIdentifier("Test2_ViewControllerID")
         self.addChildViewController(tab1)
         self.addChildViewController(tab2)
         self.addChildViewController(tab3)
@@ -51,10 +50,10 @@ class RJ_SJViewController:UIViewController {
         //
         //自定义各种属性。。打开查看
         //  self.scroll.xl_topBackImage =[UIImage imageNamed:@"10.jpg"];
-        self.scroll.xl_topBackColor = UIColor.purpleColor()
-        self.scroll.xl_sliderColor = UIColor.whiteColor()
+        self.scroll.xl_topBackColor = UIColor.orangeColor()
+        self.scroll.xl_sliderColor = UIColor.blueColor()
         self.scroll.xl_buttonColorNormal = UIColor.blackColor()
-        self.scroll.xl_buttonColorSelected = UIColor.whiteColor()
+        self.scroll.xl_buttonColorSelected = UIColor.blueColor()
         self.scroll.xl_buttonFont = 14
         self.scroll.xl_buttonToSlider = 7
         self.scroll.xl_sliderHeight = 3

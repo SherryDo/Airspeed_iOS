@@ -5,7 +5,7 @@
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--上架-->
         <scene sceneID="yxp-dT-Iio">
             <objects>
                 <viewController id="uqe-u9-A26" customClass="RJ_SJViewController" customModule="Airspeed_iOS" customModuleProvider="target" sceneMemberID="viewController">
@@ -20,7 +20,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <toolbarItems/>
-                    <navigationItem key="navigationItem" id="YmA-NP-XaC"/>
+                    <navigationItem key="navigationItem" title="上架" id="YmA-NP-XaC"/>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7YQ-ay-G3b" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -114,24 +114,26 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AGt-QS-1Eo">
-                                <rect key="frame" x="42" y="80" width="64" height="30"/>
+                                <rect key="frame" x="42" y="80" width="75" height="30"/>
                                 <state key="normal" title="同城上架"/>
                                 <connections>
                                     <segue destination="FNi-mB-Lok" kind="push" id="cKM-ew-V77"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="39s-i8-xSa">
-                                <rect key="frame" x="205" y="80" width="64" height="30"/>
+                                <rect key="frame" x="193" y="80" width="76" height="30"/>
                                 <state key="normal" title="国内上架"/>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstAttribute="trailingMargin" secondItem="39s-i8-xSa" secondAttribute="trailing" constant="35" id="4io-X0-snW"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="AGt-QS-1Eo" secondAttribute="trailing" constant="198" id="6ph-p9-4qc"/>
                             <constraint firstItem="AGt-QS-1Eo" firstAttribute="leading" secondItem="GRe-LF-40Y" secondAttribute="leadingMargin" constant="26" id="8uD-Uh-axi"/>
-                            <constraint firstItem="39s-i8-xSa" firstAttribute="leading" secondItem="GRe-LF-40Y" secondAttribute="leadingMargin" constant="189" id="Vwr-MX-mYJ"/>
+                            <constraint firstItem="39s-i8-xSa" firstAttribute="leading" secondItem="GRe-LF-40Y" secondAttribute="leadingMargin" constant="177" id="Fi3-xu-MIf"/>
+                            <constraint firstItem="xxc-XZ-O20" firstAttribute="top" secondItem="AGt-QS-1Eo" secondAttribute="bottom" constant="458" id="RV4-m6-vrh"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="AGt-QS-1Eo" secondAttribute="trailing" constant="187" id="bfA-ui-aS6"/>
                             <constraint firstItem="39s-i8-xSa" firstAttribute="top" secondItem="TR6-BX-6vD" secondAttribute="bottom" constant="60" id="r2h-ln-83N"/>
+                            <constraint firstItem="xxc-XZ-O20" firstAttribute="top" secondItem="39s-i8-xSa" secondAttribute="bottom" constant="458" id="rVO-xX-3cA"/>
                             <constraint firstItem="AGt-QS-1Eo" firstAttribute="top" secondItem="TR6-BX-6vD" secondAttribute="bottom" constant="60" id="tEG-2j-7dC"/>
                         </constraints>
                     </view>
@@ -190,6 +192,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="creame" width="227" height="229"/>
+        <image name="creame" width="455" height="458"/>
     </resources>
 </document>
