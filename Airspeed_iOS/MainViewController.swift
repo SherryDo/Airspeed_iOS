@@ -12,6 +12,8 @@ class MainViewController: UITabBarController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+//        获取每个故事版的根视图控制器
+        let yxl_RootViewController = UIStoryboard(name: "YXL_Storyboard", bundle: nil).instantiateInitialViewController() as! MyNavigationViewController
         
         let rj_RootViewController = UIStoryboard(name: "rj_Storyboard", bundle: nil).instantiateInitialViewController() as! UINavigationController
         
@@ -19,23 +21,20 @@ class MainViewController: UITabBarController {
         
         let yxl2_ViewController = UIStoryboard(name: "YXL2_Storyboard", bundle: nil).instantiateInitialViewController() as! UINavigationController
         
-//        let yxl_RootViewController = UIStoryboard(name: "yxl_RootViewController", bundle: nil).instantiateInitialViewController() as! UINavigationController
-
-        
         //设置tabbar被选中时的字体颜色
         let selectedText = NSMutableDictionary()
         selectedText[NSForegroundColorAttributeName] = UIColor.purpleColor()
-//        yxl_RootViewController.tabBarItem.setTitleTextAttributes(selectedText as? [String:AnyObject], forState: UIControlState.Selected)
+        yxl_RootViewController.tabBarItem.setTitleTextAttributes(selectedText as? [String:AnyObject], forState: UIControlState.Selected)
         rj_RootViewController.tabBarItem.setTitleTextAttributes(selectedText as? [String:AnyObject], forState: UIControlState.Selected)
         wz_RootViewController.tabBarItem.setTitleTextAttributes(selectedText as? [String:AnyObject], forState: UIControlState.Selected)
         yxl2_ViewController.tabBarItem.setTitleTextAttributes(selectedText as? [String:AnyObject], forState: UIControlState.Selected)
         
         //        设置 tabBarItem的一些属性
         //1
-//        yxl_RootViewController.tabBarItem.title = "租赁"
-//        yxl_RootViewController.tabBarItem.image = UIImage(named: "tabbar 1")?.imageWithRenderingMode(UIImageRenderingMode.AlwaysOriginal)
-//        yxl_RootViewController.tabBarItem.selectedImage = UIImage(named: "tabbar 1_selected")?.imageWithRenderingMode(UIImageRenderingMode.AlwaysOriginal)
-   
+        yxl_RootViewController.tabBarItem.title = "租赁"
+        yxl_RootViewController.tabBarItem.image = UIImage(named: "tabbar 1")?.imageWithRenderingMode(UIImageRenderingMode.AlwaysOriginal)
+        yxl_RootViewController.tabBarItem.selectedImage = UIImage(named: "tabbar 1_selected")?.imageWithRenderingMode(UIImageRenderingMode.AlwaysOriginal)
+        
         //2
         yxl2_ViewController.tabBarItem.title = "同城"
         yxl2_ViewController.tabBarItem.image = UIImage(named: "lima")?.imageWithRenderingMode(UIImageRenderingMode.AlwaysOriginal)
@@ -52,13 +51,12 @@ class MainViewController: UITabBarController {
         
         self.viewControllers = [
             yxl2_ViewController,
-//            yxl_RootViewController,
+            yxl_RootViewController,
             rj_RootViewController,
             wz_RootViewController
         ]
         
         self.selectedIndex = 0
-
         // Do any additional setup after loading the view.
     }
 
@@ -68,6 +66,8 @@ class MainViewController: UITabBarController {
     }
     
 
+    
+    
     /*
     // MARK: - Navigation
 

@@ -10,7 +10,9 @@ import UIKit
 
 class WZ_UserInformationViewController:UIViewController,UIImagePickerControllerDelegate,UINavigationControllerDelegate{
     
-    @IBOutlet weak var Navi: UINavigationItem!
+//    @IBOutlet weak var Navi: UINavigationItem!
+    @IBOutlet weak var editUserInformation: UIButton!
+    
     //用户头像
     @IBOutlet weak var userIcon: UIImageView!
     //背景
@@ -28,10 +30,6 @@ class WZ_UserInformationViewController:UIViewController,UIImagePickerControllerD
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        //更改标题
-        Navi.title="用户信息"
-        self.navigationController?.navigationBar.translucent=true
-        
         //设置头像形状，去边框
         userIcon.layer.cornerRadius=50
         userIcon.clipsToBounds=true
@@ -52,7 +50,7 @@ class WZ_UserInformationViewController:UIViewController,UIImagePickerControllerD
         userIcon.addGestureRecognizer(userIconActionGR)
         
         //读取用户头像
-        let fullPath = ((NSHomeDirectory() as NSString).stringByAppendingPathComponent("Documents") as NSString).stringByAppendingPathComponent("currentImage.png")
+        let fullPath = ((NSHomeDirectory() as NSString) .stringByAppendingPathComponent("Documents") as NSString).stringByAppendingPathComponent("currentImage.png")
         if let savedImage = UIImage(contentsOfFile: fullPath){
         self.userIcon.image = savedImage
         }
@@ -60,7 +58,7 @@ class WZ_UserInformationViewController:UIViewController,UIImagePickerControllerD
         let userdata = NSUserDefaults()
         
     }
-    //设置任务栏文字颜色
+    
     override func preferredStatusBarStyle() -> UIStatusBarStyle {
         return UIStatusBarStyle.LightContent
     }
@@ -137,7 +135,8 @@ class WZ_UserInformationViewController:UIViewController,UIImagePickerControllerD
         var imageData = NSData()
         imageData = UIImageJPEGRepresentation(currentImage, 0.5)!
         // 获取沙盒目录
-    let fullPath = ((NSHomeDirectory() as NSString).stringByAppendingPathComponent("Documents") as NSString).stringByAppendingPathComponent(imageName)
+
+      let fullPath = ((NSHomeDirectory() as NSString).stringByAppendingPathComponent("Documents") as NSString).stringByAppendingPathComponent(imageName)
         // 将图片写入文件
         imageData.writeToFile(fullPath, atomically: false)
     }

@@ -44,19 +44,15 @@ class RJ_SJViewController:UIViewController {
         let names = ["上架物品","上架需求","上架拍卖品"]
         
         //        //创建使用
-        tab3.view.backgroundColor = UIColor.orangeColor()
-        tab1.view.backgroundColor = UIColor.greenColor()
-        tab2.view.backgroundColor = UIColor.blueColor()
+        tab3.view.backgroundColor = UIColor.whiteColor()
+        tab1.view.backgroundColor = UIColor.whiteColor()
+        tab2.view.backgroundColor = UIColor.whiteColor()
         self.scroll = XLScrollViewer(frame: frame, withViews: views, withButtonNames: names, withThreeAnimation: 211)
         //
         //自定义各种属性。。打开查看
         //  self.scroll.xl_topBackImage =[UIImage imageNamed:@"10.jpg"];
-
-
-
-        self.scroll.xl_topBackColor = UIColor.whiteColor()
-        self.scroll.xl_sliderColor = UIColor.blueColor()
-
+        self.scroll.xl_topBackColor = UIColor.purpleColor()
+        self.scroll.xl_sliderColor = UIColor.whiteColor()
         self.scroll.xl_buttonColorNormal = UIColor.blackColor()
         self.scroll.xl_buttonColorSelected = UIColor.whiteColor()
         self.scroll.xl_buttonFont = 14

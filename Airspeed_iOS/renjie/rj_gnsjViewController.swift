@@ -79,7 +79,7 @@ class rj_gnsjViewController: UIViewController,UIImagePickerControllerDelegate,UI
     func imagePickerController(picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : AnyObject]) {
         let image = (info as NSDictionary).objectForKey(UIImagePickerControllerOriginalImage)
         self.saveImage(image as! UIImage, imageName: "currentImage.png")
-        let fullPath = ((NSHomeDirectory() as NSString).stringByAppendingPathComponent("Documents") as NSString).stringByAppendingPathComponent("currentImage.png")
+        let fullPath = ((NSHomeDirectory()as NSString) .stringByAppendingPathComponent("Documents") as NSString).stringByAppendingPathComponent("currentImage.png")
         let savedImage = UIImage(contentsOfFile: fullPath)
         self.photoChoise.image=savedImage
         picker.dismissViewControllerAnimated(true, completion: nil)
