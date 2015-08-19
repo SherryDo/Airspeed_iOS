@@ -171,10 +171,10 @@
             </objects>
             <point key="canvasLocation" x="932" y="1075"/>
         </scene>
-        <!--View Controller-->
+        <!--国内上架-->
         <scene sceneID="3lV-yw-4pm">
             <objects>
-                <viewController id="dRC-UL-73Y" sceneMemberID="viewController">
+                <viewController title="国内上架" id="dRC-UL-73Y" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="p7P-1X-CbC"/>
                         <viewControllerLayoutGuide type="bottom" id="aSI-dv-Jdo"/>
