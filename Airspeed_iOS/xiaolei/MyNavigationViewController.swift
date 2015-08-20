@@ -8,7 +8,7 @@
 
 import UIKit
 
-class MyNavigationViewController:ENSideMenuNavigationController,ENSideMenuDelegate {
+class MyNavigationViewController:ENSideMenuNavigationController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -17,7 +17,7 @@ class MyNavigationViewController:ENSideMenuNavigationController,ENSideMenuDelega
         
         sideMenu?.menuWidth = 160.0 // optional, default is 160
         
-        // Dispose of any resources that can be recreated.
+        // make navigation bar showing over side menu
         view.bringSubviewToFront(navigationBar)
     }
 
@@ -25,16 +25,7 @@ class MyNavigationViewController:ENSideMenuNavigationController,ENSideMenuDelega
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    
-   
-    // MARK: - ENSideMenu Delegate
-    func sideMenuWillOpen() {
-        
-    }
-    
-    func sideMenuWillClose() {
-        
-    }
+
 
 
 

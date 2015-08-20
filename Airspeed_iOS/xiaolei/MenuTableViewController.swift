@@ -12,7 +12,7 @@ class MenuTableViewController: UITableViewController{
     
     /// cell的信息存储
     var ArticArry = [ArticInformation]()
-    var menueNumber = 0
+    
     /**
     打开侧边菜单/关闭侧边栏
     
@@ -27,9 +27,9 @@ class MenuTableViewController: UITableViewController{
         super.viewDidLoad()
         // MJRefresh
         mjRefreshAction()
+        
     }
-
- 
+   
    
 
     // MARK: - Table view data source
@@ -126,6 +126,14 @@ class MenuTableViewController: UITableViewController{
         tableView.reloadData()
     //停止加载数据
         tableView.footer.endRefreshing()
+    }
+    
+    /**
+    根据选index来获取数据
+    */
+    func loadListData(index:NSIndexPath){
+        print(index.row)
+        self.tableView.header.beginRefreshing()
     }
     
 

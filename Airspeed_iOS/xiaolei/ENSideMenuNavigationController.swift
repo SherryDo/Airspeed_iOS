@@ -11,7 +11,7 @@ import UIKit
 public class ENSideMenuNavigationController: UINavigationController, ENSideMenuProtocol {
     
     public var sideMenu : ENSideMenu?
-    public var sideMenuAnimationType : ENSideMenuAnimation = .Default
+    public var sideMenuAnimationType : ENSideMenuAnimation = .None
     
     
     // MARK: - Life cycle

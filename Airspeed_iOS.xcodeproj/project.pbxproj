@@ -16,6 +16,7 @@
 		AB4A2E571B392EC40023F291 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB4A2E561B392EC40023F291 /* MainViewController.swift */; };
 		AB4A63C01B85A6970040DEEA /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB4A63BE1B85A6970040DEEA /* TableViewCell.swift */; };
 		AB4A63C11B85A6970040DEEA /* TableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AB4A63BF1B85A6970040DEEA /* TableViewCell.xib */; };
+		AB4A63C81B8605020040DEEA /* YXL_InforMationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB4A63C71B8605020040DEEA /* YXL_InforMationViewController.swift */; };
 		AB536FCB1B6F003D004B75B8 /* MenuCellList.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB536FCA1B6F003D004B75B8 /* MenuCellList.swift */; };
 		AB7A1FB41B706CAE00D77160 /* MJRefreshAutoFooter.m in Sources */ = {isa = PBXBuildFile; fileRef = AB7A1F8A1B706CAE00D77160 /* MJRefreshAutoFooter.m */; };
 		AB7A1FB51B706CAE00D77160 /* MJRefreshBackFooter.m in Sources */ = {isa = PBXBuildFile; fileRef = AB7A1F8C1B706CAE00D77160 /* MJRefreshBackFooter.m */; };
@@ -79,6 +80,7 @@
 		AB4A2E561B392EC40023F291 /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		AB4A63BE1B85A6970040DEEA /* TableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
 		AB4A63BF1B85A6970040DEEA /* TableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TableViewCell.xib; sourceTree = "<group>"; };
+		AB4A63C71B8605020040DEEA /* YXL_InforMationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YXL_InforMationViewController.swift; sourceTree = "<group>"; };
 		AB536FCA1B6F003D004B75B8 /* MenuCellList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuCellList.swift; sourceTree = "<group>"; };
 		AB536FDC1B6F5195004B75B8 /* Airspeed_iOS-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Airspeed_iOS-Bridging-Header.h"; sourceTree = "<group>"; };
 		AB7A1F891B706CAE00D77160 /* MJRefreshAutoFooter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJRefreshAutoFooter.h; sourceTree = "<group>"; };
@@ -242,6 +244,7 @@
 			children = (
 				ABA2CEC91B7218C700D2C4A4 /* MenuTableViewController.swift */,
 				AB8008CC1B7F021B0038BF89 /* YXL_ItemTableViewController.swift */,
+				AB4A63C71B8605020040DEEA /* YXL_InforMationViewController.swift */,
 			);
 			name = controller;
 			sourceTree = "<group>";
@@ -569,6 +572,7 @@
 				AB7A1FB81B706CAE00D77160 /* MJRefreshHeader.m in Sources */,
 				AB7C476F1B75D69900AF2077 /* SwiftNotice.swift in Sources */,
 				ABA2CECF1B721FA700D2C4A4 /* ENSideMenuNavigationController.swift in Sources */,
+				AB4A63C81B8605020040DEEA /* YXL_InforMationViewController.swift in Sources */,
 				AB4A2E571B392EC40023F291 /* MainViewController.swift in Sources */,
 				AB7A1FB41B706CAE00D77160 /* MJRefreshAutoFooter.m in Sources */,
 				AB7A1FB71B706CAE00D77160 /* MJRefreshFooter.m in Sources */,

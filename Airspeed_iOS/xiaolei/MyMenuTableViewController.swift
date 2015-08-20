@@ -23,106 +23,62 @@ class MyMenuTableViewController: UITableViewController,ENSideMenuDelegate{
         tableView.contentInset = UIEdgeInsetsMake(64.0, 0, 0, 0) //
         tableView.separatorStyle = .None
         tableView.backgroundColor = UIColor.clearColor()
-        tableView.scrollsToTop = true
+        tableView.scrollsToTop = false
         
         // Preserve selection between presentations
         self.clearsSelectionOnViewWillAppear = false
+        
+        tableView.selectRowAtIndexPath(NSIndexPath(forRow: selectedMenuItem, inSection: 0), animated: true, scrollPosition: .Middle)
     }
 
   
 
     // MARK: - Table view data source
 
-    override func numberOfSectionsInTableView(tableView: UITableView) -> Int {
-        
-        return 1
-    }
+ 
 
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return 16
+        return 10
     }
 
     
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         
-       let cell =  tableView.dequeueReusableCellWithIdentifier("menucell", forIndexPath: indexPath) as! TableViewCell
+        var cell =  tableView.dequeueReusableCellWithIdentifier("CELL")
         
-        cell.imageView?.image = UIImage(named: "Cd_toy")
+        if (cell == nil) {
+            
+            cell  = UITableViewCell(style: UITableViewCellStyle.Default, reuseIdentifier: "CELL")
+            let photoimage = UIImageView(frame: CGRectMake(0, 0, cell!.frame.size.width, cell!.frame.size.height))
+            photoimage.image = UIImage(named: "Cd_house")
+            
+            cell!.addSubview(photoimage)
+            
+            cell!.backgroundColor = UIColor.clearColor()
+        }
+      
         
-        return cell
+        return cell!
     }
 
 
-    override func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
-        return 50.0
-    }
-    
+
     override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath){
 
         //取消cell的选中状态
         self.tableView.deselectRowAtIndexPath(indexPath, animated: true)
         
-//        if (indexPath.row == selectedMenuItem) {
-//            如果选择的是现在的view的话就退出
-//            return
-//        }
-        
-        goMenuToRefresh(indexPath.row)
-       
-    }
-    
-//    MARK: function
-    
-    /**
-    跳转到选择的菜单页面
-
-    */
-    func goMenuToRefresh(cellindex:Int){
-        
-        selectedMenuItem = cellindex
+        selectedMenuItem = indexPath.row
         //跳转到选择的界面
         sideMenuController()?.setContentViewController(destViewController)
         //选择cell之后进行刷新界面的数据
-        destViewController.tableView.header.beginRefreshing()
+//        destViewController.tableView.header.beginRefreshing()
+        destViewController.loadListData(indexPath)
         //        关掉侧边导航
         hideSideMenuView()
-        
     }
     
-    /**
-    判断cell是否为nil如果为nil则生成一个cell
-    */
-    func configMenueCell(var menucell:TableViewCell?) -> UITableViewCell{
 
-        if (menucell == nil) {
-            
-            menucell = TableViewCell()
-           
-//            menucell!.backgroundColor = UIColor.yellowColor()
-//            
-//            menucell!.textLabel?.textColor = UIColor.blueColor()
-//            
-//            let selectedBackgroundView = UIView(frame: CGRectMake(0, 0, menucell!.frame.size.width, menucell!.frame.size.height))
-//            
-//            selectedBackgroundView.backgroundColor = UIColor.grayColor().colorWithAlphaComponent(0.2)
-//            
-//            menucell!.selectedBackgroundView = selectedBackgroundView
-        }
-       
-        MenueCellData(menucell!)
-    return menucell!
-    }
-    
-    /**
-    *  @author 这块显卡有点冷
-    *
-    *  cell的内容填充
-    */
-    func  MenueCellData(cell:TableViewCell){
-        cell.imageView?.image = UIImage(named: "Cd_toy")
-//        cell.textLabel?.text = "菜单"
-    }
-    
-    
+
 }

@@ -90,10 +90,10 @@
             </objects>
             <point key="canvasLocation" x="1268" y="774"/>
         </scene>
-        <!--View Controller-->
+        <!--Infor Mation View Controller-->
         <scene sceneID="Lz4-fr-yFB">
             <objects>
-                <viewController id="QXL-Wa-0g0" sceneMemberID="viewController">
+                <viewController id="QXL-Wa-0g0" customClass="YXL_InforMationViewController" customModule="Airspeed_iOS" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="9w8-2R-M3x"/>
                         <viewControllerLayoutGuide type="bottom" id="PNh-Sa-u1Y"/>
