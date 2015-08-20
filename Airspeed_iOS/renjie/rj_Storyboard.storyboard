@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8173.3" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="6Aq-ma-sVh">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8173.3" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="6Aq-ma-sVh">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8142"/>
-        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -113,26 +113,30 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AGt-QS-1Eo">
-                                <rect key="frame" x="42" y="80" width="64" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="39s-i8-xSa">
+                                <rect key="frame" x="200" y="70" width="80" height="30"/>
+                                <state key="normal" title="国内上架"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sUH-Cb-5bJ">
+                                <rect key="frame" x="40" y="70" width="80" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="80" id="Me1-0D-4Sr"/>
+                                    <constraint firstAttribute="height" constant="30" id="SOS-Zw-eRM"/>
+                                </constraints>
                                 <state key="normal" title="同城上架"/>
                                 <connections>
-                                    <segue destination="FNi-mB-Lok" kind="push" id="cKM-ew-V77"/>
+                                    <segue destination="FNi-mB-Lok" kind="push" id="I4D-kf-oHZ"/>
                                 </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="39s-i8-xSa">
-                                <rect key="frame" x="205" y="80" width="64" height="30"/>
-                                <state key="normal" title="国内上架"/>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstAttribute="trailingMargin" secondItem="39s-i8-xSa" secondAttribute="trailing" constant="35" id="4io-X0-snW"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="AGt-QS-1Eo" secondAttribute="trailing" constant="198" id="6ph-p9-4qc"/>
-                            <constraint firstItem="AGt-QS-1Eo" firstAttribute="leading" secondItem="GRe-LF-40Y" secondAttribute="leadingMargin" constant="26" id="8uD-Uh-axi"/>
-                            <constraint firstItem="39s-i8-xSa" firstAttribute="leading" secondItem="GRe-LF-40Y" secondAttribute="leadingMargin" constant="189" id="Vwr-MX-mYJ"/>
-                            <constraint firstItem="39s-i8-xSa" firstAttribute="top" secondItem="TR6-BX-6vD" secondAttribute="bottom" constant="60" id="r2h-ln-83N"/>
-                            <constraint firstItem="AGt-QS-1Eo" firstAttribute="top" secondItem="TR6-BX-6vD" secondAttribute="bottom" constant="60" id="tEG-2j-7dC"/>
+                            <constraint firstItem="sUH-Cb-5bJ" firstAttribute="centerY" secondItem="GRe-LF-40Y" secondAttribute="centerY" multiplier="0.3" id="7w3-U2-8Bk"/>
+                            <constraint firstItem="39s-i8-xSa" firstAttribute="height" secondItem="sUH-Cb-5bJ" secondAttribute="height" id="9JO-HR-npt"/>
+                            <constraint firstItem="sUH-Cb-5bJ" firstAttribute="centerX" secondItem="GRe-LF-40Y" secondAttribute="centerX" multiplier="0.5" id="Goy-al-gWb"/>
+                            <constraint firstItem="39s-i8-xSa" firstAttribute="centerX" secondItem="GRe-LF-40Y" secondAttribute="centerX" multiplier="1.5" id="JqO-lW-2Sp"/>
+                            <constraint firstItem="39s-i8-xSa" firstAttribute="centerY" secondItem="GRe-LF-40Y" secondAttribute="centerY" multiplier="0.3" id="PW6-8p-eIM"/>
+                            <constraint firstItem="39s-i8-xSa" firstAttribute="width" secondItem="sUH-Cb-5bJ" secondAttribute="width" id="QKH-XZ-6AC"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="AOi-MN-057"/>
@@ -190,6 +194,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="creame" width="455" height="458"/>
+        <image name="creame" width="227" height="229"/>
     </resources>
 </document>
