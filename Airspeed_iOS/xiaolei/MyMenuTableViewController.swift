@@ -23,7 +23,7 @@ class MyMenuTableViewController: UITableViewController,ENSideMenuDelegate{
         tableView.contentInset = UIEdgeInsetsMake(64.0, 0, 0, 0) //
         tableView.separatorStyle = .None
         tableView.backgroundColor = UIColor.clearColor()
-        tableView.scrollsToTop = false
+        tableView.scrollsToTop = true
         
         // Preserve selection between presentations
         self.clearsSelectionOnViewWillAppear = false
@@ -46,11 +46,11 @@ class MyMenuTableViewController: UITableViewController,ENSideMenuDelegate{
     
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         
-       let cell = tableView.dequeueReusableCellWithIdentifier("menuCell")
-       /// 判断cell是否存在
-       let menueCell = configMenueCell(cell)
+       let cell =  tableView.dequeueReusableCellWithIdentifier("menucell", forIndexPath: indexPath) as! TableViewCell
         
-        return menueCell
+        cell.imageView?.image = UIImage(named: "Cd_toy")
+        
+        return cell
     }
 
 
@@ -93,26 +93,24 @@ class MyMenuTableViewController: UITableViewController,ENSideMenuDelegate{
     /**
     判断cell是否为nil如果为nil则生成一个cell
     */
-    func configMenueCell(var menucell:UITableViewCell?) -> UITableViewCell{
+    func configMenueCell(var menucell:TableViewCell?) -> UITableViewCell{
 
         if (menucell == nil) {
             
-            menucell = UITableViewCell(style: UITableViewCellStyle.Default, reuseIdentifier: "menuCell")
-            
-            menucell!.backgroundColor = UIColor.yellowColor()
-            
-            menucell!.textLabel?.textColor = UIColor.blueColor()
-            
-            let selectedBackgroundView = UIView(frame: CGRectMake(0, 0, menucell!.frame.size.width, menucell!.frame.size.height))
-            
-            selectedBackgroundView.backgroundColor = UIColor.grayColor().colorWithAlphaComponent(0.2)
-            
-            menucell!.selectedBackgroundView = selectedBackgroundView
+            menucell = TableViewCell()
+           
+//            menucell!.backgroundColor = UIColor.yellowColor()
+//            
+//            menucell!.textLabel?.textColor = UIColor.blueColor()
+//            
+//            let selectedBackgroundView = UIView(frame: CGRectMake(0, 0, menucell!.frame.size.width, menucell!.frame.size.height))
+//            
+//            selectedBackgroundView.backgroundColor = UIColor.grayColor().colorWithAlphaComponent(0.2)
+//            
+//            menucell!.selectedBackgroundView = selectedBackgroundView
         }
-        
+       
         MenueCellData(menucell!)
-        
-        
     return menucell!
     }
     
@@ -121,8 +119,9 @@ class MyMenuTableViewController: UITableViewController,ENSideMenuDelegate{
     *
     *  cell的内容填充
     */
-    func  MenueCellData(cell:UITableViewCell){
-        cell.textLabel?.text = "菜单"
+    func  MenueCellData(cell:TableViewCell){
+        cell.imageView?.image = UIImage(named: "Cd_toy")
+//        cell.textLabel?.text = "菜单"
     }
     
     

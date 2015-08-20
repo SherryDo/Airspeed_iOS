@@ -14,6 +14,8 @@
 		AB4A2E461B38F7050023F291 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AB4A2E441B38F7050023F291 /* LaunchScreen.storyboard */; };
 		AB4A2E531B392DC30023F291 /* YXL_Storyboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AB4A2E521B392DC30023F291 /* YXL_Storyboard.storyboard */; };
 		AB4A2E571B392EC40023F291 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB4A2E561B392EC40023F291 /* MainViewController.swift */; };
+		AB4A63C01B85A6970040DEEA /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB4A63BE1B85A6970040DEEA /* TableViewCell.swift */; };
+		AB4A63C11B85A6970040DEEA /* TableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AB4A63BF1B85A6970040DEEA /* TableViewCell.xib */; };
 		AB536FCB1B6F003D004B75B8 /* MenuCellList.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB536FCA1B6F003D004B75B8 /* MenuCellList.swift */; };
 		AB7A1FB41B706CAE00D77160 /* MJRefreshAutoFooter.m in Sources */ = {isa = PBXBuildFile; fileRef = AB7A1F8A1B706CAE00D77160 /* MJRefreshAutoFooter.m */; };
 		AB7A1FB51B706CAE00D77160 /* MJRefreshBackFooter.m in Sources */ = {isa = PBXBuildFile; fileRef = AB7A1F8C1B706CAE00D77160 /* MJRefreshBackFooter.m */; };
@@ -75,6 +77,8 @@
 		AB4A2E471B38F7050023F291 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AB4A2E521B392DC30023F291 /* YXL_Storyboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = YXL_Storyboard.storyboard; sourceTree = "<group>"; };
 		AB4A2E561B392EC40023F291 /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		AB4A63BE1B85A6970040DEEA /* TableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
+		AB4A63BF1B85A6970040DEEA /* TableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TableViewCell.xib; sourceTree = "<group>"; };
 		AB536FCA1B6F003D004B75B8 /* MenuCellList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuCellList.swift; sourceTree = "<group>"; };
 		AB536FDC1B6F5195004B75B8 /* Airspeed_iOS-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Airspeed_iOS-Bridging-Header.h"; sourceTree = "<group>"; };
 		AB7A1F891B706CAE00D77160 /* MJRefreshAutoFooter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJRefreshAutoFooter.h; sourceTree = "<group>"; };
@@ -367,6 +371,8 @@
 			isa = PBXGroup;
 			children = (
 				ABA2CED41B72274A00D2C4A4 /* MyMenuTableViewController.swift */,
+				AB4A63BE1B85A6970040DEEA /* TableViewCell.swift */,
+				AB4A63BF1B85A6970040DEEA /* TableViewCell.xib */,
 				ABA2CED01B72203C00D2C4A4 /* MyNavigationViewController.swift */,
 			);
 			name = menu;
@@ -504,6 +510,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				AB8008CF1B7F03590038BF89 /* YXL2_Storyboard.storyboard in Resources */,
+				AB4A63C11B85A6970040DEEA /* TableViewCell.xib in Resources */,
 				CBF07FAE1B76F86F008BA69F /* icon.jpg in Resources */,
 				AB4A2E461B38F7050023F291 /* LaunchScreen.storyboard in Resources */,
 				CBF07FB31B76F86F008BA69F /* WZ_StoryBoard.storyboard in Resources */,
@@ -544,6 +551,7 @@
 				ABA2CED51B72274A00D2C4A4 /* MyMenuTableViewController.swift in Sources */,
 				AB7A1FBD1B706CAE00D77160 /* MJRefreshBackNormalFooter.m in Sources */,
 				AB7C476D1B75D25D00AF2077 /* Pitaya.swift in Sources */,
+				AB4A63C01B85A6970040DEEA /* TableViewCell.swift in Sources */,
 				AB7A1FC01B706CAE00D77160 /* MJRefreshNormalHeader.m in Sources */,
 				AB7A1FBA1B706CAE00D77160 /* MJRefreshAutoNormalFooter.m in Sources */,
 				AB7A1FB51B706CAE00D77160 /* MJRefreshBackFooter.m in Sources */,
