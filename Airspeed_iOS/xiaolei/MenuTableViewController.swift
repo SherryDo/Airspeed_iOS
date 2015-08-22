@@ -17,18 +17,23 @@ class MenuTableViewController: UITableViewController{
     打开侧边菜单/关闭侧边栏
     
     */
-    @IBAction func Miss(sender: UIBarButtonItem) {
-        toggleSideMenuView()
+  
+    func navgationleftButtonAction(){
+//        let leftBtton = 
+        self.navigationItem.leftBarButtonItem = UIBarButtonItem.item(self, action: "sideMenuView:", image: "caiDan", HighImage: "caiDan_selected")
         
     }
-   
+    
+    func sideMenuView(bt:UIBarButtonItem){
+        self.toggleSideMenuView()
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // MJRefresh
         mjRefreshAction()
+        navgationleftButtonAction()
         
-        self.navigationItem.leftBarButtonItem = UIBarButtonItem.item(self, action: "toggleSideMenuView", image: "caiDan", HighImage: "caiDan_selected")
         
     }
    
@@ -105,7 +110,7 @@ class MenuTableViewController: UITableViewController{
     */
   private func refreshHeader(){
     //测试数据
-    let newCell = ArticInformation(name: "Swift", money: 0)
+    let newCell = ArticInformation(name: "杨晓磊", money: 0)
     ArticArry.append(newCell)
     // 上次刷新的时间
     tableView.header.lastUpdatedTimeKey = NSDate().description
@@ -122,7 +127,7 @@ class MenuTableViewController: UITableViewController{
     */
    private func refreshFooter(){
     //测试数据
-        let newCell = ArticInformation(name: "Swift", money: 0)
+        let newCell = ArticInformation(name: "杨晓磊", money: 0)
         ArticArry.append(newCell)
     //刷新界面
         tableView.reloadData()

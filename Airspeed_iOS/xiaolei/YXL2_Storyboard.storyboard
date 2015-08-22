@@ -4,10 +4,10 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8142"/>
     </dependencies>
     <scenes>
-        <!--Item Table View Controller-->
+        <!--同城租赁-->
         <scene sceneID="XgK-go-5hl">
             <objects>
-                <tableViewController id="N9K-FT-Tpa" customClass="YXL_ItemTableViewController" customModule="Airspeed_iOS" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController id="N9K-FT-Tpa" customClass="YXL_ItemTableViewController" customModule="SherryDo" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="EMe-r0-DfM">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -30,7 +30,7 @@
                             <outlet property="delegate" destination="N9K-FT-Tpa" id="wka-i5-zhu"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" id="zct-Fw-Bs0"/>
+                    <navigationItem key="navigationItem" title="同城租赁" id="zct-Fw-Bs0"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="OcF-Bu-Lmh" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

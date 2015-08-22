@@ -22,12 +22,12 @@ class MainViewController: UITabBarController {
         let yxl2_ViewController = UIStoryboard(name: "YXL2_Storyboard", bundle: nil).instantiateInitialViewController() as! UINavigationController
         
         //设置tabbar被选中时的字体颜色
-        let selectedText = NSMutableDictionary()
-        selectedText[NSForegroundColorAttributeName] = UIColor.purpleColor()
-        yxl_RootViewController.tabBarItem.setTitleTextAttributes(selectedText as? [String:AnyObject], forState: UIControlState.Selected)
-        rj_RootViewController.tabBarItem.setTitleTextAttributes(selectedText as? [String:AnyObject], forState: UIControlState.Selected)
-        wz_RootViewController.tabBarItem.setTitleTextAttributes(selectedText as? [String:AnyObject], forState: UIControlState.Selected)
-        yxl2_ViewController.tabBarItem.setTitleTextAttributes(selectedText as? [String:AnyObject], forState: UIControlState.Selected)
+        let selectedText = [NSForegroundColorAttributeName:UIColor.purpleColor()]
+       yxl_RootViewController.tabBarItem.setTitleTextAttributes(selectedText, forState: UIControlState.Selected)
+        
+        rj_RootViewController.tabBarItem.setTitleTextAttributes(selectedText, forState: UIControlState.Selected)
+        wz_RootViewController.tabBarItem.setTitleTextAttributes(selectedText, forState: UIControlState.Selected)
+        yxl2_ViewController.tabBarItem.setTitleTextAttributes(selectedText, forState: UIControlState.Selected)
         
         //        设置 tabBarItem的一些属性
         //1
@@ -67,18 +67,5 @@ class MainViewController: UITabBarController {
     
 
     
-    
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
-    
-    
-
 
 }
