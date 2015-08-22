@@ -12,6 +12,7 @@ class YXL_InforMationViewController: UIViewController,ENSideMenuDelegate{
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         self.sideMenuController()?.sideMenu?.delegate = self
         // Do any additional setup after loading the view.
     }

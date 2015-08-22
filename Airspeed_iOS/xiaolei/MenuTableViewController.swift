@@ -8,25 +8,12 @@
 
 import UIKit
 
-class MenuTableViewController: UITableViewController{
+class MenuTableViewController: UITableViewController,ENSideMenuDelegate{
     
     /// cell的信息存储
     var ArticArry = [ArticInformation]()
     
-    /**
-    打开侧边菜单/关闭侧边栏
-    
-    */
-  
-    func navgationleftButtonAction(){
-//        let leftBtton = 
-        self.navigationItem.leftBarButtonItem = UIBarButtonItem.item(self, action: "sideMenuView:", image: "caiDan", HighImage: "caiDan_selected")
-        
-    }
-    
-    func sideMenuView(bt:UIBarButtonItem){
-        self.toggleSideMenuView()
-    }
+   
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -34,6 +21,7 @@ class MenuTableViewController: UITableViewController{
         mjRefreshAction()
         navgationleftButtonAction()
         
+        self.sideMenuController()?.sideMenu?.delegate = self
         
     }
    
@@ -83,8 +71,29 @@ class MenuTableViewController: UITableViewController{
         hideSideMenuView()
     }
   
-    
+    //    MARK: ENSideMenuDelegate
+    func sideMenuWillOpen(){
+       
+     }
+    func sideMenuWillClose(){
+        
+    }
     //    MARK: function
+
+    /**
+    打开侧边菜单/关闭侧边栏
+    
+    */
+    
+    func navgationleftButtonAction(){
+        //        let leftBtton =
+        self.navigationItem.leftBarButtonItem = UIBarButtonItem.item(self, action: "sideMenuView:", image: "caiDan", HighImage: "caiDan_selected")
+        
+    }
+    
+    func sideMenuView(bt:UIBarButtonItem){
+        self.toggleSideMenuView()
+    }
     
     /**
     cell收藏

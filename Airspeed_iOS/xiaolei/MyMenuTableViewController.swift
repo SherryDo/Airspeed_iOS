@@ -8,7 +8,7 @@
 
 import UIKit
 /// 种类菜单栏的设置
-class MyMenuTableViewController: UITableViewController,ENSideMenuDelegate{
+class MyMenuTableViewController: UITableViewController{
     var selectedMenuItem : Int = 0// 当前是第几个菜单
     
      //Present new view controller

@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		AB326A9F1B88CBF400934007 /* Pitaya.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB326A9E1B88CBF400934007 /* Pitaya.framework */; };
 		AB4A2E391B38F7050023F291 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB4A2E381B38F7050023F291 /* AppDelegate.swift */; };
 		AB4A2E3E1B38F7050023F291 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AB4A2E3C1B38F7050023F291 /* Main.storyboard */; };
 		AB4A2E411B38F7050023F291 /* Airspeed_iOS.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = AB4A2E3F1B38F7050023F291 /* Airspeed_iOS.xcdatamodeld */; };
@@ -87,9 +86,21 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		AB326AA51B88D09F00934007 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		AB326A941B88CBCB00934007 /* PitayaExample.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = PitayaExample.xcodeproj; path = "Pitaya-master/PitayaExample.xcodeproj"; sourceTree = "<group>"; };
-		AB326A9E1B88CBF400934007 /* Pitaya.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Pitaya.framework; path = "Pitaya-master/Pitaya/build/Debug-iphoneos/Pitaya.framework"; sourceTree = "<group>"; };
 		AB4A2E351B38F7050023F291 /* SherryDo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SherryDo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AB4A2E381B38F7050023F291 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AB4A2E3D1B38F7050023F291 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -181,7 +192,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AB326A9F1B88CBF400934007 /* Pitaya.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -200,7 +210,6 @@
 		AB4A2E2C1B38F7050023F291 = {
 			isa = PBXGroup;
 			children = (
-				AB326A9E1B88CBF400934007 /* Pitaya.framework */,
 				AB326A941B88CBCB00934007 /* PitayaExample.xcodeproj */,
 				AB4A2E371B38F7050023F291 /* Airspeed_iOS */,
 				AB4A2E361B38F7050023F291 /* Products */,
@@ -518,6 +527,7 @@
 				AB4A2E311B38F7050023F291 /* Sources */,
 				AB4A2E321B38F7050023F291 /* Frameworks */,
 				AB4A2E331B38F7050023F291 /* Resources */,
+				AB326AA51B88D09F00934007 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
