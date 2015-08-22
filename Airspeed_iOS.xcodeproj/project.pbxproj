@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AB326A9F1B88CBF400934007 /* Pitaya.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB326A9E1B88CBF400934007 /* Pitaya.framework */; };
 		AB4A2E391B38F7050023F291 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB4A2E381B38F7050023F291 /* AppDelegate.swift */; };
 		AB4A2E3E1B38F7050023F291 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AB4A2E3C1B38F7050023F291 /* Main.storyboard */; };
 		AB4A2E411B38F7050023F291 /* Airspeed_iOS.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = AB4A2E3F1B38F7050023F291 /* Airspeed_iOS.xcdatamodeld */; };
@@ -35,7 +36,6 @@
 		AB7A1FC41B706CAE00D77160 /* UIScrollView+MJExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = AB7A1FAF1B706CAE00D77160 /* UIScrollView+MJExtension.m */; };
 		AB7A1FC51B706CAE00D77160 /* UIScrollView+MJRefresh.m in Sources */ = {isa = PBXBuildFile; fileRef = AB7A1FB11B706CAE00D77160 /* UIScrollView+MJRefresh.m */; };
 		AB7A1FC61B706CAE00D77160 /* UIView+MJExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = AB7A1FB31B706CAE00D77160 /* UIView+MJExtension.m */; };
-		AB7C476D1B75D25D00AF2077 /* Pitaya.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB7C476C1B75D25D00AF2077 /* Pitaya.swift */; };
 		AB7C476F1B75D69900AF2077 /* SwiftNotice.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB7C476E1B75D69900AF2077 /* SwiftNotice.swift */; };
 		AB8008CD1B7F021B0038BF89 /* YXL_ItemTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB8008CC1B7F021B0038BF89 /* YXL_ItemTableViewController.swift */; };
 		AB8008CF1B7F03590038BF89 /* YXL2_Storyboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AB8008CE1B7F03590038BF89 /* YXL2_Storyboard.storyboard */; };
@@ -70,7 +70,26 @@
 		CBF07FB51B76F86F008BA69F /* WZ_UserInformationViewController.swift .swift in Sources */ = {isa = PBXBuildFile; fileRef = CBF07FAC1B76F86F008BA69F /* WZ_UserInformationViewController.swift .swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		AB326A9A1B88CBCB00934007 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AB326A941B88CBCB00934007 /* PitayaExample.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 46C7CABC1B04AA4000CC3B70;
+			remoteInfo = PitayaExample;
+		};
+		AB326A9C1B88CBCB00934007 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AB326A941B88CBCB00934007 /* PitayaExample.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 46C7CAD11B04AA4000CC3B70;
+			remoteInfo = PitayaExampleTests;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
+		AB326A941B88CBCB00934007 /* PitayaExample.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = PitayaExample.xcodeproj; path = "Pitaya-master/PitayaExample.xcodeproj"; sourceTree = "<group>"; };
+		AB326A9E1B88CBF400934007 /* Pitaya.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Pitaya.framework; path = "Pitaya-master/Pitaya/build/Debug-iphoneos/Pitaya.framework"; sourceTree = "<group>"; };
 		AB4A2E351B38F7050023F291 /* SherryDo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SherryDo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AB4A2E381B38F7050023F291 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AB4A2E3D1B38F7050023F291 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -121,7 +140,6 @@
 		AB7A1FB11B706CAE00D77160 /* UIScrollView+MJRefresh.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIScrollView+MJRefresh.m"; sourceTree = "<group>"; };
 		AB7A1FB21B706CAE00D77160 /* UIView+MJExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+MJExtension.h"; sourceTree = "<group>"; };
 		AB7A1FB31B706CAE00D77160 /* UIView+MJExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+MJExtension.m"; sourceTree = "<group>"; };
-		AB7C476C1B75D25D00AF2077 /* Pitaya.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Pitaya.swift; sourceTree = "<group>"; };
 		AB7C476E1B75D69900AF2077 /* SwiftNotice.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftNotice.swift; sourceTree = "<group>"; };
 		AB8008CC1B7F021B0038BF89 /* YXL_ItemTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YXL_ItemTableViewController.swift; sourceTree = "<group>"; };
 		AB8008CE1B7F03590038BF89 /* YXL2_Storyboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = YXL2_Storyboard.storyboard; sourceTree = "<group>"; };
@@ -163,15 +181,27 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AB326A9F1B88CBF400934007 /* Pitaya.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		AB326A951B88CBCB00934007 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AB326A9B1B88CBCB00934007 /* PitayaExample.app */,
+				AB326A9D1B88CBCB00934007 /* PitayaExampleTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 		AB4A2E2C1B38F7050023F291 = {
 			isa = PBXGroup;
 			children = (
+				AB326A9E1B88CBF400934007 /* Pitaya.framework */,
+				AB326A941B88CBCB00934007 /* PitayaExample.xcodeproj */,
 				AB4A2E371B38F7050023F291 /* Airspeed_iOS */,
 				AB4A2E361B38F7050023F291 /* Products */,
 			);
@@ -390,7 +420,6 @@
 			isa = PBXGroup;
 			children = (
 				AB7C476E1B75D69900AF2077 /* SwiftNotice.swift */,
-				AB7C476C1B75D25D00AF2077 /* Pitaya.swift */,
 				ABAD850D1B724B5F0010E923 /* sideMenu */,
 				AB7A1F871B706CAE00D77160 /* MJRefresh */,
 			);
@@ -525,12 +554,35 @@
 			mainGroup = AB4A2E2C1B38F7050023F291;
 			productRefGroup = AB4A2E361B38F7050023F291 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = AB326A951B88CBCB00934007 /* Products */;
+					ProjectRef = AB326A941B88CBCB00934007 /* PitayaExample.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				AB4A2E341B38F7050023F291 /* Airspeed_iOS */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		AB326A9B1B88CBCB00934007 /* PitayaExample.app */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.application;
+			path = PitayaExample.app;
+			remoteRef = AB326A9A1B88CBCB00934007 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		AB326A9D1B88CBCB00934007 /* PitayaExampleTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = PitayaExampleTests.xctest;
+			remoteRef = AB326A9C1B88CBCB00934007 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		AB4A2E331B38F7050023F291 /* Resources */ = {
@@ -580,7 +632,6 @@
 				ABA2CED51B72274A00D2C4A4 /* MyMenuTableViewController.swift in Sources */,
 				AB7A1FBD1B706CAE00D77160 /* MJRefreshBackNormalFooter.m in Sources */,
 				CA4E2FA61B85C286004706A1 /* ItemExtension.swift in Sources */,
-				AB7C476D1B75D25D00AF2077 /* Pitaya.swift in Sources */,
 				AB7A1FC01B706CAE00D77160 /* MJRefreshNormalHeader.m in Sources */,
 				AB7A1FBA1B706CAE00D77160 /* MJRefreshAutoNormalFooter.m in Sources */,
 				AB7A1FB51B706CAE00D77160 /* MJRefreshBackFooter.m in Sources */,
@@ -720,6 +771,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Pitaya-master/Pitaya/build/Debug-iphoneos",
+				);
 				INFOPLIST_FILE = Airspeed_iOS/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -736,6 +791,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Pitaya-master/Pitaya/build/Debug-iphoneos",
+				);
 				INFOPLIST_FILE = Airspeed_iOS/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
