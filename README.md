@@ -75,3 +75,5 @@ Master分支主要用来发布正式的版本；develop分支用来开发。所�
 
 
 在Xcode中可以直接进行`commit`。这个就不多说了
+
+8月22日：添加了一个对图片做各种编辑的类库。也就是通常的改变外形什么的。oc库，已桥接。库名：`UIImage+JYExtention`。文件夹：`Airspeed_iOS/renjie/UIImage+JYExtention` 暂无Github链接。。。。别人改好直接发给我的。
