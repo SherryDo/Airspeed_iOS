@@ -219,6 +219,7 @@
 				AB536FCD1B6F1248004B75B8 /* controller */,
 				AB4A2E521B392DC30023F291 /* YXL_Storyboard.storyboard */,
 				AB8008CE1B7F03590038BF89 /* YXL2_Storyboard.storyboard */,
+				AB8008CC1B7F021B0038BF89 /* YXL_ItemTableViewController.swift */,
 			);
 			path = xiaolei;
 			sourceTree = "<group>";
@@ -250,7 +251,6 @@
 			isa = PBXGroup;
 			children = (
 				ABA2CEC91B7218C700D2C4A4 /* MenuTableViewController.swift */,
-				AB8008CC1B7F021B0038BF89 /* YXL_ItemTableViewController.swift */,
 				AB4A63C71B8605020040DEEA /* YXL_InforMationViewController.swift */,
 			);
 			name = controller;
