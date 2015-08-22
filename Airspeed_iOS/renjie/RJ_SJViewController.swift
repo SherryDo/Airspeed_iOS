@@ -15,8 +15,19 @@ class RJ_SJViewController:UIViewController {
         self.addPageMenu()
         self.view.backgroundColor = UIColor.lightGrayColor()
         self.navigationItem.title = "上架"
+        //使用扩展后的UIBarButtonItem，调用其扩展方法
+        self.navigationItem.rightBarButtonItem = UIBarButtonItem.item(self, action: "Help", image: "Settings", HighImage: "Settings_selected")
+        self.navigationItem.leftBarButtonItem = UIBarButtonItem.item(self, action: "Ratio", image: "tabbar 4", HighImage: "tabbar 4_selected")
 //        self.navigationItem.rightBarButtonItem?.title = "帮助"
 //        self.navigationItem.leftBarButtonItem?.image = UIImage(contentsOfFile: "sherry_purple")
+        
+    }
+    //设置左按钮的action，同类比价方法
+    func Ratio(){
+        
+    }
+    //设置右item的action方法，帮助
+    func Help(){
         
     }
     

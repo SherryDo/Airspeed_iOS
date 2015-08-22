@@ -51,6 +51,7 @@
 		ABA2CED51B72274A00D2C4A4 /* MyMenuTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABA2CED41B72274A00D2C4A4 /* MyMenuTableViewController.swift */; };
 		ABE387F81B7320BB0028557E /* SwiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABE387F71B7320BB0028557E /* SwiftyJSON.swift */; };
 		ABE387FA1B7336EC0028557E /* ItemDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABE387F91B7336EC0028557E /* ItemDetails.swift */; };
+		CA4E2FA61B85C286004706A1 /* ItemExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA4E2FA51B85C286004706A1 /* ItemExtension.swift */; };
 		CA64D0541B744D0600E6786B /* rj_gnsjViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA64D0531B744D0600E6786B /* rj_gnsjViewController.swift */; };
 		CABCABF21B71B5C400000E02 /* rj_Storyboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CABCABF11B71B5C400000E02 /* rj_Storyboard.storyboard */; };
 		CABCABFC1B71BA3F00000E02 /* Test1_ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CABCABFB1B71BA3F00000E02 /* Test1_ViewController.swift */; };
@@ -69,7 +70,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		AB4A2E351B38F7050023F291 /* Airspeed_iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Airspeed_iOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		AB4A2E351B38F7050023F291 /* SherryDo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SherryDo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AB4A2E381B38F7050023F291 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AB4A2E3D1B38F7050023F291 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		AB4A2E401B38F7050023F291 /* Airspeed_iOS.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Airspeed_iOS.xcdatamodel; sourceTree = "<group>"; };
@@ -135,6 +136,7 @@
 		ABA2CED41B72274A00D2C4A4 /* MyMenuTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyMenuTableViewController.swift; sourceTree = "<group>"; };
 		ABE387F71B7320BB0028557E /* SwiftyJSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SwiftyJSON.swift; path = xiaolei/SwiftyJSON.swift; sourceTree = "<group>"; };
 		ABE387F91B7336EC0028557E /* ItemDetails.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemDetails.swift; sourceTree = "<group>"; };
+		CA4E2FA51B85C286004706A1 /* ItemExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemExtension.swift; sourceTree = "<group>"; };
 		CA64D0531B744D0600E6786B /* rj_gnsjViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = rj_gnsjViewController.swift; sourceTree = "<group>"; };
 		CABCABF11B71B5C400000E02 /* rj_Storyboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = rj_Storyboard.storyboard; sourceTree = "<group>"; };
 		CABCABFB1B71BA3F00000E02 /* Test1_ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Test1_ViewController.swift; sourceTree = "<group>"; };
@@ -175,7 +177,7 @@
 		AB4A2E361B38F7050023F291 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				AB4A2E351B38F7050023F291 /* Airspeed_iOS.app */,
+				AB4A2E351B38F7050023F291 /* SherryDo.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -196,6 +198,7 @@
 			isa = PBXGroup;
 			children = (
 				CABCABF11B71B5C400000E02 /* rj_Storyboard.storyboard */,
+				CA4E2FA41B85C248004706A1 /* Rj_Model */,
 				CAC772841B70A4AE00AF9009 /* Controller */,
 				CAC772771B709B8700AF9009 /* XLScrollViewer */,
 			);
@@ -401,6 +404,14 @@
 			name = sideMenu;
 			sourceTree = "<group>";
 		};
+		CA4E2FA41B85C248004706A1 /* Rj_Model */ = {
+			isa = PBXGroup;
+			children = (
+				CA4E2FA51B85C286004706A1 /* ItemExtension.swift */,
+			);
+			name = Rj_Model;
+			sourceTree = "<group>";
+		};
 		CAC772771B709B8700AF9009 /* XLScrollViewer */ = {
 			isa = PBXGroup;
 			children = (
@@ -471,7 +482,7 @@
 			);
 			name = Airspeed_iOS;
 			productName = Airspeed_iOS;
-			productReference = AB4A2E351B38F7050023F291 /* Airspeed_iOS.app */;
+			productReference = AB4A2E351B38F7050023F291 /* SherryDo.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -553,6 +564,7 @@
 				AB7A1FC51B706CAE00D77160 /* UIScrollView+MJRefresh.m in Sources */,
 				ABA2CED51B72274A00D2C4A4 /* MyMenuTableViewController.swift in Sources */,
 				AB7A1FBD1B706CAE00D77160 /* MJRefreshBackNormalFooter.m in Sources */,
+				CA4E2FA61B85C286004706A1 /* ItemExtension.swift in Sources */,
 				AB7C476D1B75D25D00AF2077 /* Pitaya.swift in Sources */,
 				AB4A63C01B85A6970040DEEA /* TableViewCell.swift in Sources */,
 				AB7A1FC01B706CAE00D77160 /* MJRefreshNormalHeader.m in Sources */,
@@ -697,7 +709,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "net.dowhile.Airspeed-iOS";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = SherryDo;
 				SWIFT_OBJC_BRIDGING_HEADER = "Airspeed_iOS/Airspeed_iOS-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
@@ -713,7 +725,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "net.dowhile.Airspeed-iOS";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = SherryDo;
 				SWIFT_OBJC_BRIDGING_HEADER = "Airspeed_iOS/Airspeed_iOS-Bridging-Header.h";
 			};
 			name = Release;
