@@ -12,7 +12,10 @@ class YXL_ItemTableViewController: UITableViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
+//        MJREfresh
+        self.tableView.header = MJRefreshNormalHeader(refreshingBlock: refreshHeader)
+        self.tableView.footer = MJRefreshAutoNormalFooter (refreshingBlock: refreshFooter)
     
     }
 
@@ -43,6 +46,16 @@ class YXL_ItemTableViewController: UITableViewController {
         return cell
     }
     
+//   MARK: FuncTion
+   private func refreshHeader(){
+    self.tableView.header.lastUpdatedTimeKey = NSDate().description
+        print("refreshHeader")
+    self.tableView.header.endRefreshing()
+    }
+   private func refreshFooter(){
+        print("refreshFooter")
+    self.tableView.footer.endRefreshing()
+    }
 
     /*
     // Override to support conditional editing of the table view.
