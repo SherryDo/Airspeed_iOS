@@ -19,6 +19,8 @@ class MyNavigationViewController:ENSideMenuNavigationController {
         
         // make navigation bar showing over side menu
         view.bringSubviewToFront(navigationBar)
+
+
     }
 
     override func didReceiveMemoryWarning() {

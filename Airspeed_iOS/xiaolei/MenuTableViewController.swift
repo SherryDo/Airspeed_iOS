@@ -28,6 +28,8 @@ class MenuTableViewController: UITableViewController{
         // MJRefresh
         mjRefreshAction()
         
+        self.navigationItem.leftBarButtonItem = UIBarButtonItem.item(self, action: "toggleSideMenuView", image: "caiDan", HighImage: "caiDan_selected")
+        
     }
    
    

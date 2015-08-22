@@ -29,6 +29,7 @@ class MyMenuTableViewController: UITableViewController,ENSideMenuDelegate{
         self.clearsSelectionOnViewWillAppear = false
         
         tableView.selectRowAtIndexPath(NSIndexPath(forRow: selectedMenuItem, inSection: 0), animated: true, scrollPosition: .Middle)
+        
     }
 
   

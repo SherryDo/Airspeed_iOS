@@ -52,7 +52,7 @@ class RJ_SJViewController:UIViewController {
         self.addChildViewController(tab2)
         self.addChildViewController(tab3)
         let views = [tab1.view, tab2.view,tab3.view]
-        let names = ["上架物品","上架需求","上架拍卖品"]
+        let names = ["上架物品","上架需求","上架拍卖"]
         
         //        //创建使用
         tab3.view.backgroundColor = UIColor.whiteColor()
@@ -62,7 +62,7 @@ class RJ_SJViewController:UIViewController {
         //
         //自定义各种属性。。打开查看
         //  self.scroll.xl_topBackImage =[UIImage imageNamed:@"10.jpg"];
-        self.scroll.xl_topBackColor = UIColor.purpleColor()
+        self.scroll.xl_topBackColor = UIColor(red: 0.488, green: 0.210, blue: 0.610, alpha: 0.900)
         self.scroll.xl_sliderColor = UIColor.whiteColor()
         self.scroll.xl_buttonColorNormal = UIColor.blackColor()
         self.scroll.xl_buttonColorSelected = UIColor.whiteColor()

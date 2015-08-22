@@ -7,3 +7,4 @@
 //上拉加载，下拉刷新。
 #import "MJRefresh.h"
 #import "XLScrollViewer.h"
+#import "UIImage+JYExtention.h"
