@@ -2,7 +2,13 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="8173.3" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8142"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <mutableArray key="HelveticaNeue.ttc">
+            <string>HelveticaNeue</string>
+        </mutableArray>
+    </customFonts>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
@@ -13,22 +19,73 @@
                 <rect key="frame" x="0.0" y="0.0" width="383" height="69"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <button opaque="NO" alpha="0.90000000000000002" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Z2c-V9-hPD">
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="任杰才是大帅比" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1x9-0v-Z8p">
+                        <rect key="frame" x="76" y="8" width="129" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="sherry业务" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1lH-PF-iVz">
+                        <rect key="frame" x="76" y="40" width="97" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2015.8.24上架" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ued-V9-d3v">
+                        <rect key="frame" x="215" y="8" width="86" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="86" id="y7z-4E-mAs"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="13"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="0.65000000000000002" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="creame" translatesAutoresizingMaskIntoConstraints="NO" id="RnR-dP-fy8">
                         <rect key="frame" x="8" y="5" width="60" height="60"/>
-                        <state key="normal" image="creame"/>
-                    </button>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="任杰才是大帅比，谁不服来撸" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1x9-0v-Z8p">
-                        <rect key="frame" x="88" y="24" width="221" height="21"/>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="&gt;" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZGa-I7-V6A">
+                        <rect key="frame" x="352" y="24" width="21" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="21" id="fjC-eU-3Ul"/>
+                        </constraints>
                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                         <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                         <nil key="highlightedColor"/>
                     </label>
                 </subviews>
+                <constraints>
+                    <constraint firstItem="1lH-PF-iVz" firstAttribute="top" secondItem="1x9-0v-Z8p" secondAttribute="bottom" constant="11" id="0dz-yz-FJY"/>
+                    <constraint firstItem="1lH-PF-iVz" firstAttribute="bottom" secondItem="H2p-sc-9uM" secondAttribute="bottomMargin" id="1AL-dW-F9n"/>
+                    <constraint firstItem="ZGa-I7-V6A" firstAttribute="leading" secondItem="Ued-V9-d3v" secondAttribute="trailing" constant="51" id="6D8-Sn-r3k"/>
+                    <constraint firstItem="1lH-PF-iVz" firstAttribute="leading" secondItem="RnR-dP-fy8" secondAttribute="trailing" constant="8" id="AFN-pN-iEY"/>
+                    <constraint firstItem="ZGa-I7-V6A" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="16" id="ELv-xl-qml"/>
+                    <constraint firstItem="Ued-V9-d3v" firstAttribute="leading" secondItem="1x9-0v-Z8p" secondAttribute="trailing" constant="10" id="HQP-X9-TEv"/>
+                    <constraint firstItem="Ued-V9-d3v" firstAttribute="leading" secondItem="1x9-0v-Z8p" secondAttribute="trailing" constant="10" id="ICH-vw-29M"/>
+                    <constraint firstItem="1lH-PF-iVz" firstAttribute="leading" secondItem="RnR-dP-fy8" secondAttribute="trailing" constant="8" id="LdN-WY-oHP"/>
+                    <constraint firstItem="1x9-0v-Z8p" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" id="MTX-A0-s93"/>
+                    <constraint firstItem="ZGa-I7-V6A" firstAttribute="leading" secondItem="1lH-PF-iVz" secondAttribute="trailing" constant="179" id="OHX-40-nHW"/>
+                    <constraint firstItem="1x9-0v-Z8p" firstAttribute="leading" secondItem="RnR-dP-fy8" secondAttribute="trailing" constant="8" id="PCH-zm-k29"/>
+                    <constraint firstItem="Ued-V9-d3v" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" id="PxN-C8-T0i"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="RnR-dP-fy8" secondAttribute="bottom" constant="-4" id="VJL-k6-Jbr"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="ZGa-I7-V6A" secondAttribute="bottom" constant="16" id="WRl-HX-2A6"/>
+                    <constraint firstItem="Ued-V9-d3v" firstAttribute="top" secondItem="1x9-0v-Z8p" secondAttribute="top" id="WgQ-o4-ReX"/>
+                    <constraint firstItem="1lH-PF-iVz" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="76" id="XDH-pN-8B6"/>
+                    <constraint firstItem="1lH-PF-iVz" firstAttribute="bottom" secondItem="H2p-sc-9uM" secondAttribute="bottomMargin" id="XI7-cI-jln"/>
+                    <constraint firstItem="RnR-dP-fy8" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="-3" id="dcq-kN-BTB"/>
+                    <constraint firstItem="Ued-V9-d3v" firstAttribute="bottom" secondItem="1x9-0v-Z8p" secondAttribute="bottom" id="duA-L9-Yod"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="Ued-V9-d3v" secondAttribute="bottom" constant="32" id="fQj-7e-fc3"/>
+                    <constraint firstItem="1lH-PF-iVz" firstAttribute="leading" secondItem="1x9-0v-Z8p" secondAttribute="leading" id="oWx-Kc-RCo"/>
+                    <constraint firstItem="1lH-PF-iVz" firstAttribute="top" secondItem="1x9-0v-Z8p" secondAttribute="bottom" constant="11" id="pWH-QI-DRJ"/>
+                    <constraint firstItem="RnR-dP-fy8" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="rfz-0B-KC4"/>
+                    <constraint firstItem="1lH-PF-iVz" firstAttribute="top" secondItem="1x9-0v-Z8p" secondAttribute="bottom" constant="11" id="uYS-CV-SUJ"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="ZGa-I7-V6A" secondAttribute="trailing" constant="2" id="uc7-hV-YT8"/>
+                    <constraint firstItem="ZGa-I7-V6A" firstAttribute="leading" secondItem="Ued-V9-d3v" secondAttribute="trailing" constant="51" id="wu9-ju-qxe"/>
+                </constraints>
             </tableViewCellContentView>
             <connections>
-                <outlet property="staffPhoto" destination="Z2c-V9-hPD" id="2tw-Kf-ulK"/>
+                <outlet property="pIImage" destination="RnR-dP-fy8" id="2PA-nt-6Pg"/>
             </connections>
-            <point key="canvasLocation" x="289.5" y="300.5"/>
+            <point key="canvasLocation" x="289.5" y="300"/>
         </tableViewCell>
     </objects>
     <resources>

@@ -56,6 +56,7 @@
 		CAC7722F1B7093FB00AF9009 /* RJ_SJViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAC7722E1B7093FB00AF9009 /* RJ_SJViewController.swift */; };
 		CAC7727A1B709B8700AF9009 /* XLScrollViewer.m in Sources */ = {isa = PBXBuildFile; fileRef = CAC772791B709B8700AF9009 /* XLScrollViewer.m */; };
 		CAC8ECB11B887DB100C2B183 /* UIImage+JYExtention.m in Sources */ = {isa = PBXBuildFile; fileRef = CAC8ECB01B887DB100C2B183 /* UIImage+JYExtention.m */; };
+		CAC8ECC81B8C75DC00C2B183 /* ScrollViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAC8ECC71B8C75DC00C2B183 /* ScrollViewController.swift */; };
 		CACADEDF1B887426006BA7A5 /* RjTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CACADEDD1B887426006BA7A5 /* RjTableViewCell.swift */; };
 		CACADEE01B887426006BA7A5 /* RjTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CACADEDE1B887426006BA7A5 /* RjTableViewCell.xib */; };
 		CBF07FAD1B76F86F008BA69F /* background.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CBF07FA41B76F86F008BA69F /* background.jpg */; };
@@ -174,6 +175,7 @@
 		CAC772791B709B8700AF9009 /* XLScrollViewer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XLScrollViewer.m; sourceTree = "<group>"; };
 		CAC8ECAF1B887DB100C2B183 /* UIImage+JYExtention.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+JYExtention.h"; sourceTree = "<group>"; };
 		CAC8ECB01B887DB100C2B183 /* UIImage+JYExtention.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+JYExtention.m"; sourceTree = "<group>"; };
+		CAC8ECC71B8C75DC00C2B183 /* ScrollViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ScrollViewController.swift; path = Airspeed_iOS/renjie/ScrollViewController.swift; sourceTree = SOURCE_ROOT; };
 		CACADEDD1B887426006BA7A5 /* RjTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RjTableViewCell.swift; sourceTree = "<group>"; };
 		CACADEDE1B887426006BA7A5 /* RjTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RjTableViewCell.xib; sourceTree = "<group>"; };
 		CBF07FA41B76F86F008BA69F /* background.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = background.jpg; sourceTree = "<group>"; };
@@ -229,6 +231,7 @@
 			children = (
 				AB4A2E511B392D790023F291 /* common */,
 				AB4A2E501B392D510023F291 /* Data */,
+				CAC8ECC61B8C737300C2B183 /* Welcome */,
 				CBF07FA31B76F86F008BA69F /* wangzhuo */,
 				AB4A2E4D1B392D340023F291 /* renjie */,
 				AB4A2E4F1B392D340023F291 /* xiaolei */,
@@ -485,6 +488,15 @@
 			path = "../XLScrollViewer/UIImage+JYExtention";
 			sourceTree = "<group>";
 		};
+		CAC8ECC61B8C737300C2B183 /* Welcome */ = {
+			isa = PBXGroup;
+			children = (
+				CAC8ECC71B8C75DC00C2B183 /* ScrollViewController.swift */,
+			);
+			name = Welcome;
+			path = Data;
+			sourceTree = "<group>";
+		};
 		CBECF9291B76F950002DCD6E /* testFiles */ = {
 			isa = PBXGroup;
 			children = (
@@ -662,6 +674,7 @@
 				AB4A63C81B8605020040DEEA /* YXL_InforMationViewController.swift in Sources */,
 				AB4A2E571B392EC40023F291 /* MainViewController.swift in Sources */,
 				AB7A1FB41B706CAE00D77160 /* MJRefreshAutoFooter.m in Sources */,
+				CAC8ECC81B8C75DC00C2B183 /* ScrollViewController.swift in Sources */,
 				AB7A1FB71B706CAE00D77160 /* MJRefreshFooter.m in Sources */,
 				CA64D0541B744D0600E6786B /* rj_gnsjViewController.swift in Sources */,
 				ABA2CE711B72070900D2C4A4 /* HttpCollectionData.swift in Sources */,

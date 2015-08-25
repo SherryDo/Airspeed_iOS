@@ -12,6 +12,8 @@ class rj_gnsjViewController: UIViewController,UIImagePickerControllerDelegate,UI
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        photoC.layer.borderWidth = 0.5
+        photoC.layer.borderColor = UIColor(red: 0.223, green: 0.345, blue: 0.856, alpha: 0.3).CGColor
         
     }
     
@@ -19,9 +21,13 @@ class rj_gnsjViewController: UIViewController,UIImagePickerControllerDelegate,UI
         super.didReceiveMemoryWarning()
         
     }
+   
+    @IBOutlet weak var photoC: UIImageView!
     
-    
+    func photoCTab(){
         
-    @IBOutlet weak var photoChoise: UIImageView!
+    }
+        
+
 
 }

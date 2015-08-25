@@ -6,5 +6,7 @@
 
 //上拉加载，下拉刷新。
 #import "MJRefresh.h"
+//这个是ScrollView的加强版。。。。
 #import "XLScrollViewer.h"
+//这个是给image做修整的库。
 #import "UIImage+JYExtention.h"

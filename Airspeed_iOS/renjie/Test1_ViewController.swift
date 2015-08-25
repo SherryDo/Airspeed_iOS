@@ -12,6 +12,7 @@ class Test1_ViewController: UIViewController,UITableViewDelegate, UITableViewDat
     
     
     @IBOutlet weak var Sj_tableView: UITableView!
+    @IBOutlet weak var tCButton: UIButton!
 
 
     override func viewDidLoad() {
@@ -19,6 +20,8 @@ class Test1_ViewController: UIViewController,UITableViewDelegate, UITableViewDat
         let nib = UINib(nibName: "RjTableViewCell", bundle: nil)
         self.Sj_tableView.registerNib(nib, forCellReuseIdentifier: "reCellID")
         Sj_tableView.rowHeight = 70
+        tCButton.layer.cornerRadius = 8
+        tCButton.layer.masksToBounds = true
 
     }
     
