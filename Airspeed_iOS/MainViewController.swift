@@ -17,7 +17,7 @@ class MainViewController: UITabBarController {
         
         let rj_RootViewController = UIStoryboard(name: "rj_Storyboard", bundle: nil).instantiateInitialViewController() as! UINavigationController
         
-        let wz_RootViewController = UIStoryboard(name: "WZ_StoryBoard", bundle: nil).instantiateInitialViewController() as! WZ_UserInformationViewController
+        let wz_RootViewController = UIStoryboard(name: "WZ_StoryBoard", bundle: nil).instantiateInitialViewController() as!UINavigationController
         
         let yxl2_ViewController = UIStoryboard(name: "YXL2_Storyboard", bundle: nil).instantiateInitialViewController() as! UINavigationController
         
