@@ -16,7 +16,7 @@ class YXL_ItemTableViewController: UITableViewController {
 //        MJREfresh
         self.tableView.header = MJRefreshNormalHeader(refreshingBlock: refreshHeader)
         self.tableView.footer = MJRefreshAutoNormalFooter (refreshingBlock: refreshFooter)
-    
+    tableView.tableFooterView = UIView(frame: CGRectZero)
     }
 
     override func didReceiveMemoryWarning() {

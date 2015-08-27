@@ -8,23 +8,21 @@
 
 import UIKit
 
-class MenuTableViewController: UITableViewController,ENSideMenuDelegate{
+class MenuTableViewController: UITableViewController{
     
     /// cell的信息存储
     var ArticArry = [ArticInformation]()
-    
-   private var sideMenuOpen = false
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // MJRefresh
         mjRefreshAction()
         navgationleftButtonAction()
-    
         
     }
    
    
+    
 
     // MARK: - Table view data source
 
@@ -37,7 +35,7 @@ class MenuTableViewController: UITableViewController,ENSideMenuDelegate{
     override func tableView(tableView: UITableView,
         cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell{
      
-            let cell =  self.tableView.dequeueReusableCellWithIdentifier("ListCell", forIndexPath: indexPath) as! MenuTableViewCell
+            let cell =  tableView.dequeueReusableCellWithIdentifier("ListCell", forIndexPath: indexPath) as! MenuTableViewCell
             
         cell.name.text = ArticArry[indexPath.row].name
         cell.money.text = String(ArticArry[indexPath.row].money + 1)
@@ -71,13 +69,7 @@ class MenuTableViewController: UITableViewController,ENSideMenuDelegate{
     }
     
    
-    //    MARK: ENSideMenuDelegate
-    func sideMenuWillOpen(){
-       
-     }
-    func sideMenuWillClose(){
-        
-    }
+    
     //    MARK: function
 
     /**
@@ -88,21 +80,12 @@ class MenuTableViewController: UITableViewController,ENSideMenuDelegate{
     func navgationleftButtonAction(){
         //        let leftBtton =
         self.navigationItem.leftBarButtonItem = UIBarButtonItem.item(self, action: "sideMenuView:", image: "caiDan", HighImage: "caiDan_selected")
-        
-    }
     
+        tableView.tableFooterView = UIView(frame: CGRectZero)
+    }
+    //隐藏和显示侧边栏
     func sideMenuView(bt:UIBarButtonItem){
-        
         self.toggleSideMenuView()
-        if !sideMenuOpen
-        {
-//        self.tableView.userInteractionEnabled = false
-        }
-        else
-        {
-        
-        }
-        
     }
     
     /**
@@ -116,7 +99,7 @@ class MenuTableViewController: UITableViewController,ENSideMenuDelegate{
     /**
     刷新的属性配置
     */
-    func mjRefreshAction(){
+ private func mjRefreshAction(){
         //header 给当前tb的header属性
         self.tableView.header = MJRefreshNormalHeader(refreshingBlock: refreshHeader)
         //footer  给当前的tb的footer属性
@@ -159,8 +142,12 @@ class MenuTableViewController: UITableViewController,ENSideMenuDelegate{
     */
     func loadListData(index:NSIndexPath){
         print(index.row)
-        self.tableView.header.beginRefreshing()
+        tableView.header.beginRefreshing()
     }
     
-
+    
+  
 }
+
+
+
