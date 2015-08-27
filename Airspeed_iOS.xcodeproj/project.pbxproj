@@ -56,17 +56,20 @@
 		CAC7722F1B7093FB00AF9009 /* RJ_SJViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAC7722E1B7093FB00AF9009 /* RJ_SJViewController.swift */; };
 		CAC7727A1B709B8700AF9009 /* XLScrollViewer.m in Sources */ = {isa = PBXBuildFile; fileRef = CAC772791B709B8700AF9009 /* XLScrollViewer.m */; };
 		CAC8ECB11B887DB100C2B183 /* UIImage+JYExtention.m in Sources */ = {isa = PBXBuildFile; fileRef = CAC8ECB01B887DB100C2B183 /* UIImage+JYExtention.m */; };
+		CAC8ECC81B8C75DC00C2B183 /* ScrollViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAC8ECC71B8C75DC00C2B183 /* ScrollViewController.swift */; };
 		CACADEDF1B887426006BA7A5 /* RjTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CACADEDD1B887426006BA7A5 /* RjTableViewCell.swift */; };
 		CACADEE01B887426006BA7A5 /* RjTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CACADEDE1B887426006BA7A5 /* RjTableViewCell.xib */; };
-		CBF07FAD1B76F86F008BA69F /* background.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CBF07FA41B76F86F008BA69F /* background.jpg */; };
-		CBF07FAE1B76F86F008BA69F /* icon.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CBF07FA51B76F86F008BA69F /* icon.jpg */; };
-		CBF07FAF1B76F86F008BA69F /* WZ_auctionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBF07FA61B76F86F008BA69F /* WZ_auctionViewController.swift */; };
-		CBF07FB01B76F86F008BA69F /* WZ_myRentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBF07FA71B76F86F008BA69F /* WZ_myRentViewController.swift */; };
-		CBF07FB11B76F86F008BA69F /* WZ_myWalletViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBF07FA81B76F86F008BA69F /* WZ_myWalletViewController.swift */; };
-		CBF07FB21B76F86F008BA69F /* WZ_onSaleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBF07FA91B76F86F008BA69F /* WZ_onSaleViewController.swift */; };
-		CBF07FB31B76F86F008BA69F /* WZ_StoryBoard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CBF07FAA1B76F86F008BA69F /* WZ_StoryBoard.storyboard */; };
-		CBF07FB41B76F86F008BA69F /* WZ_UserInfoEditTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBF07FAB1B76F86F008BA69F /* WZ_UserInfoEditTableViewController.swift */; };
-		CBF07FB51B76F86F008BA69F /* WZ_UserInformationViewController.swift .swift in Sources */ = {isa = PBXBuildFile; fileRef = CBF07FAC1B76F86F008BA69F /* WZ_UserInformationViewController.swift .swift */; };
+		CB4219021B8D64DD00AEFCCF /* WZ_StoryBoard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CB4219011B8D64DD00AEFCCF /* WZ_StoryBoard.storyboard */; };
+		CB4219091B8D64F700AEFCCF /* WZ_auctionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB4219031B8D64F700AEFCCF /* WZ_auctionViewController.swift */; };
+		CB42190A1B8D64F700AEFCCF /* WZ_myRentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB4219041B8D64F700AEFCCF /* WZ_myRentViewController.swift */; };
+		CB42190B1B8D64F700AEFCCF /* WZ_myWalletViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB4219051B8D64F700AEFCCF /* WZ_myWalletViewController.swift */; };
+		CB42190C1B8D64F700AEFCCF /* WZ_onSaleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB4219061B8D64F700AEFCCF /* WZ_onSaleViewController.swift */; };
+		CB42190D1B8D64F700AEFCCF /* WZ_UserInfoEditTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB4219071B8D64F700AEFCCF /* WZ_UserInfoEditTableViewController.swift */; };
+		CB42190E1B8D64F700AEFCCF /* WZ_UserInformationViewController.swift .swift in Sources */ = {isa = PBXBuildFile; fileRef = CB4219081B8D64F700AEFCCF /* WZ_UserInformationViewController.swift .swift */; };
+		CB4219111B8D650C00AEFCCF /* background.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CB42190F1B8D650C00AEFCCF /* background.jpg */; };
+		CB4219121B8D650C00AEFCCF /* icon.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CB4219101B8D650C00AEFCCF /* icon.jpg */; };
+		CBDAD5021B8D6EDD0096797D /* WZ_onSaleTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBDAD5001B8D6EDD0096797D /* WZ_onSaleTableViewCell.swift */; };
+		CBDAD5031B8D6EDD0096797D /* WZ_onSaleTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CBDAD5011B8D6EDD0096797D /* WZ_onSaleTableViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -174,17 +177,20 @@
 		CAC772791B709B8700AF9009 /* XLScrollViewer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XLScrollViewer.m; sourceTree = "<group>"; };
 		CAC8ECAF1B887DB100C2B183 /* UIImage+JYExtention.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+JYExtention.h"; sourceTree = "<group>"; };
 		CAC8ECB01B887DB100C2B183 /* UIImage+JYExtention.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+JYExtention.m"; sourceTree = "<group>"; };
+		CAC8ECC71B8C75DC00C2B183 /* ScrollViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ScrollViewController.swift; path = Airspeed_iOS/renjie/ScrollViewController.swift; sourceTree = SOURCE_ROOT; };
 		CACADEDD1B887426006BA7A5 /* RjTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RjTableViewCell.swift; sourceTree = "<group>"; };
 		CACADEDE1B887426006BA7A5 /* RjTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RjTableViewCell.xib; sourceTree = "<group>"; };
-		CBF07FA41B76F86F008BA69F /* background.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = background.jpg; sourceTree = "<group>"; };
-		CBF07FA51B76F86F008BA69F /* icon.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = icon.jpg; sourceTree = "<group>"; };
-		CBF07FA61B76F86F008BA69F /* WZ_auctionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WZ_auctionViewController.swift; sourceTree = "<group>"; };
-		CBF07FA71B76F86F008BA69F /* WZ_myRentViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WZ_myRentViewController.swift; sourceTree = "<group>"; };
-		CBF07FA81B76F86F008BA69F /* WZ_myWalletViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WZ_myWalletViewController.swift; sourceTree = "<group>"; };
-		CBF07FA91B76F86F008BA69F /* WZ_onSaleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WZ_onSaleViewController.swift; sourceTree = "<group>"; };
-		CBF07FAA1B76F86F008BA69F /* WZ_StoryBoard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = WZ_StoryBoard.storyboard; sourceTree = "<group>"; };
-		CBF07FAB1B76F86F008BA69F /* WZ_UserInfoEditTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WZ_UserInfoEditTableViewController.swift; sourceTree = "<group>"; };
-		CBF07FAC1B76F86F008BA69F /* WZ_UserInformationViewController.swift .swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "WZ_UserInformationViewController.swift .swift"; sourceTree = "<group>"; };
+		CB4219011B8D64DD00AEFCCF /* WZ_StoryBoard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = WZ_StoryBoard.storyboard; path = Airspeed_iOS/wangzhuo/WZ_StoryBoard.storyboard; sourceTree = SOURCE_ROOT; };
+		CB4219031B8D64F700AEFCCF /* WZ_auctionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = WZ_auctionViewController.swift; path = Airspeed_iOS/wangzhuo/WZ_auctionViewController.swift; sourceTree = SOURCE_ROOT; };
+		CB4219041B8D64F700AEFCCF /* WZ_myRentViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = WZ_myRentViewController.swift; path = Airspeed_iOS/wangzhuo/WZ_myRentViewController.swift; sourceTree = SOURCE_ROOT; };
+		CB4219051B8D64F700AEFCCF /* WZ_myWalletViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = WZ_myWalletViewController.swift; path = Airspeed_iOS/wangzhuo/WZ_myWalletViewController.swift; sourceTree = SOURCE_ROOT; };
+		CB4219061B8D64F700AEFCCF /* WZ_onSaleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = WZ_onSaleViewController.swift; path = Airspeed_iOS/wangzhuo/WZ_onSaleViewController.swift; sourceTree = SOURCE_ROOT; };
+		CB4219071B8D64F700AEFCCF /* WZ_UserInfoEditTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = WZ_UserInfoEditTableViewController.swift; path = Airspeed_iOS/wangzhuo/WZ_UserInfoEditTableViewController.swift; sourceTree = SOURCE_ROOT; };
+		CB4219081B8D64F700AEFCCF /* WZ_UserInformationViewController.swift .swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "WZ_UserInformationViewController.swift .swift"; path = "Airspeed_iOS/wangzhuo/WZ_UserInformationViewController.swift .swift"; sourceTree = SOURCE_ROOT; };
+		CB42190F1B8D650C00AEFCCF /* background.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = background.jpg; path = Airspeed_iOS/wangzhuo/background.jpg; sourceTree = SOURCE_ROOT; };
+		CB4219101B8D650C00AEFCCF /* icon.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = icon.jpg; path = Airspeed_iOS/wangzhuo/icon.jpg; sourceTree = SOURCE_ROOT; };
+		CBDAD5001B8D6EDD0096797D /* WZ_onSaleTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = WZ_onSaleTableViewCell.swift; path = Airspeed_iOS/wangzhuo/WZ_onSaleTableViewCell.swift; sourceTree = SOURCE_ROOT; };
+		CBDAD5011B8D6EDD0096797D /* WZ_onSaleTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = WZ_onSaleTableViewCell.xib; path = Airspeed_iOS/wangzhuo/WZ_onSaleTableViewCell.xib; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -229,6 +235,7 @@
 			children = (
 				AB4A2E511B392D790023F291 /* common */,
 				AB4A2E501B392D510023F291 /* Data */,
+				CAC8ECC61B8C737300C2B183 /* Welcome */,
 				CBF07FA31B76F86F008BA69F /* wangzhuo */,
 				AB4A2E4D1B392D340023F291 /* renjie */,
 				AB4A2E4F1B392D340023F291 /* xiaolei */,
@@ -485,11 +492,54 @@
 			path = "../XLScrollViewer/UIImage+JYExtention";
 			sourceTree = "<group>";
 		};
+		CAC8ECC61B8C737300C2B183 /* Welcome */ = {
+			isa = PBXGroup;
+			children = (
+				CAC8ECC71B8C75DC00C2B183 /* ScrollViewController.swift */,
+			);
+			name = Welcome;
+			path = Data;
+			sourceTree = "<group>";
+		};
+		CB4219171B8D677E00AEFCCF /* 我的拍卖 */ = {
+			isa = PBXGroup;
+			children = (
+				CB4219031B8D64F700AEFCCF /* WZ_auctionViewController.swift */,
+			);
+			name = "我的拍卖";
+			sourceTree = "<group>";
+		};
+		CB4219181B8D679800AEFCCF /* 我的租赁 */ = {
+			isa = PBXGroup;
+			children = (
+				CB4219041B8D64F700AEFCCF /* WZ_myRentViewController.swift */,
+			);
+			name = "我的租赁";
+			sourceTree = "<group>";
+		};
+		CB4219191B8D67B500AEFCCF /* 我的钱包 */ = {
+			isa = PBXGroup;
+			children = (
+				CB4219051B8D64F700AEFCCF /* WZ_myWalletViewController.swift */,
+			);
+			name = "我的钱包";
+			sourceTree = "<group>";
+		};
+		CB42191A1B8D67C500AEFCCF /* 我的上架 */ = {
+			isa = PBXGroup;
+			children = (
+				CB4219061B8D64F700AEFCCF /* WZ_onSaleViewController.swift */,
+				CBDAD5001B8D6EDD0096797D /* WZ_onSaleTableViewCell.swift */,
+				CBDAD5011B8D6EDD0096797D /* WZ_onSaleTableViewCell.xib */,
+			);
+			name = "我的上架";
+			sourceTree = "<group>";
+		};
 		CBECF9291B76F950002DCD6E /* testFiles */ = {
 			isa = PBXGroup;
 			children = (
-				CBF07FA41B76F86F008BA69F /* background.jpg */,
-				CBF07FA51B76F86F008BA69F /* icon.jpg */,
+				CB42190F1B8D650C00AEFCCF /* background.jpg */,
+				CB4219101B8D650C00AEFCCF /* icon.jpg */,
 			);
 			name = testFiles;
 			sourceTree = "<group>";
@@ -497,12 +547,12 @@
 		CBECF92A1B76F967002DCD6E /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
-				CBF07FAC1B76F86F008BA69F /* WZ_UserInformationViewController.swift .swift */,
-				CBF07FAB1B76F86F008BA69F /* WZ_UserInfoEditTableViewController.swift */,
-				CBF07FA61B76F86F008BA69F /* WZ_auctionViewController.swift */,
-				CBF07FA71B76F86F008BA69F /* WZ_myRentViewController.swift */,
-				CBF07FA81B76F86F008BA69F /* WZ_myWalletViewController.swift */,
-				CBF07FA91B76F86F008BA69F /* WZ_onSaleViewController.swift */,
+				CB4219081B8D64F700AEFCCF /* WZ_UserInformationViewController.swift .swift */,
+				CB4219071B8D64F700AEFCCF /* WZ_UserInfoEditTableViewController.swift */,
+				CB42191A1B8D67C500AEFCCF /* 我的上架 */,
+				CB4219181B8D679800AEFCCF /* 我的租赁 */,
+				CB4219171B8D677E00AEFCCF /* 我的拍卖 */,
+				CB4219191B8D67B500AEFCCF /* 我的钱包 */,
 			);
 			name = ViewController;
 			sourceTree = "<group>";
@@ -510,7 +560,7 @@
 		CBF07FA31B76F86F008BA69F /* wangzhuo */ = {
 			isa = PBXGroup;
 			children = (
-				CBF07FAA1B76F86F008BA69F /* WZ_StoryBoard.storyboard */,
+				CB4219011B8D64DD00AEFCCF /* WZ_StoryBoard.storyboard */,
 				CBECF92A1B76F967002DCD6E /* ViewController */,
 				CBECF9291B76F950002DCD6E /* testFiles */,
 			);
@@ -600,15 +650,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				AB8008CF1B7F03590038BF89 /* YXL2_Storyboard.storyboard in Resources */,
-				CBF07FAE1B76F86F008BA69F /* icon.jpg in Resources */,
+				CB4219111B8D650C00AEFCCF /* background.jpg in Resources */,
 				AB4A2E461B38F7050023F291 /* LaunchScreen.storyboard in Resources */,
-				CBF07FB31B76F86F008BA69F /* WZ_StoryBoard.storyboard in Resources */,
 				AB4A2E531B392DC30023F291 /* YXL_Storyboard.storyboard in Resources */,
 				CACADEE01B887426006BA7A5 /* RjTableViewCell.xib in Resources */,
-				CBF07FAD1B76F86F008BA69F /* background.jpg in Resources */,
 				CABCABF21B71B5C400000E02 /* rj_Storyboard.storyboard in Resources */,
+				CB4219121B8D650C00AEFCCF /* icon.jpg in Resources */,
 				AB4A2E431B38F7050023F291 /* Assets.xcassets in Resources */,
+				CBDAD5031B8D6EDD0096797D /* WZ_onSaleTableViewCell.xib in Resources */,
 				AB4A2E3E1B38F7050023F291 /* Main.storyboard in Resources */,
+				CB4219021B8D64DD00AEFCCF /* WZ_StoryBoard.storyboard in Resources */,
 				AB7A1FC21B706CAE00D77160 /* MJRefresh.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -621,20 +672,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				ABA2CE6E1B71F5FE00D2C4A4 /* ArticInformation.swift in Sources */,
-				CBF07FB01B76F86F008BA69F /* WZ_myRentViewController.swift in Sources */,
 				CABCABFC1B71BA3F00000E02 /* Test1_ViewController.swift in Sources */,
 				CAC7727A1B709B8700AF9009 /* XLScrollViewer.m in Sources */,
-				CBF07FAF1B76F86F008BA69F /* WZ_auctionViewController.swift in Sources */,
 				AB7A1FC11B706CAE00D77160 /* MJRefreshStateHeader.m in Sources */,
 				CABCAC0E1B720E2000000E02 /* Test2_ViewController.swift in Sources */,
-				CBF07FB41B76F86F008BA69F /* WZ_UserInfoEditTableViewController.swift in Sources */,
 				AB8008CD1B7F021B0038BF89 /* YXL_ItemTableViewController.swift in Sources */,
 				CAC7722F1B7093FB00AF9009 /* RJ_SJViewController.swift in Sources */,
 				CAC8ECB11B887DB100C2B183 /* UIImage+JYExtention.m in Sources */,
-				CBF07FB21B76F86F008BA69F /* WZ_onSaleViewController.swift in Sources */,
+				CB4219091B8D64F700AEFCCF /* WZ_auctionViewController.swift in Sources */,
+				CB42190C1B8D64F700AEFCCF /* WZ_onSaleViewController.swift in Sources */,
 				ABE387F81B7320BB0028557E /* SwiftyJSON.swift in Sources */,
 				AB7A1FC61B706CAE00D77160 /* UIView+MJExtension.m in Sources */,
-				CBF07FB11B76F86F008BA69F /* WZ_myWalletViewController.swift in Sources */,
+				CBDAD5021B8D6EDD0096797D /* WZ_onSaleTableViewCell.swift in Sources */,
 				ABA2CED11B72203C00D2C4A4 /* MyNavigationViewController.swift in Sources */,
 				AB4A2E411B38F7050023F291 /* Airspeed_iOS.xcdatamodeld in Sources */,
 				AB536FCB1B6F003D004B75B8 /* MenuCellList.swift in Sources */,
@@ -646,12 +695,12 @@
 				AB7A1FBA1B706CAE00D77160 /* MJRefreshAutoNormalFooter.m in Sources */,
 				AB7A1FB51B706CAE00D77160 /* MJRefreshBackFooter.m in Sources */,
 				AB7A1FBB1B706CAE00D77160 /* MJRefreshAutoStateFooter.m in Sources */,
+				CB42190A1B8D64F700AEFCCF /* WZ_myRentViewController.swift in Sources */,
 				AB7A1FBF1B706CAE00D77160 /* MJRefreshGifHeader.m in Sources */,
 				AB7A1FB91B706CAE00D77160 /* MJRefreshAutoGifFooter.m in Sources */,
 				AB7A1FC41B706CAE00D77160 /* UIScrollView+MJExtension.m in Sources */,
 				ABA2CECA1B7218C700D2C4A4 /* MenuTableViewController.swift in Sources */,
 				ABA2CEC81B7218B100D2C4A4 /* MenuTableViewCell.swift in Sources */,
-				CBF07FB51B76F86F008BA69F /* WZ_UserInformationViewController.swift .swift in Sources */,
 				ABA2CECE1B721FA700D2C4A4 /* ENSideMenu.swift in Sources */,
 				AB7A1FBC1B706CAE00D77160 /* MJRefreshBackGifFooter.m in Sources */,
 				AB7A1FB61B706CAE00D77160 /* MJRefreshComponent.m in Sources */,
@@ -662,11 +711,15 @@
 				AB4A63C81B8605020040DEEA /* YXL_InforMationViewController.swift in Sources */,
 				AB4A2E571B392EC40023F291 /* MainViewController.swift in Sources */,
 				AB7A1FB41B706CAE00D77160 /* MJRefreshAutoFooter.m in Sources */,
+				CB42190E1B8D64F700AEFCCF /* WZ_UserInformationViewController.swift .swift in Sources */,
+				CAC8ECC81B8C75DC00C2B183 /* ScrollViewController.swift in Sources */,
+				CB42190D1B8D64F700AEFCCF /* WZ_UserInfoEditTableViewController.swift in Sources */,
 				AB7A1FB71B706CAE00D77160 /* MJRefreshFooter.m in Sources */,
 				CA64D0541B744D0600E6786B /* rj_gnsjViewController.swift in Sources */,
 				ABA2CE711B72070900D2C4A4 /* HttpCollectionData.swift in Sources */,
 				ABE387FA1B7336EC0028557E /* ItemDetails.swift in Sources */,
 				AB7A1FBE1B706CAE00D77160 /* MJRefreshBackStateFooter.m in Sources */,
+				CB42190B1B8D64F700AEFCCF /* WZ_myWalletViewController.swift in Sources */,
 				AB7A1FC31B706CAE00D77160 /* MJRefreshConst.m in Sources */,
 				CACADEDF1B887426006BA7A5 /* RjTableViewCell.swift in Sources */,
 			);

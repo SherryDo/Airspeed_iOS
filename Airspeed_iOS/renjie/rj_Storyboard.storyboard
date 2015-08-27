@@ -2,7 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8173.3" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="6Aq-ma-sVh">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8142"/>
-        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -110,55 +110,50 @@
                         <viewControllerLayoutGuide type="bottom" id="xxc-XZ-O20"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="GRe-LF-40Y">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="39s-i8-xSa">
-                                <rect key="frame" x="200" y="70" width="80" height="30"/>
-                                <state key="normal" title="国内上架"/>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sUH-Cb-5bJ">
-                                <rect key="frame" x="40" y="70" width="80" height="30"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="80" id="Me1-0D-4Sr"/>
-                                    <constraint firstAttribute="height" constant="30" id="SOS-Zw-eRM"/>
-                                </constraints>
-                                <state key="normal" title="同城上架"/>
-                                <connections>
-                                    <segue destination="FNi-mB-Lok" kind="push" id="I4D-kf-oHZ"/>
-                                </connections>
-                            </button>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="SrH-IN-kjE">
-                                <rect key="frame" x="0.0" y="120" width="320" height="448"/>
+                                <rect key="frame" x="-3" y="100" width="378" height="567"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <connections>
                                     <outlet property="dataSource" destination="LKg-eu-GUV" id="CjH-If-DCR"/>
                                     <outlet property="delegate" destination="LKg-eu-GUV" id="uQa-Qp-zbc"/>
                                 </connections>
                             </tableView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sUH-Cb-5bJ">
+                                <rect key="frame" x="24" y="30" width="324" height="50"/>
+                                <color key="backgroundColor" red="0.42056435032894623" green="0.11112253289473684" blue="0.59955797697368418" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="H07-9W-L6G"/>
+                                </constraints>
+                                <state key="normal" title="同城上架"/>
+                                <connections>
+                                    <segue destination="FNi-mB-Lok" kind="push" id="I4D-kf-oHZ"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="sUH-Cb-5bJ" firstAttribute="centerY" secondItem="GRe-LF-40Y" secondAttribute="centerY" multiplier="0.3" id="7w3-U2-8Bk"/>
-                            <constraint firstItem="39s-i8-xSa" firstAttribute="height" secondItem="sUH-Cb-5bJ" secondAttribute="height" id="9JO-HR-npt"/>
-                            <constraint firstItem="SrH-IN-kjE" firstAttribute="top" secondItem="sUH-Cb-5bJ" secondAttribute="bottom" constant="20" id="Fwr-nQ-Ye1"/>
-                            <constraint firstItem="sUH-Cb-5bJ" firstAttribute="centerX" secondItem="GRe-LF-40Y" secondAttribute="centerX" multiplier="0.5" id="Goy-al-gWb"/>
-                            <constraint firstItem="39s-i8-xSa" firstAttribute="centerX" secondItem="GRe-LF-40Y" secondAttribute="centerX" multiplier="1.5" id="JqO-lW-2Sp"/>
-                            <constraint firstItem="39s-i8-xSa" firstAttribute="centerY" secondItem="GRe-LF-40Y" secondAttribute="centerY" multiplier="0.3" id="PW6-8p-eIM"/>
-                            <constraint firstItem="39s-i8-xSa" firstAttribute="width" secondItem="sUH-Cb-5bJ" secondAttribute="width" id="QKH-XZ-6AC"/>
-                            <constraint firstAttribute="trailing" secondItem="SrH-IN-kjE" secondAttribute="trailing" id="kMo-Rn-tgI"/>
-                            <constraint firstItem="xxc-XZ-O20" firstAttribute="top" secondItem="SrH-IN-kjE" secondAttribute="bottom" id="rmK-vv-sUn"/>
-                            <constraint firstItem="SrH-IN-kjE" firstAttribute="leading" secondItem="GRe-LF-40Y" secondAttribute="leading" id="y5D-L9-f7s"/>
+                            <constraint firstItem="sUH-Cb-5bJ" firstAttribute="leading" secondItem="GRe-LF-40Y" secondAttribute="leadingMargin" constant="8" id="B9q-hP-WtE"/>
+                            <constraint firstItem="SrH-IN-kjE" firstAttribute="centerX" secondItem="sUH-Cb-5bJ" secondAttribute="centerX" id="GTw-Cz-cFn"/>
+                            <constraint firstAttribute="trailing" secondItem="SrH-IN-kjE" secondAttribute="trailing" id="PHh-sX-foE"/>
+                            <constraint firstItem="sUH-Cb-5bJ" firstAttribute="top" secondItem="TR6-BX-6vD" secondAttribute="bottom" constant="10" id="Pq2-Jf-YRZ"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="sUH-Cb-5bJ" secondAttribute="trailing" constant="11" id="T6C-HX-nEU"/>
+                            <constraint firstItem="SrH-IN-kjE" firstAttribute="top" secondItem="sUH-Cb-5bJ" secondAttribute="bottom" constant="20" id="eg8-Dc-9jE"/>
+                            <constraint firstItem="SrH-IN-kjE" firstAttribute="bottom" secondItem="xxc-XZ-O20" secondAttribute="top" id="tiZ-S9-NdJ"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="AOi-MN-057"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <connections>
                         <outlet property="Sj_tableView" destination="SrH-IN-kjE" id="PhU-9C-b4I"/>
+                        <outlet property="tCButton" destination="sUH-Cb-5bJ" id="L5D-rI-v18"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mZp-kb-PSy" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="319" y="1075"/>
+            <point key="canvasLocation" x="318.5" y="1074.5"/>
         </scene>
         <!--制定协议-->
         <scene sceneID="tCU-OI-EVD">
@@ -169,11 +164,11 @@
                         <viewControllerLayoutGuide type="bottom" id="7pn-Dz-YGf"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="Fjy-Gf-AO4">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="photoPicker" translatesAutoresizingMaskIntoConstraints="NO" id="RYi-Tu-RIH">
-                                <rect key="frame" x="20" y="68" width="70" height="70"/>
+                                <rect key="frame" x="20" y="80" width="70" height="70"/>
                             </imageView>
                         </subviews>
                         <animations/>
@@ -181,12 +176,12 @@
                     </view>
                     <navigationItem key="navigationItem" title="制定协议" id="9tB-Pa-sD6"/>
                     <connections>
-                        <outlet property="photoChoise" destination="RYi-Tu-RIH" id="K6p-Da-lAe"/>
+                        <outlet property="photoC" destination="RYi-Tu-RIH" id="Ksi-e1-64e"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9Hd-PM-cbg" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="932" y="1075"/>
+            <point key="canvasLocation" x="746.5" y="1074.5"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="3lV-yw-4pm">

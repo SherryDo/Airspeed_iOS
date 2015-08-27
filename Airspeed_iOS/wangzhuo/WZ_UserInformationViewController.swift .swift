@@ -39,7 +39,7 @@ class WZ_UserInformationViewController:UIViewController,UIImagePickerControllerD
         let EffertView=UIVisualEffectView(effect: blurEffert)
         EffertView.alpha=0.65
         //设置view的大小
-        EffertView.frame.size=CGSize(width: view.frame.width, height: view.frame.height)
+        EffertView.frame.size=CGSize(width: view.frame.width, height: userBackground.frame.height)
         //加入视图
         userBackground.addSubview(EffertView)
         
@@ -62,17 +62,6 @@ class WZ_UserInformationViewController:UIViewController,UIImagePickerControllerD
     override func preferredStatusBarStyle() -> UIStatusBarStyle {
         return UIStatusBarStyle.LightContent
     }
-
-    
-//    //返回按钮响应方法
-//    @IBAction func backButtonClicked(sender: UIBarButtonItem) {
-//        self.dismissViewControllerAnimated(true, completion: nil)
-//    }
-    //编辑按钮响应方法
-    @IBAction func editButtonClicked(sender: UIButton) {
-        print("editButtonClicked has been called")
-    }
-    
     
     
 // Mark: -头像点击事件
