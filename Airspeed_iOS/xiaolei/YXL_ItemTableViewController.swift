@@ -33,18 +33,21 @@ class YXL_ItemTableViewController: UITableViewController {
 
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return 10
+        return 5
     }
 
     
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCellWithIdentifier("itemcell", forIndexPath: indexPath)
-
+        
         cell.textLabel?.text = "杨晓磊是个大帅哥"
         // Configure the cell...
 
         return cell
     }
+    
+    
+    
     
 //   MARK: FuncTion
    private func refreshHeader(){

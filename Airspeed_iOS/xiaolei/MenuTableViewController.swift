@@ -13,15 +13,14 @@ class MenuTableViewController: UITableViewController,ENSideMenuDelegate{
     /// cell的信息存储
     var ArticArry = [ArticInformation]()
     
-   
+   private var sideMenuOpen = false
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // MJRefresh
         mjRefreshAction()
         navgationleftButtonAction()
-        
-        self.sideMenuController()?.sideMenu?.delegate = self
+    
         
     }
    
@@ -70,7 +69,8 @@ class MenuTableViewController: UITableViewController,ENSideMenuDelegate{
         //侧边栏隐藏
         hideSideMenuView()
     }
-  
+    
+   
     //    MARK: ENSideMenuDelegate
     func sideMenuWillOpen(){
        
@@ -92,7 +92,17 @@ class MenuTableViewController: UITableViewController,ENSideMenuDelegate{
     }
     
     func sideMenuView(bt:UIBarButtonItem){
+        
         self.toggleSideMenuView()
+        if !sideMenuOpen
+        {
+//        self.tableView.userInteractionEnabled = false
+        }
+        else
+        {
+        
+        }
+        
     }
     
     /**
