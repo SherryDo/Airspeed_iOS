@@ -72,38 +72,7 @@
 		CBDAD5031B8D6EDD0096797D /* WZ_onSaleTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CBDAD5011B8D6EDD0096797D /* WZ_onSaleTableViewCell.xib */; };
 /* End PBXBuildFile section */
 
-/* Begin PBXContainerItemProxy section */
-		AB326A9A1B88CBCB00934007 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = AB326A941B88CBCB00934007 /* PitayaExample.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 46C7CABC1B04AA4000CC3B70;
-			remoteInfo = PitayaExample;
-		};
-		AB326A9C1B88CBCB00934007 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = AB326A941B88CBCB00934007 /* PitayaExample.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 46C7CAD11B04AA4000CC3B70;
-			remoteInfo = PitayaExampleTests;
-		};
-/* End PBXContainerItemProxy section */
-
-/* Begin PBXCopyFilesBuildPhase section */
-		AB326AA51B88D09F00934007 /* Embed Frameworks */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "";
-			dstSubfolderSpec = 10;
-			files = (
-			);
-			name = "Embed Frameworks";
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXCopyFilesBuildPhase section */
-
 /* Begin PBXFileReference section */
-		AB326A941B88CBCB00934007 /* PitayaExample.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = PitayaExample.xcodeproj; path = "Pitaya-master/PitayaExample.xcodeproj"; sourceTree = "<group>"; };
 		AB4A2E351B38F7050023F291 /* SherryDo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SherryDo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AB4A2E381B38F7050023F291 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AB4A2E3D1B38F7050023F291 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -204,19 +173,9 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		AB326A951B88CBCB00934007 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				AB326A9B1B88CBCB00934007 /* PitayaExample.app */,
-				AB326A9D1B88CBCB00934007 /* PitayaExampleTests.xctest */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
 		AB4A2E2C1B38F7050023F291 = {
 			isa = PBXGroup;
 			children = (
-				AB326A941B88CBCB00934007 /* PitayaExample.xcodeproj */,
 				AB4A2E371B38F7050023F291 /* Airspeed_iOS */,
 				AB4A2E361B38F7050023F291 /* Products */,
 			);
@@ -577,7 +536,6 @@
 				AB4A2E311B38F7050023F291 /* Sources */,
 				AB4A2E321B38F7050023F291 /* Frameworks */,
 				AB4A2E331B38F7050023F291 /* Resources */,
-				AB326AA51B88D09F00934007 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -614,35 +572,12 @@
 			mainGroup = AB4A2E2C1B38F7050023F291;
 			productRefGroup = AB4A2E361B38F7050023F291 /* Products */;
 			projectDirPath = "";
-			projectReferences = (
-				{
-					ProductGroup = AB326A951B88CBCB00934007 /* Products */;
-					ProjectRef = AB326A941B88CBCB00934007 /* PitayaExample.xcodeproj */;
-				},
-			);
 			projectRoot = "";
 			targets = (
 				AB4A2E341B38F7050023F291 /* Airspeed_iOS */,
 			);
 		};
 /* End PBXProject section */
-
-/* Begin PBXReferenceProxy section */
-		AB326A9B1B88CBCB00934007 /* PitayaExample.app */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.application;
-			path = PitayaExample.app;
-			remoteRef = AB326A9A1B88CBCB00934007 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		AB326A9D1B88CBCB00934007 /* PitayaExampleTests.xctest */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.cfbundle;
-			path = PitayaExampleTests.xctest;
-			remoteRef = AB326A9C1B88CBCB00934007 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		AB4A2E331B38F7050023F291 /* Resources */ = {

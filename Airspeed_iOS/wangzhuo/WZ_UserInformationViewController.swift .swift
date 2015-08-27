@@ -55,7 +55,7 @@ class WZ_UserInformationViewController:UIViewController,UIImagePickerControllerD
         self.userIcon.image = savedImage
         }
         
-        let userdata = NSUserDefaults()
+        let userdata = NSUserDefaults.standardUserDefaults()
         
     }
     
