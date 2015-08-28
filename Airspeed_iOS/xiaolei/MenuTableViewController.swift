@@ -39,8 +39,10 @@ class MenuTableViewController: UITableViewController{
             
         cell.name.text = ArticArry[indexPath.row].name
         cell.money.text = String(ArticArry[indexPath.row].money + 1)
-        cell.imageView?.image = ArticArry[indexPath.row].imge!
-        
+//        cell.imageView?.image = ArticArry[indexPath.row].imge!
+            
+        cell.imageView?.sd_setImageWithURL(NSURL(string: "http://7xlc1d.com1.z0.glb.clouddn.com/airZ.jpg"), placeholderImage:ArticArry[indexPath.row].imge!)
+//        cell.imageview.sd_setImageWithURL(NSURL(string: "http://7xlc1d.com1.z0.glb.clouddn.com/airZ.jpg")!)
             
             return cell
     }
