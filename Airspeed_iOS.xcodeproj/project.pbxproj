@@ -386,6 +386,7 @@
 			isa = PBXGroup;
 			children = (
 				ABA2CEC91B7218C700D2C4A4 /* MenuTableViewController.swift */,
+				ABA2CEC71B7218B100D2C4A4 /* MenuTableViewCell.swift */,
 				AB4A63C71B8605020040DEEA /* YXL_InforMationViewController.swift */,
 			);
 			name = controller;
@@ -567,7 +568,6 @@
 			isa = PBXGroup;
 			children = (
 				ABA2CED71B722DA200D2C4A4 /* menu */,
-				ABA2CEC71B7218B100D2C4A4 /* MenuTableViewCell.swift */,
 			);
 			name = view;
 			sourceTree = "<group>";

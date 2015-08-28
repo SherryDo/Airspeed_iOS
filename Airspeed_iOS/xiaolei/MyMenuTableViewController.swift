@@ -22,7 +22,7 @@ class MyMenuTableViewController: UITableViewController{
         // Customize apperance of table view
         tableView.contentInset = UIEdgeInsetsMake(64.0, 0, 0, 0) //
         tableView.separatorStyle = .None
-        tableView.backgroundColor = UIColor.clearColor()
+        tableView.backgroundColor = UIColor.whiteColor()
         tableView.scrollsToTop = false
         
         // Preserve selection between presentations
@@ -51,12 +51,14 @@ class MyMenuTableViewController: UITableViewController{
         if (cell == nil) {
             
             cell  = UITableViewCell(style: UITableViewCellStyle.Default, reuseIdentifier: "CELL")
+            
             let photoimage = UIImageView(frame: CGRectMake(0, 0, cell!.frame.size.width, cell!.frame.size.height))
+            
             photoimage.image = UIImage(named: "Cd_house")
             
             cell!.addSubview(photoimage)
             
-            cell!.backgroundColor = UIColor.clearColor()
+            cell!.backgroundColor = UIColor.whiteColor()
         }
       
         
