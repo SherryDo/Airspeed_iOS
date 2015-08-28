@@ -12,10 +12,19 @@ class ArticInformation {
     
     let name:String
     let money:Double
-    let imge = UIImage(named: "icon.jpg")
+    let imgeURL:NSURL?
     
-    init(name:String,money:Double){
+    init(name:String,money:Double,imageurl:String)
+    {
         self.name = name
         self.money = money
+        
+        if let url = NSURL(string: imageurl)
+        {
+            imgeURL = url
+        }else{
+            imgeURL = nil
+        }
+        
     }
 }

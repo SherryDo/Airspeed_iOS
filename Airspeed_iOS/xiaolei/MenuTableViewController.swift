@@ -41,8 +41,8 @@ class MenuTableViewController: UITableViewController{
         cell.money.text = String(ArticArry[indexPath.row].money + 1)
 //        cell.imageView?.image = ArticArry[indexPath.row].imge!
             
-        cell.imageView?.sd_setImageWithURL(NSURL(string: "http://7xlc1d.com1.z0.glb.clouddn.com/airZ.jpg"), placeholderImage:ArticArry[indexPath.row].imge!)
-//        cell.imageview.sd_setImageWithURL(NSURL(string: "http://7xlc1d.com1.z0.glb.clouddn.com/airZ.jpg")!)
+        cell.imageview.sd_setImageWithURL(ArticArry[indexPath.row].imgeURL!, placeholderImage:UIImage(named: "icon.jpg"))
+        
             
             return cell
     }
@@ -114,7 +114,7 @@ class MenuTableViewController: UITableViewController{
     */
   private func refreshHeader(){
     //测试数据
-    let newCell = ArticInformation(name: "杨晓磊", money: 0)
+    let newCell = ArticInformation(name: "杨晓磊", money: 1.1, imageurl: "http://7xlc1d.com1.z0.glb.clouddn.com/airZ.jpg")
     ArticArry.append(newCell)
     // 上次刷新的时间
     tableView.header.lastUpdatedTimeKey = NSDate().description
@@ -131,7 +131,7 @@ class MenuTableViewController: UITableViewController{
     */
    private func refreshFooter(){
     //测试数据
-        let newCell = ArticInformation(name: "杨晓磊", money: 0)
+        let newCell = ArticInformation(name: "杨晓磊", money: 0.0, imageurl: "http://7xlc1d.com1.z0.glb.clouddn.com/airZ.jpg")
         ArticArry.append(newCell)
     //刷新界面
         tableView.reloadData()
