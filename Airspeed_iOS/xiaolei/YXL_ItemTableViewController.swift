@@ -7,17 +7,23 @@
 //
 
 import UIKit
-import SwiftyJSON
-
+import Pitaya
 class YXL_ItemTableViewController: UITableViewController {
+
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+       
 //        MJREfresh
         self.tableView.header = MJRefreshNormalHeader(refreshingBlock: refreshHeader)
         self.tableView.footer = MJRefreshAutoNormalFooter (refreshingBlock: refreshFooter)
-    tableView.tableFooterView = UIView(frame: CGRectZero)
+        
+        tableView.tableFooterView = UIView(frame: CGRectZero)
+        
+        Pitaya.request(.GET, url: "http://pitayaswift.sinaapp.com/pitaya.php", errorCallback: nil) { (data, response) -> Void in
+            
+        }
+        
     }
 
     override func didReceiveMemoryWarning() {
