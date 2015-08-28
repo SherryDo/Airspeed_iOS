@@ -8,17 +8,13 @@
 
 import UIKit
 import Pitaya
-class YXL_ItemTableViewController: UITableViewController {
-
-
+class YXL_ItemTableViewController: UITableViewController,CNPGridMenuDelegate{
+    
+//    var gridMenu:CNPGridMenu?
     override func viewDidLoad() {
         super.viewDidLoad()
-       
-//        MJREfresh
-        self.tableView.header = MJRefreshNormalHeader(refreshingBlock: refreshHeader)
-        self.tableView.footer = MJRefreshAutoNormalFooter (refreshingBlock: refreshFooter)
-        
-        tableView.tableFooterView = UIView(frame: CGRectZero)
+        //默认配置
+        configController()
         
         Pitaya.request(.GET, url: "http://pitayaswift.sinaapp.com/pitaya.php", errorCallback: nil) { (data, response) -> Void in
             
@@ -67,6 +63,59 @@ class YXL_ItemTableViewController: UITableViewController {
     self.tableView.footer.endRefreshing()
     }
 
+    func configController(){
+        
+        //        MJREfresh
+        self.tableView.header = MJRefreshNormalHeader(refreshingBlock: refreshHeader)
+        self.tableView.footer = MJRefreshAutoNormalFooter (refreshingBlock: refreshFooter)
+        
+        tableView.tableFooterView = UIView(frame: CGRectZero)
+        
+        self.navigationItem.leftBarButtonItem = UIBarButtonItem.item(self, action: "menuAction", image: "caiDan", HighImage: "caiDan_selected")
  
+    }
+    
+    func menuAction(){
+        
+        let laterToday = CNPGridMenuItem()
+        laterToday.icon = UIImage(named: "LaterToday")
+        laterToday.title  = "LaterToday"
+        laterToday.selectionHandler = {(CNPGridMenuItem) -> Void in
+            print(laterToday.title)
+        }
+        
+        
+        let thisEvening = CNPGridMenuItem()
+        thisEvening.icon = UIImage(named: "ThisEvening")
+        thisEvening.title = "ThisEvening"
+        thisEvening.selectionHandler = {(CNPGridMenuItem)->Void in
+            print(thisEvening.title)
+        }
+        
+        let gridMenu = CNPGridMenu(menuItems: [laterToday,thisEvening])
+        gridMenu.blurEffectStyle = CNPBlurEffectStyle.Dark
+        gridMenu.delegate = self
+        presentGridMenu(gridMenu, animated: true) { () -> Void in
+            print("gridMenu")
+        }
+    }
+    
+    
+    
+    
+    
+    
+    //MARK : CNPGridMenuDelegate
+    func gridMenuDidTapOnBackground(menu: CNPGridMenu!) {
+        self.dismissGridMenuAnimated(true) { () -> Void in
+            
+        }
+    }
+    
+    func gridMenu(menu: CNPGridMenu!, didTapOnItem item: CNPGridMenuItem!) {
+        self.dismissGridMenuAnimated(true) { () -> Void in
+            
+        }
+    }
 
 }

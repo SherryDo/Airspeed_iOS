@@ -12,3 +12,5 @@
 #import "UIImage+JYExtention.h"
 //图片缓存
 #import "UIImageView+WebCache.h"
+//全屏菜单
+#import "CNPGridMenu.h"
