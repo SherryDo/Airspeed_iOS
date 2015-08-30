@@ -18,6 +18,12 @@ class MenuTableViewController: UITableViewController{
         // MJRefresh
         mjRefreshAction()
         navgationleftButtonAction()
+        //测试数据
+        let newCell = ArticInformation(name: "杨晓磊", money: 1.1, imageurl: "http://7xlc1d.com1.z0.glb.clouddn.com/airZ.jpg")
+        for _ in 0...6{
+            ArticArry.append(newCell)
+        }
+        
 
     }
    
