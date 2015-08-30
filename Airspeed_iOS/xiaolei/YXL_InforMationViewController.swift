@@ -10,17 +10,12 @@ import UIKit
 
 class YXL_InforMationViewController: UIViewController,ENSideMenuDelegate{
 
+    @IBOutlet weak var scroll: UIScrollView!
     
-    //MARK: IBAction
-    @IBAction func goBack(sender: UIButton) {
-        navigationController?.popViewControllerAnimated(true)
-    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        navigationController?.navigationBar.hidden = true
-        
+        tabBarController?.tabBar.hidden = true
         self.sideMenuController()?.sideMenu?.delegate = self
         // Do any additional setup after loading the view.
     }

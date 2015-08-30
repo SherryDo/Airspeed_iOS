@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8187.4" systemVersion="15A244d" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="nQS-4z-po9">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8187.4" systemVersion="15A263e" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="nQS-4z-po9">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8151.3"/>
     </dependencies>
@@ -84,10 +84,10 @@
             </objects>
             <point key="canvasLocation" x="1089" y="774"/>
         </scene>
-        <!--Infor Mation View Controller-->
+        <!--详细-->
         <scene sceneID="Lz4-fr-yFB">
             <objects>
-                <viewController wantsFullScreenLayout="YES" extendedLayoutIncludesOpaqueBars="YES" id="QXL-Wa-0g0" customClass="YXL_InforMationViewController" customModule="SherryDo" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="detailedInformation" wantsFullScreenLayout="YES" extendedLayoutIncludesOpaqueBars="YES" id="QXL-Wa-0g0" customClass="YXL_InforMationViewController" customModule="SherryDo" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="9w8-2R-M3x"/>
                         <viewControllerLayoutGuide type="bottom" id="PNh-Sa-u1Y"/>
@@ -96,29 +96,55 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Tag" translatesAutoresizingMaskIntoConstraints="NO" id="8cC-pv-sef">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="200"/>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FUM-KF-izc">
+                                <rect key="frame" x="0.0" y="524" width="320" height="44"/>
                                 <animations/>
-                            </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Yg0-wZ-C0D">
-                                <rect key="frame" x="6" y="14" width="46" height="30"/>
+                                <items>
+                                    <barButtonItem title="Item" id="vkE-zF-Tc9"/>
+                                </items>
+                            </toolbar>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="hNV-75-PTU">
+                                <rect key="frame" x="0.0" y="64" width="320" height="460"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="04O-MP-T2f">
+                                        <rect key="frame" x="0.0" y="0.0" width="320" height="171"/>
+                                        <animations/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="171" id="N3E-TU-LG7"/>
+                                            <constraint firstAttribute="width" constant="320" id="heL-oE-5ZP"/>
+                                        </constraints>
+                                    </imageView>
+                                </subviews>
                                 <animations/>
-                                <state key="normal" title="Go"/>
-                                <connections>
-                                    <action selector="goBack:" destination="QXL-Wa-0g0" eventType="touchUpInside" id="Exi-HP-NMk"/>
-                                </connections>
-                            </button>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="04O-MP-T2f" secondAttribute="trailing" id="H9d-Go-Q7x"/>
+                                    <constraint firstItem="04O-MP-T2f" firstAttribute="leading" secondItem="hNV-75-PTU" secondAttribute="leading" id="jUz-or-nha"/>
+                                    <constraint firstItem="04O-MP-T2f" firstAttribute="top" secondItem="hNV-75-PTU" secondAttribute="top" id="wUh-P3-xjv"/>
+                                </constraints>
+                            </scrollView>
                         </subviews>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="hNV-75-PTU" firstAttribute="leading" secondItem="CLb-Ss-fT2" secondAttribute="leading" id="7bq-9U-XHN"/>
+                            <constraint firstItem="FUM-KF-izc" firstAttribute="top" secondItem="hNV-75-PTU" secondAttribute="bottom" id="POQ-kq-McC"/>
+                            <constraint firstAttribute="trailing" secondItem="FUM-KF-izc" secondAttribute="trailing" id="bDc-yH-uft"/>
+                            <constraint firstItem="FUM-KF-izc" firstAttribute="top" secondItem="hNV-75-PTU" secondAttribute="bottom" id="k4p-hr-ftp"/>
+                            <constraint firstAttribute="trailing" secondItem="hNV-75-PTU" secondAttribute="trailing" id="p8l-pk-hCW"/>
+                            <constraint firstItem="PNh-Sa-u1Y" firstAttribute="top" secondItem="FUM-KF-izc" secondAttribute="bottom" id="t8j-Q4-Cxj"/>
+                            <constraint firstItem="hNV-75-PTU" firstAttribute="top" secondItem="9w8-2R-M3x" secondAttribute="bottom" id="tcF-Bi-gJM"/>
+                            <constraint firstItem="FUM-KF-izc" firstAttribute="leading" secondItem="CLb-Ss-fT2" secondAttribute="leading" id="wPv-kI-Kx5"/>
+                        </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="xIP-JM-8cA"/>
-                    <nil key="simulatedStatusBarMetrics"/>
-                    <nil key="simulatedTopBarMetrics"/>
+                    <navigationItem key="navigationItem" title="详细" id="xIP-JM-8cA"/>
+                    <nil key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="scroll" destination="hNV-75-PTU" id="TzB-1v-Hgh"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gXa-U2-hcK" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1451" y="779"/>
+            <point key="canvasLocation" x="1516" y="755"/>
         </scene>
         <!--My Navigation View Controller-->
         <scene sceneID="OW5-2B-MBG">
@@ -141,6 +167,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="Tag" width="25" height="25"/>
+        <image name="icon.jpg" width="640" height="879"/>
     </resources>
 </document>

@@ -28,7 +28,8 @@ class MenuTableViewController: UITableViewController{
     }
    
     override func viewWillAppear(animated: Bool){
-        navigationController?.navigationBar.hidden = false
+        tabBarController?.tabBar.hidden = false
+        
     }
    
     
