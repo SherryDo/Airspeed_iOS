@@ -18,9 +18,12 @@ class MenuTableViewController: UITableViewController{
         // MJRefresh
         mjRefreshAction()
         navgationleftButtonAction()
-        
+
     }
    
+    override func viewWillAppear(animated: Bool){
+        navigationController?.navigationBar.hidden = false
+    }
    
     
 

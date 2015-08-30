@@ -20,15 +20,16 @@ class MyMenuTableViewController: UITableViewController{
         super.viewDidLoad()
         
         // Customize apperance of table view
-        tableView.contentInset = UIEdgeInsetsMake(64.0, 0, 0, 0) //
+//        tableView.contentInset = UIEdgeInsetsMake(64.0, 0, 0, 0) //
         tableView.separatorStyle = .None
-        tableView.backgroundColor = UIColor.whiteColor()
+        tableView.backgroundColor = UIColor.clearColor()
+        tableView.backgroundView?.backgroundColor = UIColor.clearColor()
         tableView.scrollsToTop = false
-        
+        tableView.alpha = 1
         // Preserve selection between presentations
-        self.clearsSelectionOnViewWillAppear = false
+//        self.clearsSelectionOnViewWillAppear = false
         
-        tableView.selectRowAtIndexPath(NSIndexPath(forRow: selectedMenuItem, inSection: 0), animated: true, scrollPosition: .Middle)
+//        tableView.selectRowAtIndexPath(NSIndexPath(forRow: selectedMenuItem, inSection: 0), animated: true, scrollPosition: .Middle)
         
     }
 
@@ -51,14 +52,7 @@ class MyMenuTableViewController: UITableViewController{
         if (cell == nil) {
             
             cell  = UITableViewCell(style: UITableViewCellStyle.Default, reuseIdentifier: "CELL")
-            
-            let photoimage = UIImageView(frame: CGRectMake(0, 0, cell!.frame.size.width, cell!.frame.size.height))
-            
-            photoimage.image = UIImage(named: "Cd_house")
-            
-            cell!.addSubview(photoimage)
-            
-            cell!.backgroundColor = UIColor.whiteColor()
+            cell!.alpha = 0
         }
       
         

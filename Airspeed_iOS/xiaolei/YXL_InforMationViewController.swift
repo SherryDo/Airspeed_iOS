@@ -10,8 +10,16 @@ import UIKit
 
 class YXL_InforMationViewController: UIViewController,ENSideMenuDelegate{
 
+    
+    //MARK: IBAction
+    @IBAction func goBack(sender: UIButton) {
+        navigationController?.popViewControllerAnimated(true)
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        navigationController?.navigationBar.hidden = true
         
         self.sideMenuController()?.sideMenu?.delegate = self
         // Do any additional setup after loading the view.
@@ -22,6 +30,7 @@ class YXL_InforMationViewController: UIViewController,ENSideMenuDelegate{
         // Dispose of any resources that can be recreated.
     }
     
+    //MARK: ENSideMenuDelegate
    func sideMenuShouldOpenSideMenu () -> Bool{
     return false
     }
