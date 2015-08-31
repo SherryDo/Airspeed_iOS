@@ -103,48 +103,29 @@
                                     <barButtonItem title="Item" id="vkE-zF-Tc9"/>
                                 </items>
                             </toolbar>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="hNV-75-PTU">
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0mN-VZ-koL">
                                 <rect key="frame" x="0.0" y="64" width="320" height="460"/>
-                                <subviews>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="04O-MP-T2f">
-                                        <rect key="frame" x="0.0" y="0.0" width="320" height="171"/>
-                                        <animations/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="171" id="N3E-TU-LG7"/>
-                                            <constraint firstAttribute="width" constant="320" id="heL-oE-5ZP"/>
-                                        </constraints>
-                                    </imageView>
-                                </subviews>
                                 <animations/>
-                                <constraints>
-                                    <constraint firstAttribute="trailing" secondItem="04O-MP-T2f" secondAttribute="trailing" id="H9d-Go-Q7x"/>
-                                    <constraint firstItem="04O-MP-T2f" firstAttribute="leading" secondItem="hNV-75-PTU" secondAttribute="leading" id="jUz-or-nha"/>
-                                    <constraint firstItem="04O-MP-T2f" firstAttribute="top" secondItem="hNV-75-PTU" secondAttribute="top" id="wUh-P3-xjv"/>
-                                </constraints>
                             </scrollView>
                         </subviews>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="hNV-75-PTU" firstAttribute="leading" secondItem="CLb-Ss-fT2" secondAttribute="leading" id="7bq-9U-XHN"/>
-                            <constraint firstItem="FUM-KF-izc" firstAttribute="top" secondItem="hNV-75-PTU" secondAttribute="bottom" id="POQ-kq-McC"/>
-                            <constraint firstAttribute="trailing" secondItem="FUM-KF-izc" secondAttribute="trailing" id="bDc-yH-uft"/>
-                            <constraint firstItem="FUM-KF-izc" firstAttribute="top" secondItem="hNV-75-PTU" secondAttribute="bottom" id="k4p-hr-ftp"/>
-                            <constraint firstAttribute="trailing" secondItem="hNV-75-PTU" secondAttribute="trailing" id="p8l-pk-hCW"/>
-                            <constraint firstItem="PNh-Sa-u1Y" firstAttribute="top" secondItem="FUM-KF-izc" secondAttribute="bottom" id="t8j-Q4-Cxj"/>
-                            <constraint firstItem="hNV-75-PTU" firstAttribute="top" secondItem="9w8-2R-M3x" secondAttribute="bottom" id="tcF-Bi-gJM"/>
-                            <constraint firstItem="FUM-KF-izc" firstAttribute="leading" secondItem="CLb-Ss-fT2" secondAttribute="leading" id="wPv-kI-Kx5"/>
+                            <constraint firstItem="FUM-KF-izc" firstAttribute="leading" secondItem="CLb-Ss-fT2" secondAttribute="leading" id="7HS-3X-LiR"/>
+                            <constraint firstItem="FUM-KF-izc" firstAttribute="top" secondItem="0mN-VZ-koL" secondAttribute="bottom" id="OIs-wq-Hpo"/>
+                            <constraint firstAttribute="trailing" secondItem="0mN-VZ-koL" secondAttribute="trailing" id="PoU-hQ-luJ"/>
+                            <constraint firstAttribute="trailing" secondItem="FUM-KF-izc" secondAttribute="trailing" id="Q82-dO-AlM"/>
+                            <constraint firstItem="0mN-VZ-koL" firstAttribute="top" secondItem="9w8-2R-M3x" secondAttribute="bottom" id="aJw-wq-nWZ"/>
+                            <constraint firstItem="PNh-Sa-u1Y" firstAttribute="top" secondItem="FUM-KF-izc" secondAttribute="bottom" id="mPK-Is-y7e"/>
+                            <constraint firstItem="0mN-VZ-koL" firstAttribute="leading" secondItem="CLb-Ss-fT2" secondAttribute="leading" id="thM-IV-KVz"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="详细" id="xIP-JM-8cA"/>
                     <nil key="simulatedBottomBarMetrics"/>
-                    <connections>
-                        <outlet property="scroll" destination="hNV-75-PTU" id="TzB-1v-Hgh"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gXa-U2-hcK" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1516" y="755"/>
+            <point key="canvasLocation" x="1442" y="774"/>
         </scene>
         <!--My Navigation View Controller-->
         <scene sceneID="OW5-2B-MBG">
@@ -166,7 +147,4 @@
             <point key="canvasLocation" x="736" y="774"/>
         </scene>
     </scenes>
-    <resources>
-        <image name="icon.jpg" width="640" height="879"/>
-    </resources>
 </document>

@@ -18,7 +18,8 @@ class YXL_InforMationViewController: UIViewController,ENSideMenuDelegate{
         tabBarController?.tabBar.hidden = true
         self.sideMenuController()?.sideMenu?.delegate = self
         // Do any additional setup after loading the view.
-        
+        navigationItem.backBarButtonItem = UIBarButtonItem(title: " ", style:
+            .Plain, target: nil, action: nil)
       
     }
 

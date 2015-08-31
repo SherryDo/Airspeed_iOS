@@ -49,7 +49,7 @@ class MyMenuTableViewController: UITableViewController{
             //3
             cell!.imageView?.layer.borderWidth = 0.5
             cell?.imageView?.layer.borderColor = UIColor(white: 0.3, alpha: 0.7).CGColor
-            cell?.layer.cornerRadius = (cell?.imageView?.bounds.size.height)! / 2.0
+            cell?.layer.cornerRadius = (cell?.imageView?.bounds.size.width)! / 2.0
             cell?.backgroundView?.clipsToBounds = true
             
             //4

@@ -70,7 +70,9 @@ class YXL_ItemTableViewController: UITableViewController,CNPGridMenuDelegate{
         tableView.tableFooterView = UIView(frame: CGRectZero)
         
         self.navigationItem.leftBarButtonItem = UIBarButtonItem.item(self, action: "menuAction", image: "caiDan", HighImage: "caiDan_selected")
- 
+        navigationItem.backBarButtonItem = UIBarButtonItem(title: " ", style:
+            .Plain, target: nil, action: nil)
+        
     }
     
     func menuAction(){

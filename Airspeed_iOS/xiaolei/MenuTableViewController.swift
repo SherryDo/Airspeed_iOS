@@ -24,7 +24,9 @@ class MenuTableViewController: UITableViewController{
             ArticArry.append(newCell)
         }
         
-       
+        navigationItem.backBarButtonItem = UIBarButtonItem(title: " ", style:
+            .Plain, target: nil, action: nil)
+        
     }
    
     override func viewWillAppear(animated: Bool){
