@@ -17,6 +17,9 @@ class YXL_ItemTableViewController: UITableViewController,CNPGridMenuDelegate{
         configController()
     }
 
+    override func viewWillAppear(animated: Bool) {
+        self.tabBarController?.tabBar.hidden = false
+    }
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.

@@ -7,7 +7,7 @@
 //
 
 import UIKit
-
+/// 物品的详细信息类
 class YXL_InforMationViewController: UIViewController,ENSideMenuDelegate{
 
     @IBOutlet weak var scroll: UIScrollView!
@@ -18,6 +18,8 @@ class YXL_InforMationViewController: UIViewController,ENSideMenuDelegate{
         tabBarController?.tabBar.hidden = true
         self.sideMenuController()?.sideMenu?.delegate = self
         // Do any additional setup after loading the view.
+        
+      
     }
 
     override func didReceiveMemoryWarning() {

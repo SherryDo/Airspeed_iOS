@@ -7,7 +7,7 @@
 //
 
 import UIKit
-
+/// 同城物品列表的cell 
 class MenuTableViewCell: UITableViewCell {
     @IBOutlet weak var name: UILabel!
     @IBOutlet weak var money: UILabel!

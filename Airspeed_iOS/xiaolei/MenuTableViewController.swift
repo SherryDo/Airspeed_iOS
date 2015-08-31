@@ -7,7 +7,7 @@
 //
 
 import UIKit
-
+/// 同城物品列表
 class MenuTableViewController: UITableViewController{
     
     /// cell的信息存储
@@ -24,7 +24,7 @@ class MenuTableViewController: UITableViewController{
             ArticArry.append(newCell)
         }
         
-
+       
     }
    
     override func viewWillAppear(animated: Bool){
