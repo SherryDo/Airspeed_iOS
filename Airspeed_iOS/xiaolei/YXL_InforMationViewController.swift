@@ -11,7 +11,7 @@ import UIKit
 class YXL_InforMationViewController: UIViewController,ENSideMenuDelegate{
 
     @IBOutlet weak var scroll: UIScrollView!
-    
+    @IBOutlet weak var toole: UIToolbar!
     
     override func viewDidLoad() {
         super.viewDidLoad()

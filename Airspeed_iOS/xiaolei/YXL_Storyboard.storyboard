@@ -122,6 +122,10 @@
                     </view>
                     <navigationItem key="navigationItem" title="详细" id="xIP-JM-8cA"/>
                     <nil key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="scroll" destination="0mN-VZ-koL" id="WnX-H7-lSw"/>
+                        <outlet property="toole" destination="FUM-KF-izc" id="it9-dy-WRN"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gXa-U2-hcK" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
