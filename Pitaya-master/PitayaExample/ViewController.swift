@@ -22,34 +22,28 @@ class ViewController: UIViewController {
     }
 
     @IBAction func mainButtonBeTapped(sender: AnyObject) {
-//        Pitaya.DEBUG = true
-        Pitaya.request(.GET, url: "http://httpbin.org/get", errorCallback: nil) { (data, response) -> Void in
-            for (i,j) in response!.allHeaderFields {
-                print("\(i): \(j)")
-            }
-        }
-        /*
+        Pitaya.DEBUG = true
         Pitaya.request(.GET, url: "http://staticonsae.sinaapp.com/pitaya.php", errorCallback: { (error) -> Void in
             NSLog(error.localizedDescription)
             }) { (data, response) -> Void in
                 let string = NSString(data: data!, encoding: NSUTF8StringEncoding) as! String
-                print("HTTP body: " + string, terminator: "\n")
-                print("HTTP status: " + response!.statusCode.description, string, terminator: "\n")
+                print("HTTP body: " + string, appendNewline: true)
+                print("HTTP status: " + response!.statusCode.description, appendNewline: true)
         }
         Pitaya.request(.POST, url: "http://staticonsae.sinaapp.com/pitaya.php", params: ["post": "pitaya"], errorCallback: { (error) -> Void in
             NSLog(error.localizedDescription)
             }) { (data, response) -> Void in
                 let string = NSString(data: data!, encoding: NSUTF8StringEncoding) as! String
-                print("HTTP body: " + string, string, terminator: "\n")
-                print("HTTP status: " + response!.statusCode.description, string, terminator: "\n")
+                print("HTTP body: " + string, appendNewline: true)
+                print("HTTP status: " + response!.statusCode.description, appendNewline: true)
         }
         let file = File(name: "file", url: NSURL(fileURLWithPath: NSBundle.mainBundle().pathForResource("Pitaya", ofType: "png")!))
         Pitaya.request(.POST, url: "http://staticonsae.sinaapp.com/pitaya.php", files: [file], errorCallback: { (error) -> Void in
             NSLog(error.localizedDescription)
             }) { (data, response) -> Void in
                 let string = NSString(data: data!, encoding: NSUTF8StringEncoding) as! String
-                print("HTTP body: " + string, string, terminator: "\n")
-                print("HTTP status: " + response!.statusCode.description, string, terminator: "\n")
+                print("HTTP body: " + string, appendNewline: true)
+                print("HTTP status: " + response!.statusCode.description, appendNewline: true)
         }
         let pitaya = PitayaManager.build(.POST, url: "http://httpbin.org/post")
         pitaya.setHTTPBodyRaw("{\"fuck\":\"you\"}")
@@ -57,10 +51,9 @@ class ViewController: UIViewController {
             NSLog(error.localizedDescription)
             }) { (data, response) -> Void in
                 let string = NSString(data: data!, encoding: NSUTF8StringEncoding) as! String
-                print("HTTP body: " + string, string, terminator: "\n")
-                print("HTTP status: " + response!.statusCode.description, string, terminator: "\n")
+                print("HTTP body: " + string, appendNewline: true)
+                print("HTTP status: " + response!.statusCode.description, appendNewline: true)
         }
-        */
     }
 
 }

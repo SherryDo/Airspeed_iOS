@@ -42,11 +42,7 @@ Master分支主要用来发布正式的版本；develop分支用来开发。所�
 2. 添加了第三方库`SwiftyJSON`;[链接](https://github.com/SwiftyJSON/SwiftyJSON)解析JOSN数据的.
 
 3. 添加了第三方库`Pitaya`；[链接](https://github.com/johnlui/Pitaya)网络请求。文件的上传和下载等功能
-
 4. 添加了第三方库`SwiftNotice`;[链接](https://github.com/johnlui/SwiftNotice)
-
-5.添加了第三方库 ``;[SDWebImage](https://github.com/rs/SDWebImage) 图片缓存
-[教程](http://www.cocoachina.com/ios/20141212/10622.html)
 
 <h2 id="git">git使用</h2>
 我们现在都对远程仓库有读写的权限，所以可以直接提交到Github的远程仓库中。

@@ -20,7 +20,15 @@ class MyMenuTableViewController: UITableViewController{
         super.viewDidLoad()
         
         // Customize apperance of table view
-        configMenuTableView()
+        tableView.contentInset = UIEdgeInsetsMake(64.0, 0, 0, 0) //
+        tableView.separatorStyle = .None
+        tableView.backgroundColor = UIColor.clearColor()
+        tableView.scrollsToTop = false
+        
+        // Preserve selection between presentations
+        self.clearsSelectionOnViewWillAppear = false
+        
+        tableView.selectRowAtIndexPath(NSIndexPath(forRow: selectedMenuItem, inSection: 0), animated: true, scrollPosition: .Middle)
         
     }
 
@@ -41,22 +49,14 @@ class MyMenuTableViewController: UITableViewController{
         var cell =  tableView.dequeueReusableCellWithIdentifier("CELL")
         
         if (cell == nil) {
-            //1
+            
             cell  = UITableViewCell(style: UITableViewCellStyle.Default, reuseIdentifier: "CELL")
+            let photoimage = UIImageView(frame: CGRectMake(0, 0, cell!.frame.size.width, cell!.frame.size.height))
+            photoimage.image = UIImage(named: "Cd_house")
             
-            //2
+            cell!.addSubview(photoimage)
+            
             cell!.backgroundColor = UIColor.clearColor()
-            //3
-            cell!.imageView?.layer.borderWidth = 0.5
-            cell?.imageView?.layer.borderColor = UIColor(white: 0.3, alpha: 0.7).CGColor
-            cell?.layer.cornerRadius = (cell?.imageView?.bounds.size.width)! / 2.0
-            cell?.backgroundView?.clipsToBounds = true
-            
-            //4
-            cell?.textLabel?.textColor = UIColor(white: 0.2, alpha: 1)
-            //5
-            cell?.textLabel?.text = "\(indexPath.row)"
-            cell!.imageView!.image = UIImage(named: "Cd_selected")
         }
       
         
@@ -80,22 +80,6 @@ class MyMenuTableViewController: UITableViewController{
         hideSideMenuView()
     }
     
-    override func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
-        return 66
-    }
-    
-    /**
-    表格的样式配置
-    */
-    func configMenuTableView(){
-       
-        tableView.contentInset = UIEdgeInsetsMake(64.0, 0, 0, 0)
-        tableView.separatorStyle = .None
-        tableView.scrollsToTop = false
-        self.clearsSelectionOnViewWillAppear = false
-        tableView.selectRowAtIndexPath(NSIndexPath(forItem: selectedMenuItem, inSection: 0), animated: true, scrollPosition: .Middle)
-        tableView.backgroundColor = UIColor.clearColor()
-        
-    }
+
 
 }

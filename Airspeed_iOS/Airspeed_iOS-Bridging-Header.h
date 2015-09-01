@@ -10,7 +10,3 @@
 #import "XLScrollViewer.h"
 //这个是给image做修整的库。
 #import "UIImage+JYExtention.h"
-//图片缓存
-#import "UIImageView+WebCache.h"
-//全屏菜单
-#import "CNPGridMenu.h"
