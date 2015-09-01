@@ -25,9 +25,9 @@ class WZ_UserInformationViewController:UIViewController,UIImagePickerControllerD
     @IBOutlet weak var countLabel: UILabel!
     //用户诚信度
     @IBOutlet weak var honestLevelLabel: UILabel!
+    //保存的图片名
+    let iconImageFileName="currentImage.png"
     
-    
-
     override func viewDidLoad() {
         super.viewDidLoad()
         //设置头像形状，去边框
@@ -39,7 +39,7 @@ class WZ_UserInformationViewController:UIViewController,UIImagePickerControllerD
         let EffertView=UIVisualEffectView(effect: blurEffert)
         EffertView.alpha=0.65
         //设置view的大小
-        EffertView.frame.size=CGSize(width: view.frame.width, height: userBackground.frame.height)
+        EffertView.frame.size=CGSize(width: view.frame.width, height: view.frame.height)
         //加入视图
         userBackground.addSubview(EffertView)
         
@@ -50,21 +50,22 @@ class WZ_UserInformationViewController:UIViewController,UIImagePickerControllerD
         userIcon.addGestureRecognizer(userIconActionGR)
         
         //读取用户头像
-        let fullPath = ((NSHomeDirectory() as NSString) .stringByAppendingPathComponent("Documents") as NSString).stringByAppendingPathComponent("currentImage.png")
+        let fullPath = ((NSHomeDirectory() as NSString) .stringByAppendingPathComponent("Documents") as NSString).stringByAppendingPathComponent(iconImageFileName)
         if let savedImage = UIImage(contentsOfFile: fullPath){
         self.userIcon.image = savedImage
         }
         
-        let userdata = NSUserDefaults.standardUserDefaults()
+        
         
     }
     
+//状态栏颜色调整
     override func preferredStatusBarStyle() -> UIStatusBarStyle {
         return UIStatusBarStyle.LightContent
     }
     
     
-// Mark: -头像点击事件
+// Mark: -头像点击事件,弹出一个Sheet
     func userIconAction(){
         let userIconAlert = UIAlertController(title: "请选择操作", message: "", preferredStyle: UIAlertControllerStyle.ActionSheet)
 
@@ -106,10 +107,14 @@ class WZ_UserInformationViewController:UIViewController,UIImagePickerControllerD
 //     UIImagePickerControllerMediaURL;       // an NSURL
 //     UIImagePickerControllerReferenceURL    // an NSURL that references an asset in the AssetsLibrary framework
 //     UIImagePickerControllerMediaMetadata    // an NSDictionary containing metadata from a captured photo
+    
+    //UIImagePicker回调方法
     func imagePickerController(picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : AnyObject]) {
+        //获取照片的原图
         let image = (info as NSDictionary).objectForKey(UIImagePickerControllerOriginalImage)
-        self.saveImage(image as! UIImage, imageName: "currentImage.png")
-        let fullPath = ((NSHomeDirectory() as NSString).stringByAppendingPathComponent("Documents") as NSString).stringByAppendingPathComponent("currentImage.png")
+        //保存图片至沙盒
+        self.saveImage(image as! UIImage, imageName: iconImageFileName)
+        let fullPath = ((NSHomeDirectory() as NSString).stringByAppendingPathComponent("Documents") as NSString).stringByAppendingPathComponent(iconImageFileName)
         let savedImage = UIImage(contentsOfFile: fullPath)
         self.userIcon.image=savedImage
         picker.dismissViewControllerAnimated(true, completion: nil)
