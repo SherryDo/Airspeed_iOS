@@ -7,34 +7,25 @@
 //
 
 import UIKit
-/// 同城物品列表
-class MenuTableViewController: UITableViewController{
+
+class MenuTableViewController: UITableViewController,ENSideMenuDelegate{
     
     /// cell的信息存储
     var ArticArry = [ArticInformation]()
+    
+   
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // MJRefresh
         mjRefreshAction()
         navgationleftButtonAction()
-        //测试数据
-        let newCell = ArticInformation(name: "杨晓磊", money: 1.1, imageurl: "http://7xlc1d.com1.z0.glb.clouddn.com/airZ.jpg")
-        for _ in 0...6{
-            ArticArry.append(newCell)
-        }
         
-        navigationItem.backBarButtonItem = UIBarButtonItem(title: " ", style:
-            .Plain, target: nil, action: nil)
+        self.sideMenuController()?.sideMenu?.delegate = self
         
     }
    
-    override func viewWillAppear(animated: Bool){
-        tabBarController?.tabBar.hidden = false
-        
-    }
    
-    
 
     // MARK: - Table view data source
 
@@ -47,13 +38,11 @@ class MenuTableViewController: UITableViewController{
     override func tableView(tableView: UITableView,
         cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell{
      
-            let cell =  tableView.dequeueReusableCellWithIdentifier("ListCell", forIndexPath: indexPath) as! MenuTableViewCell
+            let cell =  self.tableView.dequeueReusableCellWithIdentifier("ListCell", forIndexPath: indexPath) as! MenuTableViewCell
             
         cell.name.text = ArticArry[indexPath.row].name
         cell.money.text = String(ArticArry[indexPath.row].money + 1)
-//        cell.imageView?.image = ArticArry[indexPath.row].imge!
-            
-        cell.imageview.sd_setImageWithURL(ArticArry[indexPath.row].imgeURL!, placeholderImage:UIImage(named: "icon.jpg"))
+        cell.imageView?.image = ArticArry[indexPath.row].imge!
         
             
             return cell
@@ -81,9 +70,14 @@ class MenuTableViewController: UITableViewController{
         //侧边栏隐藏
         hideSideMenuView()
     }
-    
-   
-    
+  
+    //    MARK: ENSideMenuDelegate
+    func sideMenuWillOpen(){
+       
+     }
+    func sideMenuWillClose(){
+        
+    }
     //    MARK: function
 
     /**
@@ -94,10 +88,9 @@ class MenuTableViewController: UITableViewController{
     func navgationleftButtonAction(){
         //        let leftBtton =
         self.navigationItem.leftBarButtonItem = UIBarButtonItem.item(self, action: "sideMenuView:", image: "caiDan", HighImage: "caiDan_selected")
-    
-        tableView.tableFooterView = UIView(frame: CGRectZero)
+        
     }
-    //隐藏和显示侧边栏
+    
     func sideMenuView(bt:UIBarButtonItem){
         self.toggleSideMenuView()
     }
@@ -113,7 +106,7 @@ class MenuTableViewController: UITableViewController{
     /**
     刷新的属性配置
     */
- private func mjRefreshAction(){
+    func mjRefreshAction(){
         //header 给当前tb的header属性
         self.tableView.header = MJRefreshNormalHeader(refreshingBlock: refreshHeader)
         //footer  给当前的tb的footer属性
@@ -126,7 +119,7 @@ class MenuTableViewController: UITableViewController{
     */
   private func refreshHeader(){
     //测试数据
-    let newCell = ArticInformation(name: "杨晓磊", money: 1.1, imageurl: "http://7xlc1d.com1.z0.glb.clouddn.com/airZ.jpg")
+    let newCell = ArticInformation(name: "杨晓磊", money: 0)
     ArticArry.append(newCell)
     // 上次刷新的时间
     tableView.header.lastUpdatedTimeKey = NSDate().description
@@ -143,7 +136,7 @@ class MenuTableViewController: UITableViewController{
     */
    private func refreshFooter(){
     //测试数据
-        let newCell = ArticInformation(name: "杨晓磊", money: 0.0, imageurl: "http://7xlc1d.com1.z0.glb.clouddn.com/airZ.jpg")
+        let newCell = ArticInformation(name: "杨晓磊", money: 0)
         ArticArry.append(newCell)
     //刷新界面
         tableView.reloadData()
@@ -156,12 +149,8 @@ class MenuTableViewController: UITableViewController{
     */
     func loadListData(index:NSIndexPath){
         print(index.row)
-        tableView.header.beginRefreshing()
+        self.tableView.header.beginRefreshing()
     }
     
-    
-  
+
 }
-
-
-

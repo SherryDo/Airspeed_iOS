@@ -11,9 +11,12 @@ import UIKit
 class WZ_onSaleViewController: UIViewController,UITableViewDelegate,UITableViewDataSource{
 
     @IBOutlet weak var onSaleTableView: UITableView!
+    var simpleInfoArray:[ItemsSimpleInfo] = [];
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         self.navigationItem.title="我的上架"
+        
         //        MJREfresh
         self.onSaleTableView.header = MJRefreshNormalHeader(refreshingBlock: refreshHeader)
         self.onSaleTableView.footer = MJRefreshAutoNormalFooter (refreshingBlock: refreshFooter)
@@ -23,23 +26,25 @@ class WZ_onSaleViewController: UIViewController,UITableViewDelegate,UITableViewD
         
         // Do any additional setup after loading the view.
     }
-
+//MARK: -TableView DataSource
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cellIdentifier="onSaleTableViewCell"
-        //注册xib
-        onSaleTableView!.registerNib(UINib(nibName: "WZ_onSaleTableViewCell", bundle:nil), forCellReuseIdentifier: cellIdentifier)
         let cell=onSaleTableView.dequeueReusableCellWithIdentifier(cellIdentifier) as! WZ_onSaleTableViewCell
         
-        cell.itemImage.image=UIImage(named: "icon.jpg")
-        cell.itemName.text="itemName"
-        cell.onSaleDate.text="onSaleDate"
-        cell.itemCategory.text="itemCategory"
+        cell.itemImage.image=simpleInfoArray[indexPath.row
+        ].itemImage
+        cell.itemName.text=simpleInfoArray[indexPath.row
+            ].itemName
+        cell.onSaleDate.text=simpleInfoArray[indexPath.row
+            ].itemOnSaleDate
+        cell.itemCategory.text=simpleInfoArray[indexPath.row
+            ].itemCategory
         
         return cell
     }
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         
-        return 10
+        return simpleInfoArray.count
     }
     
     func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
@@ -60,6 +65,9 @@ class WZ_onSaleViewController: UIViewController,UITableViewDelegate,UITableViewD
     private func refreshHeader(){
         self.onSaleTableView.header.lastUpdatedTimeKey = NSDate().description
         print("refreshHeader")
+        let cell = ItemsSimpleInfo(name: "显然王卓更帅", category: "帅比", date: "2015.8.26")
+        simpleInfoArray.append(cell)
+        onSaleTableView.reloadData()
         self.onSaleTableView.header.endRefreshing()
     }
     private func refreshFooter(){

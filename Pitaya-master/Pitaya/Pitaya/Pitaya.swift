@@ -205,7 +205,7 @@ public class PitayaManager {
             components += self.queryComponents(key, value)
         }
         
-        return components.map{"\($0)=\($1)"}.joinWithSeparator("&")
+        return "&".join(components.map{"\($0)=\($1)"} as [String])
     }
     func queryComponents(key: String, _ value: AnyObject) -> [(String, String)] {
         var components: [(String, String)] = []
@@ -218,7 +218,7 @@ public class PitayaManager {
                 components += queryComponents("\(key)", value)
             }
         } else {
-            components.appendContentsOf([(escape(key), escape("\(value)"))])
+            components.extend([(escape(key), escape("\(value)"))])
         }
         
         return components
