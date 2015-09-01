@@ -18,7 +18,7 @@ class MenuTableViewCell: UITableViewCell {
         super.awakeFromNib()
         // Initialization code
         
-        
+    self.selectionStyle = .None
     }
 
     override func setSelected(selected: Bool, animated: Bool) {

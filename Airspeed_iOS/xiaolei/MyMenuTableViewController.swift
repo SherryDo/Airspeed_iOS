@@ -46,6 +46,7 @@ class MyMenuTableViewController: UITableViewController{
             
             //2
             cell!.backgroundColor = UIColor.clearColor()
+            cell?.selectionStyle = .None
             //3
             cell!.imageView?.layer.borderWidth = 0.5
             cell?.imageView?.layer.borderColor = UIColor(white: 0.3, alpha: 0.7).CGColor

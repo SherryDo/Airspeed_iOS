@@ -42,6 +42,7 @@ class YXL_ItemTableViewController: UITableViewController,CNPGridMenuDelegate{
         let cell = tableView.dequeueReusableCellWithIdentifier("itemcell", forIndexPath: indexPath)
         
         cell.textLabel?.text = "杨晓磊是个大帅哥"
+        cell.selectionStyle = .None
         // Configure the cell...
 
         return cell
