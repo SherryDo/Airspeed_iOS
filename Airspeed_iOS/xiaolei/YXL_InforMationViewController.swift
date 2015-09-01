@@ -7,14 +7,20 @@
 //
 
 import UIKit
-
+/// 物品的详细信息类
 class YXL_InforMationViewController: UIViewController,ENSideMenuDelegate{
 
+    @IBOutlet weak var scroll: UIScrollView!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        tabBarController?.tabBar.hidden = true
         self.sideMenuController()?.sideMenu?.delegate = self
         // Do any additional setup after loading the view.
+        navigationItem.backBarButtonItem = UIBarButtonItem(title: " ", style:
+            .Plain, target: nil, action: nil)
+      
     }
 
     override func didReceiveMemoryWarning() {
@@ -22,6 +28,7 @@ class YXL_InforMationViewController: UIViewController,ENSideMenuDelegate{
         // Dispose of any resources that can be recreated.
     }
     
+    //MARK: ENSideMenuDelegate
    func sideMenuShouldOpenSideMenu () -> Bool{
     return false
     }

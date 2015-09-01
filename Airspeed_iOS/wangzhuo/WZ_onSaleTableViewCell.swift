@@ -13,6 +13,7 @@ class WZ_onSaleTableViewCell: UITableViewCell {
     @IBOutlet weak var itemName: UILabel!
     @IBOutlet weak var itemCategory: UILabel!
     @IBOutlet weak var onSaleDate: UILabel!
+
     
     override func awakeFromNib() {
         super.awakeFromNib()
