@@ -88,8 +88,14 @@
 		CB42190E1B8D64F700AEFCCF /* WZ_UserInformationViewController.swift .swift in Sources */ = {isa = PBXBuildFile; fileRef = CB4219081B8D64F700AEFCCF /* WZ_UserInformationViewController.swift .swift */; };
 		CB4219111B8D650C00AEFCCF /* background.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CB42190F1B8D650C00AEFCCF /* background.jpg */; };
 		CB4219121B8D650C00AEFCCF /* icon.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CB4219101B8D650C00AEFCCF /* icon.jpg */; };
+		CBD80F231B9581700030D47E /* ItemsSimpleInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBD80F221B9581700030D47E /* ItemsSimpleInfo.swift */; };
 		CBDAD5021B8D6EDD0096797D /* WZ_onSaleTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBDAD5001B8D6EDD0096797D /* WZ_onSaleTableViewCell.swift */; };
 		CBDAD5031B8D6EDD0096797D /* WZ_onSaleTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CBDAD5011B8D6EDD0096797D /* WZ_onSaleTableViewCell.xib */; };
+		CBE677F61B95805700FBF91E /* auction.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CBE677EF1B95805700FBF91E /* auction.storyboard */; };
+		CBE677F71B95805700FBF91E /* EditUserInfo.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CBE677F01B95805700FBF91E /* EditUserInfo.storyboard */; };
+		CBE677F81B95805700FBF91E /* myRent.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CBE677F11B95805700FBF91E /* myRent.storyboard */; };
+		CBE677F91B95805700FBF91E /* myWallet.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CBE677F21B95805700FBF91E /* myWallet.storyboard */; };
+		CBE677FA1B95805700FBF91E /* onSale.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CBE677F31B95805700FBF91E /* onSale.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -288,8 +294,14 @@
 		CB4219081B8D64F700AEFCCF /* WZ_UserInformationViewController.swift .swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "WZ_UserInformationViewController.swift .swift"; path = "Airspeed_iOS/wangzhuo/WZ_UserInformationViewController.swift .swift"; sourceTree = SOURCE_ROOT; };
 		CB42190F1B8D650C00AEFCCF /* background.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = background.jpg; path = Airspeed_iOS/wangzhuo/background.jpg; sourceTree = SOURCE_ROOT; };
 		CB4219101B8D650C00AEFCCF /* icon.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = icon.jpg; path = Airspeed_iOS/wangzhuo/icon.jpg; sourceTree = SOURCE_ROOT; };
+		CBD80F221B9581700030D47E /* ItemsSimpleInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ItemsSimpleInfo.swift; path = Airspeed_iOS/wangzhuo/ItemsSimpleInfo.swift; sourceTree = SOURCE_ROOT; };
 		CBDAD5001B8D6EDD0096797D /* WZ_onSaleTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = WZ_onSaleTableViewCell.swift; path = Airspeed_iOS/wangzhuo/WZ_onSaleTableViewCell.swift; sourceTree = SOURCE_ROOT; };
 		CBDAD5011B8D6EDD0096797D /* WZ_onSaleTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = WZ_onSaleTableViewCell.xib; path = Airspeed_iOS/wangzhuo/WZ_onSaleTableViewCell.xib; sourceTree = SOURCE_ROOT; };
+		CBE677EF1B95805700FBF91E /* auction.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = auction.storyboard; path = Airspeed_iOS/wangzhuo/auction.storyboard; sourceTree = SOURCE_ROOT; };
+		CBE677F01B95805700FBF91E /* EditUserInfo.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = EditUserInfo.storyboard; path = Airspeed_iOS/wangzhuo/EditUserInfo.storyboard; sourceTree = SOURCE_ROOT; };
+		CBE677F11B95805700FBF91E /* myRent.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = myRent.storyboard; path = Airspeed_iOS/wangzhuo/myRent.storyboard; sourceTree = SOURCE_ROOT; };
+		CBE677F21B95805700FBF91E /* myWallet.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = myWallet.storyboard; path = Airspeed_iOS/wangzhuo/myWallet.storyboard; sourceTree = SOURCE_ROOT; };
+		CBE677F31B95805700FBF91E /* onSale.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = onSale.storyboard; path = Airspeed_iOS/wangzhuo/onSale.storyboard; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -667,6 +679,7 @@
 		CB4219171B8D677E00AEFCCF /* 我的拍卖 */ = {
 			isa = PBXGroup;
 			children = (
+				CBE677EF1B95805700FBF91E /* auction.storyboard */,
 				CB4219031B8D64F700AEFCCF /* WZ_auctionViewController.swift */,
 			);
 			name = "我的拍卖";
@@ -675,6 +688,7 @@
 		CB4219181B8D679800AEFCCF /* 我的租赁 */ = {
 			isa = PBXGroup;
 			children = (
+				CBE677F11B95805700FBF91E /* myRent.storyboard */,
 				CB4219041B8D64F700AEFCCF /* WZ_myRentViewController.swift */,
 			);
 			name = "我的租赁";
@@ -683,6 +697,7 @@
 		CB4219191B8D67B500AEFCCF /* 我的钱包 */ = {
 			isa = PBXGroup;
 			children = (
+				CBE677F21B95805700FBF91E /* myWallet.storyboard */,
 				CB4219051B8D64F700AEFCCF /* WZ_myWalletViewController.swift */,
 			);
 			name = "我的钱包";
@@ -691,11 +706,20 @@
 		CB42191A1B8D67C500AEFCCF /* 我的上架 */ = {
 			isa = PBXGroup;
 			children = (
+				CBE677F31B95805700FBF91E /* onSale.storyboard */,
 				CB4219061B8D64F700AEFCCF /* WZ_onSaleViewController.swift */,
 				CBDAD5001B8D6EDD0096797D /* WZ_onSaleTableViewCell.swift */,
 				CBDAD5011B8D6EDD0096797D /* WZ_onSaleTableViewCell.xib */,
 			);
 			name = "我的上架";
+			sourceTree = "<group>";
+		};
+		CBD80F1D1B95815E0030D47E /* model */ = {
+			isa = PBXGroup;
+			children = (
+				CBD80F221B9581700030D47E /* ItemsSimpleInfo.swift */,
+			);
+			name = model;
 			sourceTree = "<group>";
 		};
 		CBECF9291B76F950002DCD6E /* testFiles */ = {
@@ -710,6 +734,7 @@
 		CBECF92A1B76F967002DCD6E /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
+				CBE677F01B95805700FBF91E /* EditUserInfo.storyboard */,
 				CB4219081B8D64F700AEFCCF /* WZ_UserInformationViewController.swift .swift */,
 				CB4219071B8D64F700AEFCCF /* WZ_UserInfoEditTableViewController.swift */,
 				CB42191A1B8D67C500AEFCCF /* 我的上架 */,
@@ -724,6 +749,7 @@
 			isa = PBXGroup;
 			children = (
 				CB4219011B8D64DD00AEFCCF /* WZ_StoryBoard.storyboard */,
+				CBD80F1D1B95815E0030D47E /* model */,
 				CBECF92A1B76F967002DCD6E /* ViewController */,
 				CBECF9291B76F950002DCD6E /* testFiles */,
 			);
@@ -848,6 +874,7 @@
 			files = (
 				AB8008CF1B7F03590038BF89 /* YXL2_Storyboard.storyboard in Resources */,
 				CB4219111B8D650C00AEFCCF /* background.jpg in Resources */,
+				CBE677F81B95805700FBF91E /* myRent.storyboard in Resources */,
 				AB4A2E461B38F7050023F291 /* LaunchScreen.storyboard in Resources */,
 				AB4A2E531B392DC30023F291 /* YXL_Storyboard.storyboard in Resources */,
 				CACADEE01B887426006BA7A5 /* RjTableViewCell.xib in Resources */,
@@ -855,9 +882,13 @@
 				CB4219121B8D650C00AEFCCF /* icon.jpg in Resources */,
 				AB4A2E431B38F7050023F291 /* Assets.xcassets in Resources */,
 				CBDAD5031B8D6EDD0096797D /* WZ_onSaleTableViewCell.xib in Resources */,
+				CBE677FA1B95805700FBF91E /* onSale.storyboard in Resources */,
+				CBE677F61B95805700FBF91E /* auction.storyboard in Resources */,
 				AB4A2E3E1B38F7050023F291 /* Main.storyboard in Resources */,
 				CB4219021B8D64DD00AEFCCF /* WZ_StoryBoard.storyboard in Resources */,
 				AB7A1FC21B706CAE00D77160 /* MJRefresh.bundle in Resources */,
+				CBE677F71B95805700FBF91E /* EditUserInfo.storyboard in Resources */,
+				CBE677F91B95805700FBF91E /* myWallet.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -900,6 +931,7 @@
 				AB9EFE751B90460400201967 /* UIImageView+WebCache.m in Sources */,
 				AB7A1FB51B706CAE00D77160 /* MJRefreshBackFooter.m in Sources */,
 				AB7A1FBB1B706CAE00D77160 /* MJRefreshAutoStateFooter.m in Sources */,
+				CBD80F231B9581700030D47E /* ItemsSimpleInfo.swift in Sources */,
 				CB42190A1B8D64F700AEFCCF /* WZ_myRentViewController.swift in Sources */,
 				AB7A1FBF1B706CAE00D77160 /* MJRefreshGifHeader.m in Sources */,
 				AB7A1FB91B706CAE00D77160 /* MJRefreshAutoGifFooter.m in Sources */,
