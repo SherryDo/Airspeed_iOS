@@ -59,6 +59,8 @@
 		CAC8ECC81B8C75DC00C2B183 /* ScrollViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAC8ECC71B8C75DC00C2B183 /* ScrollViewController.swift */; };
 		CACADEDF1B887426006BA7A5 /* RjTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CACADEDD1B887426006BA7A5 /* RjTableViewCell.swift */; };
 		CACADEE01B887426006BA7A5 /* RjTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CACADEDE1B887426006BA7A5 /* RjTableViewCell.xib */; };
+		CB01C4511B8D968B00177507 /* ItemsSimpleInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB01C4501B8D968B00177507 /* ItemsSimpleInfo.swift */; };
+		CB01C4531B8DF8A500177507 /* background.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CB01C4521B8DF8A500177507 /* background.jpg */; };
 		CB4219021B8D64DD00AEFCCF /* WZ_StoryBoard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CB4219011B8D64DD00AEFCCF /* WZ_StoryBoard.storyboard */; };
 		CB4219091B8D64F700AEFCCF /* WZ_auctionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB4219031B8D64F700AEFCCF /* WZ_auctionViewController.swift */; };
 		CB42190A1B8D64F700AEFCCF /* WZ_myRentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB4219041B8D64F700AEFCCF /* WZ_myRentViewController.swift */; };
@@ -66,10 +68,9 @@
 		CB42190C1B8D64F700AEFCCF /* WZ_onSaleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB4219061B8D64F700AEFCCF /* WZ_onSaleViewController.swift */; };
 		CB42190D1B8D64F700AEFCCF /* WZ_UserInfoEditTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB4219071B8D64F700AEFCCF /* WZ_UserInfoEditTableViewController.swift */; };
 		CB42190E1B8D64F700AEFCCF /* WZ_UserInformationViewController.swift .swift in Sources */ = {isa = PBXBuildFile; fileRef = CB4219081B8D64F700AEFCCF /* WZ_UserInformationViewController.swift .swift */; };
-		CB4219111B8D650C00AEFCCF /* background.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CB42190F1B8D650C00AEFCCF /* background.jpg */; };
 		CB4219121B8D650C00AEFCCF /* icon.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CB4219101B8D650C00AEFCCF /* icon.jpg */; };
+		CB5F56651B8E8BE3000B2301 /* WZ_itemDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB5F56641B8E8BE3000B2301 /* WZ_itemDetailViewController.swift */; };
 		CBDAD5021B8D6EDD0096797D /* WZ_onSaleTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBDAD5001B8D6EDD0096797D /* WZ_onSaleTableViewCell.swift */; };
-		CBDAD5031B8D6EDD0096797D /* WZ_onSaleTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CBDAD5011B8D6EDD0096797D /* WZ_onSaleTableViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -180,6 +181,8 @@
 		CAC8ECC71B8C75DC00C2B183 /* ScrollViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ScrollViewController.swift; path = Airspeed_iOS/renjie/ScrollViewController.swift; sourceTree = SOURCE_ROOT; };
 		CACADEDD1B887426006BA7A5 /* RjTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RjTableViewCell.swift; sourceTree = "<group>"; };
 		CACADEDE1B887426006BA7A5 /* RjTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RjTableViewCell.xib; sourceTree = "<group>"; };
+		CB01C4501B8D968B00177507 /* ItemsSimpleInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ItemsSimpleInfo.swift; path = Airspeed_iOS/wangzhuo/ItemsSimpleInfo.swift; sourceTree = SOURCE_ROOT; };
+		CB01C4521B8DF8A500177507 /* background.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = background.jpg; sourceTree = SOURCE_ROOT; };
 		CB4219011B8D64DD00AEFCCF /* WZ_StoryBoard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = WZ_StoryBoard.storyboard; path = Airspeed_iOS/wangzhuo/WZ_StoryBoard.storyboard; sourceTree = SOURCE_ROOT; };
 		CB4219031B8D64F700AEFCCF /* WZ_auctionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = WZ_auctionViewController.swift; path = Airspeed_iOS/wangzhuo/WZ_auctionViewController.swift; sourceTree = SOURCE_ROOT; };
 		CB4219041B8D64F700AEFCCF /* WZ_myRentViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = WZ_myRentViewController.swift; path = Airspeed_iOS/wangzhuo/WZ_myRentViewController.swift; sourceTree = SOURCE_ROOT; };
@@ -187,10 +190,9 @@
 		CB4219061B8D64F700AEFCCF /* WZ_onSaleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = WZ_onSaleViewController.swift; path = Airspeed_iOS/wangzhuo/WZ_onSaleViewController.swift; sourceTree = SOURCE_ROOT; };
 		CB4219071B8D64F700AEFCCF /* WZ_UserInfoEditTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = WZ_UserInfoEditTableViewController.swift; path = Airspeed_iOS/wangzhuo/WZ_UserInfoEditTableViewController.swift; sourceTree = SOURCE_ROOT; };
 		CB4219081B8D64F700AEFCCF /* WZ_UserInformationViewController.swift .swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "WZ_UserInformationViewController.swift .swift"; path = "Airspeed_iOS/wangzhuo/WZ_UserInformationViewController.swift .swift"; sourceTree = SOURCE_ROOT; };
-		CB42190F1B8D650C00AEFCCF /* background.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = background.jpg; path = Airspeed_iOS/wangzhuo/background.jpg; sourceTree = SOURCE_ROOT; };
 		CB4219101B8D650C00AEFCCF /* icon.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = icon.jpg; path = Airspeed_iOS/wangzhuo/icon.jpg; sourceTree = SOURCE_ROOT; };
+		CB5F56641B8E8BE3000B2301 /* WZ_itemDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = WZ_itemDetailViewController.swift; path = Airspeed_iOS/wangzhuo/WZ_itemDetailViewController.swift; sourceTree = SOURCE_ROOT; };
 		CBDAD5001B8D6EDD0096797D /* WZ_onSaleTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = WZ_onSaleTableViewCell.swift; path = Airspeed_iOS/wangzhuo/WZ_onSaleTableViewCell.swift; sourceTree = SOURCE_ROOT; };
-		CBDAD5011B8D6EDD0096797D /* WZ_onSaleTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = WZ_onSaleTableViewCell.xib; path = Airspeed_iOS/wangzhuo/WZ_onSaleTableViewCell.xib; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -501,6 +503,14 @@
 			path = Data;
 			sourceTree = "<group>";
 		};
+		CB01C44B1B8D960D00177507 /* model */ = {
+			isa = PBXGroup;
+			children = (
+				CB01C4501B8D968B00177507 /* ItemsSimpleInfo.swift */,
+			);
+			name = model;
+			sourceTree = "<group>";
+		};
 		CB4219171B8D677E00AEFCCF /* 我的拍卖 */ = {
 			isa = PBXGroup;
 			children = (
@@ -530,7 +540,7 @@
 			children = (
 				CB4219061B8D64F700AEFCCF /* WZ_onSaleViewController.swift */,
 				CBDAD5001B8D6EDD0096797D /* WZ_onSaleTableViewCell.swift */,
-				CBDAD5011B8D6EDD0096797D /* WZ_onSaleTableViewCell.xib */,
+				CB5F56641B8E8BE3000B2301 /* WZ_itemDetailViewController.swift */,
 			);
 			name = "我的上架";
 			sourceTree = "<group>";
@@ -538,7 +548,7 @@
 		CBECF9291B76F950002DCD6E /* testFiles */ = {
 			isa = PBXGroup;
 			children = (
-				CB42190F1B8D650C00AEFCCF /* background.jpg */,
+				CB01C4521B8DF8A500177507 /* background.jpg */,
 				CB4219101B8D650C00AEFCCF /* icon.jpg */,
 			);
 			name = testFiles;
@@ -547,6 +557,7 @@
 		CBECF92A1B76F967002DCD6E /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
+				CB4219011B8D64DD00AEFCCF /* WZ_StoryBoard.storyboard */,
 				CB4219081B8D64F700AEFCCF /* WZ_UserInformationViewController.swift .swift */,
 				CB4219071B8D64F700AEFCCF /* WZ_UserInfoEditTableViewController.swift */,
 				CB42191A1B8D67C500AEFCCF /* 我的上架 */,
@@ -560,7 +571,7 @@
 		CBF07FA31B76F86F008BA69F /* wangzhuo */ = {
 			isa = PBXGroup;
 			children = (
-				CB4219011B8D64DD00AEFCCF /* WZ_StoryBoard.storyboard */,
+				CB01C44B1B8D960D00177507 /* model */,
 				CBECF92A1B76F967002DCD6E /* ViewController */,
 				CBECF9291B76F950002DCD6E /* testFiles */,
 			);
@@ -650,15 +661,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				AB8008CF1B7F03590038BF89 /* YXL2_Storyboard.storyboard in Resources */,
-				CB4219111B8D650C00AEFCCF /* background.jpg in Resources */,
 				AB4A2E461B38F7050023F291 /* LaunchScreen.storyboard in Resources */,
 				AB4A2E531B392DC30023F291 /* YXL_Storyboard.storyboard in Resources */,
 				CACADEE01B887426006BA7A5 /* RjTableViewCell.xib in Resources */,
 				CABCABF21B71B5C400000E02 /* rj_Storyboard.storyboard in Resources */,
 				CB4219121B8D650C00AEFCCF /* icon.jpg in Resources */,
 				AB4A2E431B38F7050023F291 /* Assets.xcassets in Resources */,
-				CBDAD5031B8D6EDD0096797D /* WZ_onSaleTableViewCell.xib in Resources */,
 				AB4A2E3E1B38F7050023F291 /* Main.storyboard in Resources */,
+				CB01C4531B8DF8A500177507 /* background.jpg in Resources */,
 				CB4219021B8D64DD00AEFCCF /* WZ_StoryBoard.storyboard in Resources */,
 				AB7A1FC21B706CAE00D77160 /* MJRefresh.bundle in Resources */,
 			);
@@ -707,6 +717,7 @@
 				AB4A2E391B38F7050023F291 /* AppDelegate.swift in Sources */,
 				AB7A1FB81B706CAE00D77160 /* MJRefreshHeader.m in Sources */,
 				AB7C476F1B75D69900AF2077 /* SwiftNotice.swift in Sources */,
+				CB01C4511B8D968B00177507 /* ItemsSimpleInfo.swift in Sources */,
 				ABA2CECF1B721FA700D2C4A4 /* ENSideMenuNavigationController.swift in Sources */,
 				AB4A63C81B8605020040DEEA /* YXL_InforMationViewController.swift in Sources */,
 				AB4A2E571B392EC40023F291 /* MainViewController.swift in Sources */,
@@ -717,6 +728,7 @@
 				AB7A1FB71B706CAE00D77160 /* MJRefreshFooter.m in Sources */,
 				CA64D0541B744D0600E6786B /* rj_gnsjViewController.swift in Sources */,
 				ABA2CE711B72070900D2C4A4 /* HttpCollectionData.swift in Sources */,
+				CB5F56651B8E8BE3000B2301 /* WZ_itemDetailViewController.swift in Sources */,
 				ABE387FA1B7336EC0028557E /* ItemDetails.swift in Sources */,
 				AB7A1FBE1B706CAE00D77160 /* MJRefreshBackStateFooter.m in Sources */,
 				CB42190B1B8D64F700AEFCCF /* WZ_myWalletViewController.swift in Sources */,
