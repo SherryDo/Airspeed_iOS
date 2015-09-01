@@ -256,6 +256,7 @@
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="grouped" separatorStyle="default" rowHeight="44" sectionHeaderHeight="18" sectionFooterHeight="18" id="Imd-T2-gzZ">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+<<<<<<< Updated upstream:Airspeed_iOS/wangzhuo/EditUserInfo~.storyboard
                         <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                         <sections>
                             <tableViewSection headerTitle="用户信息" id="mio-bm-qTL">
@@ -316,6 +317,23 @@
                                 </cells>
                             </tableViewSection>
                         </sections>
+=======
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="editUserInfoCell" id="hVv-fz-0Do">
+                                <rect key="frame" x="0.0" y="86" width="320" height="50"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="hVv-fz-0Do" id="CK0-Dg-8IL">
+                                    <rect key="frame" x="0.0" y="0.0" width="320" height="49"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <animations/>
+                                </tableViewCellContentView>
+                                <animations/>
+                            </tableViewCell>
+                        </prototypes>
+                        <sections/>
+>>>>>>> Stashed changes:Airspeed_iOS/wangzhuo/WZ_StoryBoard.storyboard
                         <connections>
                             <outlet property="dataSource" destination="dJG-ra-J0U" id="BDa-EF-8gk"/>
                             <outlet property="delegate" destination="dJG-ra-J0U" id="VJ0-Wy-aKU"/>
