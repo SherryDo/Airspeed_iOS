@@ -10,10 +10,6 @@ import UIKit
 
 class WZ_UserInfoEditTableViewController: UITableViewController {
 
-    @IBOutlet weak var userNameText: UITextField!
-    
-    @IBOutlet weak var saveBTN: UIBarButtonItem!
-    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -33,12 +29,12 @@ class WZ_UserInfoEditTableViewController: UITableViewController {
 
     override func numberOfSectionsInTableView(tableView: UITableView) -> Int {
         // #warning Incomplete implementation, return the number of sections
-        return 1
+        return 0
     }
 
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return 3
+        return 0
     }
 
     /*
@@ -95,8 +91,5 @@ class WZ_UserInfoEditTableViewController: UITableViewController {
         // Pass the selected object to the new view controller.
     }
     */
-    @IBAction func saveUserInfo(sender: UIBarButtonItem) {
-        self.navigationController?.popViewControllerAnimated(true)
-    }
 
 }
