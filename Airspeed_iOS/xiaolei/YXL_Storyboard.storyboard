@@ -103,7 +103,7 @@
                                     <barButtonItem title="Item" id="vkE-zF-Tc9"/>
                                 </items>
                             </toolbar>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0mN-VZ-koL">
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0mN-VZ-koL">
                                 <rect key="frame" x="0.0" y="64" width="320" height="460"/>
                                 <animations/>
                             </scrollView>

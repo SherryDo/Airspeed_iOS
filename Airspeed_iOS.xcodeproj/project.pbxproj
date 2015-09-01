@@ -65,6 +65,10 @@
 		ABA2CED51B72274A00D2C4A4 /* MyMenuTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABA2CED41B72274A00D2C4A4 /* MyMenuTableViewController.swift */; };
 		ABBC2C5D1B95964900D5DAE8 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ABBC2C501B95963100D5DAE8 /* Alamofire.framework */; };
 		ABBC2C5E1B95964900D5DAE8 /* Alamofire.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = ABBC2C501B95963100D5DAE8 /* Alamofire.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		ABBC2C681B95F50D00D5DAE8 /* q1.png in Resources */ = {isa = PBXBuildFile; fileRef = ABBC2C641B95F50D00D5DAE8 /* q1.png */; settings = {ASSET_TAGS = (); }; };
+		ABBC2C691B95F50D00D5DAE8 /* q2.png in Resources */ = {isa = PBXBuildFile; fileRef = ABBC2C651B95F50D00D5DAE8 /* q2.png */; settings = {ASSET_TAGS = (); }; };
+		ABBC2C6A1B95F50D00D5DAE8 /* q3.png in Resources */ = {isa = PBXBuildFile; fileRef = ABBC2C661B95F50D00D5DAE8 /* q3.png */; settings = {ASSET_TAGS = (); }; };
+		ABBC2C6B1B95F50D00D5DAE8 /* q4.png in Resources */ = {isa = PBXBuildFile; fileRef = ABBC2C671B95F50D00D5DAE8 /* q4.png */; settings = {ASSET_TAGS = (); }; };
 		ABE387FA1B7336EC0028557E /* ItemDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABE387F91B7336EC0028557E /* ItemDetails.swift */; };
 		ABFC19F41B930C2D00516E89 /* SwiftyJSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ABFC19ED1B930C2300516E89 /* SwiftyJSON.framework */; };
 		ABFC19F51B930C2D00516E89 /* SwiftyJSON.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = ABFC19ED1B930C2300516E89 /* SwiftyJSON.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
@@ -315,6 +319,10 @@
 		ABA2CED01B72203C00D2C4A4 /* MyNavigationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyNavigationViewController.swift; sourceTree = "<group>"; };
 		ABA2CED41B72274A00D2C4A4 /* MyMenuTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyMenuTableViewController.swift; sourceTree = "<group>"; };
 		ABBC2C471B95963100D5DAE8 /* Alamofire.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Alamofire.xcodeproj; path = "Alamofire-swift-2.0/Alamofire.xcodeproj"; sourceTree = "<group>"; };
+		ABBC2C641B95F50D00D5DAE8 /* q1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = q1.png; sourceTree = "<group>"; };
+		ABBC2C651B95F50D00D5DAE8 /* q2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = q2.png; sourceTree = "<group>"; };
+		ABBC2C661B95F50D00D5DAE8 /* q3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = q3.png; sourceTree = "<group>"; };
+		ABBC2C671B95F50D00D5DAE8 /* q4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = q4.png; sourceTree = "<group>"; };
 		ABE387F91B7336EC0028557E /* ItemDetails.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemDetails.swift; sourceTree = "<group>"; };
 		ABFC19E51B930C2200516E89 /* SwiftyJSON.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = SwiftyJSON.xcodeproj; path = "SwiftyJSON-xcode7/SwiftyJSON.xcodeproj"; sourceTree = "<group>"; };
 		ABFC19FC1B930D8300516E89 /* Pitaya.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Pitaya.xcodeproj; path = "Pitaya-master/Pitaya/Pitaya.xcodeproj"; sourceTree = "<group>"; };
@@ -448,6 +456,10 @@
 		AB536FCD1B6F1248004B75B8 /* controller */ = {
 			isa = PBXGroup;
 			children = (
+				ABBC2C641B95F50D00D5DAE8 /* q1.png */,
+				ABBC2C651B95F50D00D5DAE8 /* q2.png */,
+				ABBC2C661B95F50D00D5DAE8 /* q3.png */,
+				ABBC2C671B95F50D00D5DAE8 /* q4.png */,
 				ABA2CEC91B7218C700D2C4A4 /* MenuTableViewController.swift */,
 				ABA2CEC71B7218B100D2C4A4 /* MenuTableViewCell.swift */,
 				AB4A63C71B8605020040DEEA /* YXL_InforMationViewController.swift */,
@@ -974,9 +986,11 @@
 			files = (
 				AB8008CF1B7F03590038BF89 /* YXL2_Storyboard.storyboard in Resources */,
 				CB4219111B8D650C00AEFCCF /* background.jpg in Resources */,
+				ABBC2C6B1B95F50D00D5DAE8 /* q4.png in Resources */,
 				CBE677F81B95805700FBF91E /* myRent.storyboard in Resources */,
 				AB4A2E461B38F7050023F291 /* LaunchScreen.storyboard in Resources */,
 				AB4A2E531B392DC30023F291 /* YXL_Storyboard.storyboard in Resources */,
+				ABBC2C6A1B95F50D00D5DAE8 /* q3.png in Resources */,
 				CACADEE01B887426006BA7A5 /* RjTableViewCell.xib in Resources */,
 				CABCABF21B71B5C400000E02 /* rj_Storyboard.storyboard in Resources */,
 				CB4219121B8D650C00AEFCCF /* icon.jpg in Resources */,
@@ -987,8 +1001,10 @@
 				AB4A2E3E1B38F7050023F291 /* Main.storyboard in Resources */,
 				CB4219021B8D64DD00AEFCCF /* WZ_StoryBoard.storyboard in Resources */,
 				AB7A1FC21B706CAE00D77160 /* MJRefresh.bundle in Resources */,
+				ABBC2C691B95F50D00D5DAE8 /* q2.png in Resources */,
 				CBE677F71B95805700FBF91E /* EditUserInfo.storyboard in Resources */,
 				CBE677F91B95805700FBF91E /* myWallet.storyboard in Resources */,
+				ABBC2C681B95F50D00D5DAE8 /* q1.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

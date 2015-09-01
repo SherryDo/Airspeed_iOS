@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Alamofire
 /// 同城物品列表
 class MenuTableViewController: UITableViewController{
     
