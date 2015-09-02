@@ -14,3 +14,5 @@
 #import "UIImageView+WebCache.h"
 //全屏菜单
 #import "CNPGridMenu.h"
+//图片无限循环
+#import "SDCycleScrollView.h"

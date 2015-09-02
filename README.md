@@ -45,8 +45,10 @@ Master分支主要用来发布正式的版本；develop分支用来开发。所�
 
 4. 添加了第三方库`SwiftNotice`;[链接](https://github.com/johnlui/SwiftNotice)
 
-5.添加了第三方库 ``;[SDWebImage](https://github.com/rs/SDWebImage) 图片缓存
+5.添加了第三方库 [SDWebImage](https://github.com/rs/SDWebImage) 图片缓存
 [教程](http://www.cocoachina.com/ios/20141212/10622.html)
+
+6.添加了第三方库[SDCycleScrollView](https://github.com/gsdios/SDCycleScrollView)图片滚动
 
 <h2 id="git">git使用</h2>
 我们现在都对远程仓库有读写的权限，所以可以直接提交到Github的远程仓库中。
