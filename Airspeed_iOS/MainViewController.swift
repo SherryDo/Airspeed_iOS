@@ -12,7 +12,7 @@ class MainViewController: UITabBarController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        //加载所有的视图的根视图控制器
         loadAllViewController()
 
         // Do any additional setup after loading the view.
