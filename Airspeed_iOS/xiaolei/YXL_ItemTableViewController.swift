@@ -41,11 +41,12 @@ class YXL_ItemTableViewController: UITableViewController,CNPGridMenuDelegate{
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCellWithIdentifier("itemcell", forIndexPath: indexPath)
         
-        cell.textLabel?.text = "杨晓磊是个大帅哥"
+        cell.textLabel?.text = "杨晓磊是个大帅哥杨晓磊是个大帅哥杨晓磊是个大帅哥杨晓磊是个大帅哥杨晓磊是个大帅哥杨晓磊是个大帅哥杨晓磊是个大帅哥杨晓磊是个大帅哥杨晓磊是个大帅哥杨晓磊是个大帅哥"
         cell.selectionStyle = .None
+        cell.textLabel?.numberOfLines = 0
         // Configure the cell...
-
-        return cell
+        
+                return cell
     }
     
     
@@ -63,7 +64,8 @@ class YXL_ItemTableViewController: UITableViewController,CNPGridMenuDelegate{
     }
 
     func configController(){
-        
+        tableView.estimatedRowHeight = 44
+        tableView.rowHeight = UITableViewAutomaticDimension
         //        MJREfresh
         self.tableView.header = MJRefreshNormalHeader(refreshingBlock: refreshHeader)
         self.tableView.footer = MJRefreshAutoNormalFooter (refreshingBlock: refreshFooter)

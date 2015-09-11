@@ -12,7 +12,19 @@ class MainViewController: UITabBarController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-//        获取每个故事版的根视图控制器
+        
+        loadAllViewController()
+
+        // Do any additional setup after loading the view.
+    }
+
+    override func didReceiveMemoryWarning() {
+        super.didReceiveMemoryWarning()
+        // Dispose of any resources that can be recreated.
+    }
+    
+    func loadAllViewController(){
+        //        获取每个故事版的根视图控制器
         let yxl_RootViewController = UIStoryboard(name: "YXL_Storyboard", bundle: nil).instantiateInitialViewController() as! MyNavigationViewController
         
         let rj_RootViewController = UIStoryboard(name: "rj_Storyboard", bundle: nil).instantiateInitialViewController() as! UINavigationController
@@ -23,7 +35,7 @@ class MainViewController: UITabBarController {
         
         //设置tabbar被选中时的字体颜色
         let selectedText = [NSForegroundColorAttributeName:UIColor.purpleColor()]
-       yxl_RootViewController.tabBarItem.setTitleTextAttributes(selectedText, forState: UIControlState.Selected)
+        yxl_RootViewController.tabBarItem.setTitleTextAttributes(selectedText, forState: UIControlState.Selected)
         
         rj_RootViewController.tabBarItem.setTitleTextAttributes(selectedText, forState: UIControlState.Selected)
         wz_RootViewController.tabBarItem.setTitleTextAttributes(selectedText, forState: UIControlState.Selected)
@@ -39,7 +51,7 @@ class MainViewController: UITabBarController {
         yxl2_ViewController.tabBarItem.title = "同城"
         yxl2_ViewController.tabBarItem.image = UIImage(named: "Cd")?.imageWithRenderingMode(UIImageRenderingMode.AlwaysOriginal)
         yxl2_ViewController.tabBarItem.selectedImage = UIImage(named: "Cd_selected")?.imageWithRenderingMode(UIImageRenderingMode.AlwaysOriginal)
-
+        
         //3imageWithRenderingMode添加image渲染，使其保持为图片原色
         rj_RootViewController.tabBarItem.title = "上架"
         rj_RootViewController.tabBarItem.image = UIImage(named: "tabbar 2")?.imageWithRenderingMode(UIImageRenderingMode.AlwaysOriginal)
@@ -57,15 +69,7 @@ class MainViewController: UITabBarController {
         ]
         
         self.selectedIndex = 0
-        // Do any additional setup after loading the view.
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-    
-
     
 
 }
