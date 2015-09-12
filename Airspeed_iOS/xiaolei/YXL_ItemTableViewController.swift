@@ -15,6 +15,7 @@ class YXL_ItemTableViewController: UITableViewController,CNPGridMenuDelegate{
         super.viewDidLoad()
         //默认配置
         configController()
+       
     }
 
     override func viewWillAppear(animated: Bool) {
