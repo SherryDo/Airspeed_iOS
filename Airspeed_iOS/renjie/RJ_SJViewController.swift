@@ -50,12 +50,12 @@ class RJ_SJViewController:UIViewController {
         tab2 = sb1.instantiateViewControllerWithIdentifier("Test2_ViewControllerID")
         self.addChildViewController(tab1)
         self.addChildViewController(tab2)
-        self.addChildViewController(tab3)
-        let views = [tab1.view, tab2.view,tab3.view]
-        let names = ["上架物品","上架需求","上架拍卖"]
+     
+        let views = [tab1.view, tab2.view]
+        let names = ["上架物品","上架需求"]
         
-        //        //创建使用
-        tab3.view.backgroundColor = UIColor.whiteColor()
+        //创建使用
+  
         tab1.view.backgroundColor = UIColor.whiteColor()
         tab2.view.backgroundColor = UIColor.whiteColor()
         self.scroll = XLScrollViewer(frame: frame, withViews: views, withButtonNames: names, withThreeAnimation: 211)
