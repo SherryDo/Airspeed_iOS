@@ -33,6 +33,7 @@ class MainViewController: UITabBarController {
         
         let yxl2_ViewController = UIStoryboard(name: "YXL2_Storyboard", bundle: nil).instantiateInitialViewController() as! UINavigationController
         
+        
         //设置tabbar被选中时的字体颜色
         let selectedText = [NSForegroundColorAttributeName:UIColor.purpleColor()]
         yxl_RootViewController.tabBarItem.setTitleTextAttributes(selectedText, forState: UIControlState.Selected)
